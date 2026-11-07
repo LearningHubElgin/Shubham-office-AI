@@ -1,0 +1,66 @@
+[
+  {
+    "question": "What is iSuite AI – Clinic?",
+    "answer": "iSuite AI – Clinic is clinic management software made in Madurai for Indian clinics. It keeps a diary for each doctor, patient records and files, the day’s OPD board, prescriptions, GST bills and reminders in one app, with an AI front desk that answers patients and books, moves or cancels appointments on WhatsApp, Instagram, Messenger and web chat."
+  },
+  {
+    "question": "How much does iSuite AI – Clinic cost?",
+    "answer": "Clinic plans start from ₹11,999 a year + GST. Clinic Basic has 2 users. Clinic Growth, ₹22,999 a year + GST, has 4 users and adds treatment estimates, your own letterhead, email campaigns, Meta lead ads, and GSTR-1 and Tally exports. Both start with a 7-day free trial, and Meta bills WhatsApp charges separately."
+  },
+  {
+    "question": "Does it work for OPD and walk-in patients?",
+    "answer": "Yes. The Today board shows the day’s patients as Waiting, With the doctor, Done or No-show, and refreshes every 30 seconds. Walk-in books a patient in at once. The front desk takes BP, pulse, SpO2, sugar and weight, sends the patient to the doctor, and bills at the desk. There is no token number or TV display yet."
+  },
+  {
+    "question": "Can patients book a doctor’s appointment on WhatsApp?",
+    "answer": "Yes. The AI reads each doctor’s diary and offers only times that are really free, books the slot, and moves or cancels it when the patient asks. It never says “booked” unless the booking is saved. Patients can also book on your online booking page, shared as a link or put on your own website."
+  },
+  {
+    "question": "Does the AI reply to patients in Tamil and Tanglish?",
+    "answer": "Yes. The AI replies in the language each patient writes in, such as Tamil, Tanglish or English, or always in one language you choose. It understands WhatsApp voice notes too. The app’s own screens are in English and use clinic words: Patients, Enquiries, Appointments and Treatments."
+  },
+  {
+    "question": "Is iSuite AI – Clinic an EMR?",
+    "answer": "No, it is not a full electronic medical record system. It keeps appointments, patient details and files, vitals, prescriptions, visit summaries and bills. It does not do dental charting, lab result entry, pharmacy stock or ABDM health records, so clinics that need those keep their EMR or lab software alongside it."
+  },
+  {
+    "question": "Can doctors write prescriptions and send them on WhatsApp?",
+    "answer": "Yes. The front desk takes the vitals, and the doctor adds complaints, diagnosis, medicines, tests, advice and the next visit. It prints with your clinic’s name, logo and the doctor’s signature, or on your own letterhead with Clinic Growth. One tap sends the PDF on WhatsApp and keeps it in the patient’s files."
+  },
+  {
+    "question": "Does it make GST bills for a clinic?",
+    "answer": "Yes. At the desk, Bill adds the consultation at the service’s price and anything else done, and records what is paid by cash, UPI or card. It is a numbered invoice that prints as a PDF. If your clinic charges GST, its one rate goes on every line. Clinic Growth adds treatment estimates and GSTR-1 and Tally exports."
+  },
+  {
+    "question": "Will the AI give patients medical advice?",
+    "answer": "No. A clinic’s AI starts with rules never to diagnose, suggest a medicine or dose, or explain a report, and it never sees what a prescription says. It answers timings, fees, doctors and location, and books appointments. For chest pain, heavy bleeding or any emergency, it gives the clinic’s number and hands the chat to your staff at once."
+  },
+  {
+    "question": "Who can see patient prescriptions and health data?",
+    "answer": "Only the people you allow. By default the owner, team managers and the Doctor role read and write prescriptions; the Front desk role takes vitals and prints or sends finished ones. You give anyone else access in Team → Roles. The AI knows only that a prescription exists and the next visit date, never what it says."
+  },
+  {
+    "question": "Which types of clinics is iSuite AI – Clinic made for?",
+    "answer": "Clinics that run on appointments: dental, skin and aesthetic, eye, physiotherapy, ENT, paediatric, ayurveda and homeopathy clinics, polyclinics, and diagnostic labs that send reports to patients. Each doctor has a diary, each service has its own length and fee, and the clinic setup, with patient stages, reminder templates and roles, is ready the day you buy."
+  },
+  {
+    "question": "Does it send appointment reminders to patients automatically?",
+    "answer": "Yes. A WhatsApp reminder goes before each appointment, and another three days before the next visit the doctor asked for; patients reply to move it. Missed-visit messages, thank-yous with a review request and birthday greetings can go out on their own too. Each one uses a WhatsApp template that Meta approves first, and you switch it on."
+  },
+  {
+    "question": "Is there a clinic management app for Android?",
+    "answer": "Yes. The iSuite AI Android app holds the whole system, including the inbox, appointments, patients and alerts, so a doctor can work from the phone. It can also place calls from your own SIM, record them and add an AI transcript to the patient’s page. With WhatsApp calling switched on, patients who call your WhatsApp number ring in the app."
+  },
+  {
+    "question": "How soon can a clinic start using iSuite AI?",
+    "answer": "The clinic setup is in place the day you buy: patient stages, the doctor’s diary and services, reminder and report templates, and Doctor and Front desk roles. You add your doctors, timings, fees and address. Meta approves your WhatsApp Business number, usually in 1–2 weeks, and the MnT Future team helps you through it."
+  },
+  {
+    "question": "Is there a free version of iSuite AI – Clinic?",
+    "answer": "There is no free-forever plan. Every clinic plan starts with a 7-day free trial: you approve Razorpay auto-debit at the start, and the first yearly payment is taken only when the trial ends. Cancel before then and you pay nothing. You can also see the software first on a free 45-minute demo."
+  },
+  {
+    "question": "How many doctors and staff can use it?",
+    "answer": "Clinic Basic includes 2 users and Clinic Growth includes 4; ask us if you need more. Each doctor gets a diary with their own services and timings. The Doctor role sees their own appointments and patients, and the Front desk role handles bookings, the inbox, vitals and bills."
+  }
+]

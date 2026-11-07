@@ -1,14 +1,13 @@
 import React from 'react';
-import { industries } from '../data/industryData';
+import { allProductsNavList } from '../data/brandConfig';
 
 export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal }) {
-  const scrollToTrade = (tradeId) => {
+  const handleNav = (e, route) => {
+    if (route.startsWith('http') || route.startsWith('#')) return;
     if (onSelectIndustry) {
-      onSelectIndustry(tradeId);
-    }
-    const el = document.getElementById('preview-section') || document.getElementById('products-grid');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      e.preventDefault();
+      const slug = route.replace(/\//g, '');
+      onSelectIndustry(slug);
     }
   };
 
@@ -32,7 +31,7 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
         </div>
 
         {/* 3-Column Footer Grid: exact match to isuite.ai */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 pb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 pb-12 reveal stagger">
           
           {/* Column 1: PRODUCTS (top) + POLICIES (bottom) */}
           <div className="space-y-8 sm:space-y-10">
@@ -42,19 +41,20 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
                 PRODUCTS
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
-                {industries.map((ind) => (
-                  <li key={ind.id}>
-                    <button
-                      onClick={() => scrollToTrade(ind.id)}
-                      className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                {allProductsNavList.map((prod) => (
+                  <li key={prod.id}>
+                    <a
+                      href={prod.route}
+                      onClick={(e) => handleNav(e, prod.route)}
+                      className="hover:text-[#1663ff] transition-colors text-left block"
                     >
-                      iSuite AI – {ind.name}
-                    </button>
+                      {prod.fullName}
+                    </a>
                   </li>
                 ))}
                 <li>
                   <a
-                    href="#soon"
+                    href="/#soon"
                     className="text-slate-400 hover:text-slate-600 transition-colors block cursor-pointer"
                   >
                     3 more coming soon
@@ -70,44 +70,49 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('Terms and Conditions')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/terms/"
+                    onClick={(e) => handleNav(e, '/terms/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Terms and conditions
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('Privacy Policy')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/privacy/"
+                    onClick={(e) => handleNav(e, '/privacy/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Privacy policy
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('Refund & Cancellation')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/refund-policy/"
+                    onClick={(e) => handleNav(e, '/refund-policy/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Refund and cancellation
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('Shipping & Delivery')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/shipping-policy/"
+                    onClick={(e) => handleNav(e, '/shipping-policy/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Shipping and delivery
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('Data Deletion Policy')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/data-deletion/"
+                    onClick={(e) => handleNav(e, '/data-deletion/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Data deletion
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -122,35 +127,42 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li>
-                  <a href="#platform" className="hover:text-[#1663ff] transition-colors block cursor-pointer">
+                  <a href="/#platform" className="hover:text-[#1663ff] transition-colors block">
                     The platform
                   </a>
                 </li>
                 <li>
-                  <a href="#trades" className="hover:text-[#1663ff] transition-colors block cursor-pointer">
+                  <a 
+                    href="/pricing/" 
+                    onClick={(e) => handleNav(e, '/pricing/')}
+                    className="hover:text-[#1663ff] transition-colors block"
+                  >
                     Pricing
                   </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('Free Templates')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/templates/"
+                    onClick={(e) => handleNav(e, '/templates/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Free templates
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <a href="#faq" className="hover:text-[#1663ff] transition-colors block cursor-pointer">
+                  <a href="/#faq" className="hover:text-[#1663ff] transition-colors block">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => onOpenDemo && onOpenDemo('Client Portal Login')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="https://app.isuite.ai/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Login
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -202,15 +214,20 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li>
-                  <button
-                    onClick={() => onOpenPolicyModal && onOpenPolicyModal('About Us')}
-                    className="hover:text-[#1663ff] transition-colors text-left cursor-pointer"
+                  <a
+                    href="/about/"
+                    onClick={(e) => handleNav(e, '/about/')}
+                    className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     About
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <a href="#footer" className="hover:text-[#1663ff] transition-colors block cursor-pointer">
+                  <a
+                    href="/contact/"
+                    onClick={(e) => handleNav(e, '/contact/')}
+                    className="hover:text-[#1663ff] transition-colors block cursor-pointer"
+                  >
                     Contact
                   </a>
                 </li>

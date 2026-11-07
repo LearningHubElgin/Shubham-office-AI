@@ -96,13 +96,13 @@ const tradeCards = [
   }
 ];
 
-export default function ComparisonMatrix() {
+export default function ComparisonMatrix({ onSelectIndustry, onOpenDemo }) {
   return (
     <section id="trades" className="py-20 sm:py-28 bg-[#f8fafc] border-t border-slate-200/60">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: exact match to isuite.ai */}
-        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-3">
             MADE FOR YOUR TRADE
           </p>
@@ -116,7 +116,7 @@ export default function ComparisonMatrix() {
         </div>
 
         {/* 2-Column Trade Cards Grid with Turf spanning full-width */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto matrix reveal stagger">
           {tradeCards.map((trade) => {
             const Icon = trade.icon;
             const isTurf = trade.id === 'turf';
@@ -124,7 +124,8 @@ export default function ComparisonMatrix() {
             return (
               <div
                 key={trade.id}
-                className={`bg-white rounded-[24px] sm:rounded-[28px] border border-slate-200/90 shadow-xs hover:border-slate-300 hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col justify-between ${
+                onClick={() => onSelectIndustry && onSelectIndustry(trade.id)}
+                className={`bg-white rounded-[24px] sm:rounded-[28px] border border-slate-200/90 shadow-xs hover:border-slate-300 hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col justify-between cursor-pointer hover:-translate-y-0.5 ${
                   isTurf ? 'md:col-span-2' : ''
                 }`}
               >

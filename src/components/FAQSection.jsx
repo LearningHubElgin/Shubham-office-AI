@@ -14,7 +14,7 @@ export default function FAQSection() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: exact match to isuite.ai */}
-        <div className="text-center mb-10 sm:mb-14">
+        <div className="text-center mb-10 sm:mb-14 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-2.5">
             FAQ
           </p>
@@ -24,7 +24,7 @@ export default function FAQSection() {
         </div>
 
         {/* Minimalist Hairline Divider List: exact match to isuite.ai */}
-        <div className="divide-y divide-slate-200/80 border-t border-b border-slate-200/80">
+        <div className="divide-y divide-slate-200/80 border-t border-b border-slate-200/80 faq reveal">
           {faqs.map((faq) => {
             const isOpen = openId === faq.id;
 

@@ -1,0 +1,204 @@
+:root {
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --reveal-duration: 0.9s;
+}
+
+/* ==========================================================================
+   1. Hero Entrance Animation (.rise)
+   Played on page load (not scroll) for hero content hierarchy
+   ========================================================================== */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.js .rise > * {
+  animation: rise var(--reveal-duration) var(--ease) both;
+}
+
+.js .rise > *:nth-child(1) { animation-delay: 0s; }
+.js .rise > *:nth-child(2) { animation-delay: 0.07s; }
+.js .rise > *:nth-child(3) { animation-delay: 0.14s; }
+.js .rise > *:nth-child(4) { animation-delay: 0.21s; }
+.js .rise > *:nth-child(5) { animation-delay: 0.28s; }
+.js .rise > *:nth-child(6) { animation-delay: 0.35s; }
+.js .rise > *:nth-child(7) { animation-delay: 0.42s; }
+.js .rise > *:nth-child(8) { animation-delay: 0.49s; }
+.js .rise > *:nth-child(n+9) { animation-delay: 0.56s; }
+
+/* Mockup step arrival */
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-arrive {
+  animation: arrive 0.45s var(--ease) both;
+}
+
+/* Dropdown menu animation */
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes drop-right {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-drop {
+  animation: drop 0.22s var(--ease) both;
+}
+
+.animate-drop-right {
+  animation: drop-right 0.22s var(--ease) both;
+}
+
+/* ==========================================================================
+   2. Scroll-Reveal (.reveal) System
+   Zero visual difference from live site https://isuite.ai
+   ========================================================================== */
+.js .reveal,
+.js .reveal-fade,
+.js .reveal-left,
+.js .reveal-right,
+.js .reveal-scale {
+  opacity: 0;
+  transition: opacity var(--reveal-duration) var(--ease),
+              transform var(--reveal-duration) var(--ease);
+  will-change: opacity, transform;
+}
+
+/* Default: fade + translate up 24px */
+.js .reveal {
+  transform: translateY(24px);
+}
+
+/* Fade without displacement */
+.js .reveal-fade {
+  transform: none;
+}
+
+/* Slide in from left */
+.js .reveal-left {
+  transform: translateX(-24px);
+}
+
+/* Slide in from right */
+.js .reveal-right {
+  transform: translateX(24px);
+}
+
+/* Subtle zoom entrance */
+.js .reveal-scale {
+  transform: scale(0.96);
+}
+
+/* Active In-View State */
+.js .reveal.in,
+.js .reveal-fade.in,
+.js .reveal-left.in,
+.js .reveal-right.in,
+.js .reveal-scale.in {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* ==========================================================================
+   3. Stagger Containers
+   Applies incremental delays to direct children
+   ========================================================================== */
+.js .stagger > *:nth-child(1) { transition-delay: calc(var(--reveal-delay, 0ms) + 0ms); }
+.js .stagger > *:nth-child(2) { transition-delay: calc(var(--reveal-delay, 0ms) + 80ms); }
+.js .stagger > *:nth-child(3) { transition-delay: calc(var(--reveal-delay, 0ms) + 160ms); }
+.js .stagger > *:nth-child(4) { transition-delay: calc(var(--reveal-delay, 0ms) + 240ms); }
+.js .stagger > *:nth-child(5) { transition-delay: calc(var(--reveal-delay, 0ms) + 320ms); }
+.js .stagger > *:nth-child(6) { transition-delay: calc(var(--reveal-delay, 0ms) + 400ms); }
+.js .stagger > *:nth-child(7) { transition-delay: calc(var(--reveal-delay, 0ms) + 480ms); }
+.js .stagger > *:nth-child(8) { transition-delay: calc(var(--reveal-delay, 0ms) + 560ms); }
+.js .stagger > *:nth-child(n+9) { transition-delay: calc(var(--reveal-delay, 0ms) + 640ms); }
+
+/* ==========================================================================
+   4. Mobile Responsive Adjustments (390px / small screens)
+   ========================================================================== */
+@media (max-width: 640px) {
+  .js .reveal {
+    transform: translateY(16px);
+  }
+  .js .reveal-left {
+    transform: translateX(-16px);
+  }
+  .js .reveal-right {
+    transform: translateX(16px);
+  }
+  .js .rise > * {
+    animation-duration: 0.75s;
+  }
+  .js .stagger > *:nth-child(2) { transition-delay: 50ms; }
+  .js .stagger > *:nth-child(3) { transition-delay: 100ms; }
+  .js .stagger > *:nth-child(4) { transition-delay: 150ms; }
+  .js .stagger > *:nth-child(5) { transition-delay: 200ms; }
+  .js .stagger > *:nth-child(6) { transition-delay: 250ms; }
+  .js .stagger > *:nth-child(n+7) { transition-delay: 300ms; }
+}
+
+/* Prevent horizontal scrollbars from translateX reveals */
+.reveal-clip,
+section {
+  overflow-x: clip;
+}
+
+/* ==========================================================================
+   5. Accessibility & Reduced Motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .js .reveal,
+  .js .reveal-fade,
+  .js .reveal-left,
+  .js .reveal-right,
+  .js .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+  .js .rise > * {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+

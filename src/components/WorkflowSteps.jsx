@@ -34,7 +34,7 @@ export default function WorkflowSteps({ onOpenDemo }) {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: exact match to isuite.ai */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-2.5">
             GET STARTED
           </p>
@@ -47,7 +47,7 @@ export default function WorkflowSteps({ onOpenDemo }) {
         </div>
 
         {/* 3 Step Cards Grid: exact match to isuite.ai */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch steps reveal stagger">
           {steps.map((step) => (
             <div
               key={step.number}

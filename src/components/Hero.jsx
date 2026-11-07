@@ -25,7 +25,7 @@ const industryCardList = [
     accBg: 'rgba(17, 162, 151, 0.22)',
     description: 'Appointments, patients, prescriptions, billing and an AI front desk — in one app.',
     subtext: 'Dental, skin, eye and physiotherapy clinics, and diagnostic labs',
-    price: 'Plans from ₹23,999 a year + GST',
+    price: 'Plans from ₹11,999 a year + GST',
   },
   {
     id: 'coaching',
@@ -36,7 +36,7 @@ const industryCardList = [
     accBg: 'rgba(115, 87, 255, 0.22)',
     description: 'Admissions, batches, attendance, fees and an AI counsellor — in one app.',
     subtext: 'NEET, JEE, board-exam and tuition centres',
-    price: 'Plans from ₹23,999 a year + GST',
+    price: 'Plans from ₹11,999 a year + GST',
   },
   {
     id: 'real-estate',
@@ -47,7 +47,7 @@ const industryCardList = [
     accBg: 'rgba(224, 134, 0, 0.22)',
     description: 'Enquiries, site visits, every flat, bookings, payments and brokers — in one app.',
     subtext: 'Builders, developers and property sellers',
-    price: 'Plans from ₹32,000 a year + GST',
+    price: 'Plans from ₹19,999 a year + GST',
   },
   {
     id: 'gym',
@@ -118,7 +118,7 @@ export default function Hero({ onSelectIndustry }) {
         }}
       ></div>
 
-      <div className="relative max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+      <div className="relative max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 rise">
         
         {/* Kicker Pill: exact match */}
         <div className="flex justify-center mb-5 sm:mb-6">
@@ -142,7 +142,7 @@ export default function Hero({ onSelectIndustry }) {
         </div>
 
         {/* The Family Grid: 2 columns, with Turf taking the full width across 2 columns */}
-        <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[880px] mx-auto">
+        <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[880px] mx-auto stagger">
           {industryCardList.map((card) => {
             const IconComponent = card.icon;
 

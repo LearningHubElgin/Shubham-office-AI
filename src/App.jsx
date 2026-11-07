@@ -11,19 +11,106 @@ import FAQSection from './components/FAQSection';
 import CTABanner from './components/CTABanner';
 import Footer from './components/Footer';
 import Modals from './components/Modals';
+
+// Product pages
 import ClinicPage from './pages/ClinicPage';
+import CoachingPage from './pages/CoachingPage';
+import RealEstatePage from './pages/RealEstatePage';
+import GymPage from './pages/GymPage';
+import SalonPage from './pages/SalonPage';
+import FieldServicePage from './pages/FieldServicePage';
+import TurfPage from './pages/TurfPage';
+
+// Core pages
+import PricingPage from './pages/PricingPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import TemplatesIndexPage from './pages/TemplatesIndexPage';
+import TemplateDetailPage from './pages/TemplateDetailPage';
+import PolicyPage from './pages/PolicyPage';
+import NotFoundPage from './pages/NotFoundPage';
+
 import { CheckCircle2 } from 'lucide-react';
+import { brandConfig } from './data/brandConfig';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 export default function App() {
-  const [currentRoute, setCurrentRoute] = useState(() => {
-    const path = window.location.pathname.toLowerCase();
+  const getRouteFromUrl = () => {
+    const rawPath = window.location.pathname.toLowerCase();
     const hash = window.location.hash.toLowerCase();
-    if (path.includes('/clinics') || hash.includes('/clinics')) {
-      return 'clinics';
-    }
-    return 'home';
-  });
+    
+    // Normalize path to have trailing slash if not root
+    const path = rawPath.replace(/\/$/, '') + '/';
 
+    // 1. Core Home
+    if (rawPath === '' || rawPath === '/') {
+      return { name: 'home' };
+    }
+
+    // 2. Product Pages
+    if (path.startsWith('/clinics/') || path.startsWith('/clinic/')) {
+      return { name: 'clinics' };
+    }
+    if (path.startsWith('/coaching/')) {
+      return { name: 'coaching' };
+    }
+    if (path.startsWith('/real-estate/')) {
+      return { name: 'real-estate' };
+    }
+    if (path.startsWith('/gyms/') || path.startsWith('/gym/')) {
+      return { name: 'gyms' };
+    }
+    if (path.startsWith('/salons/') || path.startsWith('/salon/')) {
+      return { name: 'salons' };
+    }
+    if (path.startsWith('/field-service/')) {
+      return { name: 'field-service' };
+    }
+    if (path.startsWith('/turf/')) {
+      return { name: 'turf' };
+    }
+
+    // 3. Core Pages
+    if (path.startsWith('/pricing/')) {
+      return { name: 'pricing' };
+    }
+    if (path.startsWith('/about/')) {
+      return { name: 'about' };
+    }
+    if (path.startsWith('/contact/')) {
+      return { name: 'contact' };
+    }
+
+    // 4. Templates
+    if (path === '/templates/') {
+      return { name: 'templates' };
+    }
+    if (path.startsWith('/templates/')) {
+      const slug = rawPath.replace(/^\/templates\//, '').replace(/\/$/, '');
+      return { name: 'template-detail', slug };
+    }
+
+    // 5. Policy Pages
+    if (path.startsWith('/terms/')) {
+      return { name: 'policy', slug: 'terms' };
+    }
+    if (path.startsWith('/privacy/')) {
+      return { name: 'policy', slug: 'privacy' };
+    }
+    if (path.startsWith('/refund-policy/')) {
+      return { name: 'policy', slug: 'refund-policy' };
+    }
+    if (path.startsWith('/shipping-policy/')) {
+      return { name: 'policy', slug: 'shipping-policy' };
+    }
+    if (path.startsWith('/data-deletion/')) {
+      return { name: 'policy', slug: 'data-deletion' };
+    }
+
+    return { name: 'not-found' };
+  };
+
+  const [currentRoute, setCurrentRoute] = useState(getRouteFromUrl);
   const [activeIndustryId, setActiveIndustryId] = useState('clinic');
   const [demoModalOpen, setDemoModalOpen] = useState(false);
   const [trialModalOpen, setTrialModalOpen] = useState(false);
@@ -35,15 +122,12 @@ export default function App() {
   // Toast notification state
   const [toastMessage, setToastMessage] = useState(null);
 
+  // Initialize smooth scroll-reveal observer across all routes
+  useScrollReveal([currentRoute.name, currentRoute.slug]);
+
   useEffect(() => {
     const onLocationChange = () => {
-      const path = window.location.pathname.toLowerCase();
-      const hash = window.location.hash.toLowerCase();
-      if (path.includes('/clinics') || hash.includes('/clinics')) {
-        setCurrentRoute('clinics');
-      } else {
-        setCurrentRoute('home');
-      }
+      setCurrentRoute(getRouteFromUrl());
     };
 
     window.addEventListener('popstate', onLocationChange);
@@ -54,17 +138,26 @@ export default function App() {
     };
   }, []);
 
-  const navigateToClinics = () => {
-    setCurrentRoute('clinics');
-    window.history.pushState({}, '', '/clinics/');
+  // Handle hash scrolling on page navigation or initial load
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+    }
+  }, [currentRoute]);
+
+  const navigateToRoute = (route) => {
+    window.history.pushState({}, '', route);
+    setCurrentRoute(getRouteFromUrl());
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const navigateToHome = () => {
-    setCurrentRoute('home');
-    window.history.pushState({}, '', '/');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const navigateToHome = () => navigateToRoute('/');
 
   const showToast = (message) => {
     setToastMessage(message);
@@ -74,28 +167,47 @@ export default function App() {
   };
 
   const handleSelectIndustry = (industryId) => {
-    if (industryId === 'clinic') {
-      navigateToClinics();
+    const routeMap = {
+      clinic: '/clinics/',
+      coaching: '/coaching/',
+      'real-estate': '/real-estate/',
+      gym: '/gyms/',
+      salon: '/salons/',
+      'field-service': '/field-service/',
+      turf: '/turf/',
+    };
+
+    if (routeMap[industryId]) {
+      navigateToRoute(routeMap[industryId]);
       return;
     }
+    
+    // For other industries, show the preview tab on the home page
     setActiveIndustryId(industryId);
-    if (currentRoute !== 'home') {
-      setCurrentRoute('home');
-      window.history.pushState({}, '', '/');
+    if (currentRoute.name !== 'home') {
+      navigateToHome();
     }
-    const element = document.getElementById('preview-section');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    setTimeout(() => {
+      const element = document.getElementById('preview-section') || document.getElementById('products');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 150);
   };
 
   const handleOpenDemo = (industryOrFeature) => {
-    setSelectedTradeOrIndustry(industryOrFeature || (currentRoute === 'clinics' ? 'Clinic' : activeIndustryId));
+    setSelectedTradeOrIndustry(
+      industryOrFeature || 
+      (currentRoute.name === 'coaching' ? 'Coaching Institute' : currentRoute.name === 'clinics' ? 'Clinic' : activeIndustryId)
+    );
     setDemoModalOpen(true);
   };
 
   const handleOpenTrial = (industry) => {
-    setSelectedTradeOrIndustry(industry || (currentRoute === 'clinics' ? 'Clinic' : activeIndustryId));
+    setSelectedTradeOrIndustry(
+      industry || 
+      (currentRoute.name === 'coaching' ? 'Coaching Institute' : currentRoute.name === 'clinics' ? 'Clinic' : activeIndustryId)
+    );
     setTrialModalOpen(true);
   };
 
@@ -105,8 +217,19 @@ export default function App() {
   };
 
   const handleOpenPolicyModal = (title) => {
-    setPolicyTitle(title);
-    setPolicyModalOpen(true);
+    const slugMap = {
+      'Terms and Conditions': '/terms/',
+      'Privacy Policy': '/privacy/',
+      'Refund Policy': '/refund-policy/',
+      'Shipping Policy': '/shipping-policy/',
+      'Data Deletion': '/data-deletion/',
+    };
+    if (slugMap[title]) {
+      navigateToRoute(slugMap[title]);
+    } else {
+      setPolicyTitle(title);
+      setPolicyModalOpen(true);
+    }
   };
 
   const handleCloseAllModals = () => {
@@ -117,87 +240,225 @@ export default function App() {
   };
 
   const scrollToIndustries = () => {
-    if (currentRoute !== 'home') {
-      setCurrentRoute('home');
-      window.history.pushState({}, '', '/');
+    if (currentRoute.name !== 'home') {
+      navigateToHome();
     }
     setTimeout(() => {
-      const el = document.getElementById('products-grid');
+      const el = document.getElementById('products') || document.getElementById('products-grid');
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100);
+    }, 150);
+  };
+
+  // Render active route
+  const renderRoute = () => {
+    switch (currentRoute.name) {
+      // Products
+      case 'clinics':
+        return (
+          <ClinicPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'coaching':
+        return (
+          <CoachingPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'real-estate':
+        return (
+          <RealEstatePage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'gyms':
+        return (
+          <GymPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'salons':
+        return (
+          <SalonPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'field-service':
+        return (
+          <FieldServicePage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'turf':
+        return (
+          <TurfPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+
+      // Core Pages
+      case 'pricing':
+        return (
+          <PricingPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'about':
+        return (
+          <AboutPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'contact':
+        return (
+          <ContactPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+
+      // Templates
+      case 'templates':
+        return (
+          <TemplatesIndexPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+      case 'template-detail':
+        return (
+          <TemplateDetailPage
+            slug={currentRoute.slug}
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+
+      // Policies
+      case 'policy':
+        return (
+          <PolicyPage
+            slug={currentRoute.slug}
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+
+      case 'not-found':
+        return (
+          <NotFoundPage
+            onOpenDemo={handleOpenDemo}
+            onOpenTrial={handleOpenTrial}
+            onNavigateHome={navigateToHome}
+            onNavigateRoute={navigateToRoute}
+          />
+        );
+
+      // Default: Landing Page (home)
+      case 'home':
+      default:
+        return (
+          <>
+            {/* 1. Sticky Navigation Bar */}
+            <Navbar
+              onOpenDemo={() => handleOpenDemo()}
+              onOpenTrial={() => handleOpenTrial()}
+              onSelectIndustry={handleSelectIndustry}
+            />
+
+            {/* 2. Hero Section */}
+            <Hero
+              onSelectIndustry={handleSelectIndustry}
+            />
+
+            {/* 3. Dynamic Industry Preview Section */}
+            <IndustryPreview
+              activeIndustryId={activeIndustryId}
+              onSelectIndustry={handleSelectIndustry}
+              onOpenDemo={handleOpenDemo}
+              onOpenTrial={handleOpenTrial}
+            />
+
+            {/* 4. Coming Soon Trades Grid */}
+            <ComingSoon onNotifyTrade={handleNotifyTrade} />
+
+            {/* 5. Core Feature Grid */}
+            <CoreFeatures onOpenDemo={handleOpenDemo} />
+
+            {/* 6. Comprehensive Industry Breakdown Matrix / Comparison Table */}
+            <ComparisonMatrix
+              onSelectIndustry={handleSelectIndustry}
+              onOpenDemo={handleOpenDemo}
+            />
+
+            {/* 7. AI Capabilities Showcase */}
+            <AIShowcase onOpenDemo={handleOpenDemo} />
+
+            {/* 8. "Live in three steps" Workflow */}
+            <WorkflowSteps
+              onOpenDemo={() => handleOpenDemo()}
+              onOpenTrial={() => handleOpenTrial()}
+            />
+
+            {/* 9. FAQ Accordion Section */}
+            <FAQSection />
+
+            {/* 10. Call to Action Banner & Comprehensive Footer */}
+            <CTABanner
+              onOpenDemo={() => handleOpenDemo()}
+              onFindProduct={scrollToIndustries}
+            />
+
+            <Footer
+              onSelectIndustry={handleSelectIndustry}
+              onOpenDemo={handleOpenDemo}
+              onOpenPolicyModal={handleOpenPolicyModal}
+            />
+          </>
+        );
+    }
   };
 
   return (
     <div id="top" className="min-h-screen bg-[#f8fafc] text-[#0f172a] font-sans relative selection:bg-blue-600 selection:text-white">
-      {currentRoute === 'clinics' ? (
-        /* Dedicated Clinic Page matching isuite.ai/clinics/ */
-        <ClinicPage
-          onOpenDemo={handleOpenDemo}
-          onOpenTrial={handleOpenTrial}
-          onNavigateHome={navigateToHome}
-        />
-      ) : (
-        /* Main Landing Page */
-        <>
-          {/* 1. Sticky Navigation Bar */}
-          <Navbar
-            onOpenDemo={() => handleOpenDemo()}
-            onOpenTrial={() => handleOpenTrial()}
-            onSelectIndustry={handleSelectIndustry}
-          />
-
-          {/* 2. Hero Section */}
-          <Hero
-            onSelectIndustry={handleSelectIndustry}
-          />
-
-          {/* 3. Dynamic Industry Preview Section */}
-          <IndustryPreview
-            activeIndustryId={activeIndustryId}
-            onSelectIndustry={setActiveIndustryId}
-            onOpenDemo={handleOpenDemo}
-            onOpenTrial={handleOpenTrial}
-          />
-
-          {/* 4. Coming Soon Trades Grid */}
-          <ComingSoon onNotifyTrade={handleNotifyTrade} />
-
-          {/* 5. Core Feature Grid */}
-          <CoreFeatures onOpenDemo={handleOpenDemo} />
-
-          {/* 6. Comprehensive Industry Breakdown Matrix / Comparison Table */}
-          <ComparisonMatrix
-            onSelectIndustry={handleSelectIndustry}
-            onOpenDemo={handleOpenDemo}
-          />
-
-          {/* 7. AI Capabilities Showcase */}
-          <AIShowcase onOpenDemo={handleOpenDemo} />
-
-          {/* 8. "Live in three steps" Workflow */}
-          <WorkflowSteps
-            onOpenDemo={() => handleOpenDemo()}
-            onOpenTrial={() => handleOpenTrial()}
-          />
-
-          {/* 9. FAQ Accordion Section */}
-          <FAQSection />
-
-          {/* 10. Call to Action Banner & Comprehensive Footer */}
-          <CTABanner
-            onOpenDemo={() => handleOpenDemo()}
-            onFindProduct={scrollToIndustries}
-          />
-
-          <Footer
-            onSelectIndustry={handleSelectIndustry}
-            onOpenDemo={handleOpenDemo}
-            onOpenPolicyModal={handleOpenPolicyModal}
-          />
-        </>
-      )}
+      {renderRoute()}
 
       {/* Modals & Dialogs */}
       <Modals

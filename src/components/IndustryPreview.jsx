@@ -99,7 +99,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: exact match to isuite.ai */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-3">
             SEVEN PRODUCTS, ONE PLATFORM
           </p>
@@ -113,7 +113,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
         </div>
 
         {/* Tab Switcher: 2 wrapping lines with colorful circular icons */}
-        <div className="flex flex-wrap items-center justify-center gap-2 p-2 sm:p-2.5 rounded-[32px] bg-white border border-slate-200/80 shadow-xs max-w-4xl mx-auto mb-10 sm:mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-2 p-2 sm:p-2.5 rounded-[32px] bg-white border border-slate-200/80 shadow-xs max-w-4xl mx-auto mb-10 sm:mb-12 reveal">
           {industries.map((ind) => {
             const isSelected = ind.id === currentIndustry.id;
             const IconComponent = iconMap[ind.id] || Stethoscope;
@@ -146,7 +146,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
         {/* Showcase Split Layout Card with dynamic ambient tint matching isuite.ai */}
         <div 
           id="preview-section"
-          className="rounded-[32px] sm:rounded-[36px] border border-slate-200/90 shadow-sm p-6 sm:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center max-w-5xl mx-auto relative overflow-hidden bg-white transition-all duration-300"
+          className="rounded-[32px] sm:rounded-[36px] border border-slate-200/90 shadow-sm p-6 sm:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center max-w-5xl mx-auto relative overflow-hidden bg-white transition-all duration-300 showcase reveal"
         >
           {/* Subtle Ambient Color Glow at the top right of the card */}
           <div 
@@ -206,7 +206,13 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
             {/* Actions & Price - Stacked vertically */}
             <div className="flex flex-col items-start gap-2">
               <button
-                onClick={() => onOpenTrial(currentIndustry.name)}
+                onClick={() => {
+                  if (currentIndustry.id === 'clinic' || currentIndustry.id === 'coaching' || currentIndustry.id === 'real-estate') {
+                    onSelectIndustry(currentIndustry.id);
+                  } else {
+                    onOpenTrial(currentIndustry.name);
+                  }
+                }}
                 className="px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#06122e] hover:bg-black transition-all shadow-sm active:scale-95 cursor-pointer"
               >
                 Explore iSuite AI – {currentIndustry.shortName}

@@ -1,5 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { 
+  Menu, 
+  X, 
+  Stethoscope, 
+  GraduationCap, 
+  Building2, 
+  Dumbbell, 
+  Scissors, 
+  Wrench, 
+  Trophy, 
+  Truck, 
+  ShoppingCart, 
+  Utensils 
+} from 'lucide-react';
+import { brandConfig, productsMegaMenu, comingSoonChips } from '../data/brandConfig';
+
+const iconLookup = {
+  clinic: Stethoscope,
+  coaching: GraduationCap,
+  'real-estate': Building2,
+  gym: Dumbbell,
+  salon: Scissors,
+  'field-service': Wrench,
+  turf: Trophy,
+};
 
 export default function Navbar({ onOpenDemo, onOpenTrial, onSelectIndustry }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,15 +39,15 @@ export default function Navbar({ onOpenDemo, onOpenTrial, onSelectIndustry }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const productList = [
-    { name: 'iSuite AI – Clinic', id: 'clinic', desc: 'Appointments, patients, prescriptions, billing and an AI front desk — in one app.' },
-    { name: 'iSuite AI – Coaching Institute', id: 'coaching', desc: 'Admissions, batches, attendance, fees and an AI counsellor — in one app.' },
-    { name: 'iSuite AI – Real Estate', id: 'real-estate', desc: 'Enquiries, site visits, every flat, bookings, payments and brokers — in one app.' },
-    { name: 'iSuite AI – Gym & Fitness Studio', id: 'gym', desc: 'Members, check-ins, renewals, PT packs and an AI front desk — in one app.' },
-    { name: 'iSuite AI – Salon & Spa', id: 'salon', desc: 'Stylist chairs, service menu, walk-ins, loyalty and an AI receptionist — in one app.' },
-    { name: 'iSuite AI – Field Service & AMC', id: 'field-service', desc: 'Technicians, visits, AMC contracts, spare parts and an AI dispatcher — in one app.' },
-    { name: 'iSuite AI – Turf', id: 'turf', desc: 'Slots, advance payments, floodlights, tournament draws and an AI booking desk — in one app.' },
-  ];
+  const handleProductSelect = (id, route) => {
+    setProductsDropdownOpen(false);
+    setMobileMenuOpen(false);
+    if (onSelectIndustry) {
+      onSelectIndustry(id);
+    } else {
+      window.location.href = route;
+    }
+  };
 
   return (
     <header
@@ -57,7 +81,10 @@ export default function Navbar({ onOpenDemo, onOpenTrial, onSelectIndustry }) {
           isScrolled ? 'text-[#06122e]/80' : 'text-white/80'
         }`}>
           {/* Products Dropdown */}
-          <div className="relative">
+          <div 
+            className="relative"
+            onMouseLeave={() => setProductsDropdownOpen(false)}
+          >
             <button
               onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
               onMouseEnter={() => setProductsDropdownOpen(true)}
@@ -71,31 +98,101 @@ export default function Navbar({ onOpenDemo, onOpenTrial, onSelectIndustry }) {
 
             {productsDropdownOpen && (
               <div
-                onMouseLeave={() => setProductsDropdownOpen(false)}
-                className={`absolute top-full left-0 mt-1 w-72 rounded-2xl shadow-2xl p-2.5 space-y-1 animate-fadeIn border ${
-                  isScrolled 
-                    ? 'bg-white border-gray-200 text-[#06122e]' 
-                    : 'bg-[#001449] border-white/15 text-white'
-                }`}
+                className="absolute top-full left-0 mt-2 w-[620px] max-w-[calc(100vw-32px)] rounded-[24px] shadow-[0_24px_60px_-28px_rgba(0,12,43,0.38),0_6px_18px_-10px_rgba(0,12,43,0.2)] p-2.5 sm:p-3 bg-white border border-slate-200/80 text-[#06122e] animate-drop z-50 grid grid-cols-1 sm:grid-cols-2 gap-1 text-left"
               >
-                {productList.map((p) => (
-                  <a
-                    key={p.id}
-                    href="#preview-section"
-                    onClick={() => {
-                      onSelectIndustry(p.id);
-                      setProductsDropdownOpen(false);
-                    }}
-                    className={`block px-3 py-2 rounded-xl transition-colors ${
-                      isScrolled 
-                        ? 'hover:bg-gray-100 text-[#06122e]' 
-                        : 'hover:bg-white/10 text-white'
-                    }`}
-                  >
-                    <div className="font-semibold text-xs">{p.name}</div>
-                    <div className="text-[10.5px] opacity-60 leading-tight mt-0.5 line-clamp-1">{p.desc}</div>
-                  </a>
-                ))}
+                {/* Column 1: Clinic, Real Estate, Salon & Spa, Turf */}
+                <div className="flex flex-col gap-0.5">
+                  {productsMegaMenu.col1.map((p) => {
+                    const ProdIcon = iconLookup[p.id] || Stethoscope;
+                    return (
+                      <button
+                        key={p.id}
+                        onClick={() => handleProductSelect(p.id, p.route)}
+                        className="w-full text-left p-2.5 sm:p-3 rounded-2xl transition-all flex items-start gap-3 cursor-pointer hover:bg-slate-50 text-slate-700"
+                      >
+                        <div 
+                          className="w-9 h-9 rounded-xl flex items-center justify-center text-white shrink-0 shadow-xs mt-0.5"
+                          style={{ backgroundColor: p.color }}
+                        >
+                          <ProdIcon className="w-4 h-4 stroke-[2.2]" />
+                        </div>
+                        <div className="min-w-0">
+                          <div className="text-[13.5px] font-semibold text-[#06122e] leading-tight">
+                            {p.fullName}
+                          </div>
+                          <div className="text-[11.5px] text-slate-500 leading-snug mt-1 line-clamp-2 font-normal">
+                            {p.desc}
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Column 2: Coaching, Gym, Field Service */}
+                <div className="flex flex-col gap-0.5">
+                  {productsMegaMenu.col2.map((p) => {
+                    const ProdIcon = iconLookup[p.id] || GraduationCap;
+                    return (
+                      <button
+                        key={p.id}
+                        onClick={() => handleProductSelect(p.id, p.route)}
+                        className="w-full text-left p-2.5 sm:p-3 rounded-2xl transition-all flex items-start gap-3 cursor-pointer hover:bg-slate-50 text-slate-700"
+                      >
+                        <div 
+                          className="w-9 h-9 rounded-xl flex items-center justify-center text-white shrink-0 shadow-xs mt-0.5"
+                          style={{ backgroundColor: p.color }}
+                        >
+                          <ProdIcon className="w-4 h-4 stroke-[2.2]" />
+                        </div>
+                        <div className="min-w-0">
+                          <div className="text-[13.5px] font-semibold text-[#06122e] leading-tight">
+                            {p.fullName}
+                          </div>
+                          <div className="text-[11.5px] text-slate-500 leading-snug mt-1 line-clamp-2 font-normal">
+                            {p.desc}
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Bottom Row spanning both columns */}
+                <div className="sm:col-span-2 pt-2.5 mt-1 border-t border-slate-100">
+                  <div className="text-[10px] text-slate-400 font-bold tracking-[0.14em] px-2 mb-2 uppercase">
+                    COMING SOON
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 px-1">
+                    {comingSoonChips.map((cs) => {
+                      const CsIcon = cs.icon === 'Truck' ? Truck : cs.icon === 'ShoppingCart' ? ShoppingCart : Utensils;
+                      return (
+                        <a
+                          key={cs.name}
+                          href="/#soon"
+                          onClick={() => setProductsDropdownOpen(false)}
+                          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#f6f7f9] hover:bg-slate-200/70 text-[#475569] hover:text-[#06122e] text-xs font-medium transition-colors"
+                        >
+                          <span className="w-5 h-5 rounded-full bg-[#e7ebf3] flex items-center justify-center text-slate-600 shrink-0">
+                            <CsIcon className="w-3 h-3" />
+                          </span>
+                          <span>{cs.name}</span>
+                        </a>
+                      );
+                    })}
+                  </div>
+
+                  <div className="pt-2 mt-2">
+                    <a 
+                      href="/pricing/" 
+                      onClick={() => setProductsDropdownOpen(false)}
+                      className="w-full flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-xs sm:text-[13px] font-semibold text-slate-700 bg-[#f6f7f9] hover:bg-slate-200/70 hover:text-[#001d55] transition-colors"
+                    >
+                      <span>Plans and pricing for every product</span>
+                      <span>→</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             )}
           </div>
@@ -128,14 +225,14 @@ export default function Navbar({ onOpenDemo, onOpenTrial, onSelectIndustry }) {
 
         {/* Right Action Buttons */}
         <div className="flex items-center gap-4 sm:gap-5">
-          <button
-            onClick={() => onOpenDemo()}
+          <a
+            href={brandConfig.loginUrl}
             className={`text-[11px] font-medium tracking-[0.09em] uppercase transition-colors cursor-pointer ${
               isScrolled ? 'text-[#06122e]/80 hover:text-[#06122e]' : 'text-white/80 hover:text-white'
             }`}
           >
             LOGIN
-          </button>
+          </a>
           
           <button
             onClick={() => onOpenTrial()}
@@ -203,15 +300,13 @@ export default function Navbar({ onOpenDemo, onOpenTrial, onSelectIndustry }) {
           </div>
 
           <div className="pt-3 border-t border-gray-200/40 flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenDemo();
-              }}
-              className="w-full py-2 text-xs font-semibold uppercase tracking-wider text-center border border-current rounded-full"
+            <a
+              href={brandConfig.loginUrl}
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full py-2 text-xs font-semibold uppercase tracking-wider text-center border border-current rounded-full block"
             >
               LOGIN
-            </button>
+            </a>
             <button
               onClick={() => {
                 setMobileMenuOpen(false);

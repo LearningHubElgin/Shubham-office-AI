@@ -81,7 +81,7 @@ export default function CoreFeatures({ onOpenDemo }) {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-3">
             ONE PLATFORM
           </p>
@@ -94,7 +94,7 @@ export default function CoreFeatures({ onOpenDemo }) {
         </div>
 
         {/* 6 Suite Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto bento reveal stagger">
           {suiteList.map((card, idx) => {
             const Icon = card.icon;
 

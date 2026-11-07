@@ -45,7 +45,7 @@ export default function AIShowcase() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: exact match to isuite.ai */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-2.5">
             AI BUILT IN
           </p>
@@ -58,7 +58,7 @@ export default function AIShowcase() {
         </div>
 
         {/* Top Full-Width Dark Gradient Hero Card: exact match to isuite.ai */}
-        <div className="rounded-3xl sm:rounded-[32px] p-6 sm:p-10 text-white shadow-xl bg-gradient-to-br from-[#001f5c] via-[#002773] to-[#001645] border border-blue-900/60 relative overflow-hidden mb-8 max-w-5xl mx-auto">
+        <div className="rounded-3xl sm:rounded-[32px] p-6 sm:p-10 text-white shadow-xl bg-gradient-to-br from-[#001f5c] via-[#002773] to-[#001645] border border-blue-900/60 relative overflow-hidden mb-8 max-w-5xl mx-auto reveal">
           
           {/* Ambient Glow */}
           <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-blue-500/15 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
@@ -161,7 +161,7 @@ export default function AIShowcase() {
         </div>
 
         {/* 4 Cards Grid with Rich Visual Simulation Widgets: exact match to isuite.ai */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto bento reveal stagger">
           
           {/* Card 1: Answers on every channel */}
           <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 border border-slate-200/90 shadow-xs hover:border-slate-300 hover:shadow-sm transition-all duration-300 flex flex-col justify-between">
