@@ -305,11 +305,11 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
           </div>
 
           {/* Interactive Chat Simulation Window - Fixed size matching actual website */}
-          <div className="w-full max-w-[390px] sm:max-w-[400px] mx-auto text-left rounded-3xl bg-white text-[#06122e] shadow-2xl overflow-hidden border border-white/20 h-[490px] sm:h-[510px] flex flex-col">
+          <div className="w-full max-w-[390px] sm:max-w-[400px] mx-auto text-left rounded-3xl bg-white text-[#06122e] shadow-2xl overflow-hidden border border-white/20 h-[480px] flex flex-col shrink-0">
             {/* Window Head */}
             <div className="px-5 py-3.5 bg-slate-50 border-b border-slate-200/80 flex items-center justify-between shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-[#11a297] text-white font-bold text-xs flex items-center justify-center shadow-xs">
+                <div className="w-9 h-9 rounded-full bg-[#10b981] text-white font-bold text-xs flex items-center justify-center shadow-xs">
                   RK
                 </div>
                 <div>
@@ -329,12 +329,12 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               </span>
             </div>
 
-            {/* Conversation Bubbles anchored to bottom with fixed height */}
-            <div className="flex-1 p-5 space-y-3.5 bg-[#f8fafc] flex flex-col justify-end overflow-hidden">
+            {/* Conversation Bubbles anchored with fixed height */}
+            <div className="flex-1 p-5 space-y-3.5 bg-white flex flex-col justify-end overflow-hidden">
               {/* Bubble 1: Patient */}
               {visibleCount >= 1 && (
                 <div className="flex flex-col items-start animate-chat-pop">
-                  <div className="bg-white rounded-2xl rounded-tl-xs px-4 py-3 shadow-xs border border-slate-200/60 max-w-[85%] text-xs sm:text-[13px] text-slate-800">
+                  <div className="bg-[#f1f5f9] rounded-2xl rounded-tl-xs px-4 py-3 shadow-2xs border border-slate-200/50 max-w-[85%] text-xs sm:text-[13px] text-slate-800">
                     <p>Hi, pallu vali. Saturday morning doctor iruka?</p>
                   </div>
                   <span className="text-[10px] text-slate-400 mt-1 pl-1">9:48 pm</span>
@@ -377,7 +377,7 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               {/* Bubble 3: Patient */}
               {visibleCount >= 3 && (
                 <div className="flex flex-col items-start animate-chat-pop">
-                  <div className="bg-white rounded-2xl rounded-tl-xs px-4 py-2.5 shadow-xs border border-slate-200/60 text-xs sm:text-[13px] text-slate-800">
+                  <div className="bg-[#f1f5f9] rounded-2xl rounded-tl-xs px-4 py-2.5 shadow-2xs border border-slate-200/50 text-xs sm:text-[13px] text-slate-800">
                     <p>10:30 ok</p>
                   </div>
                   <span className="text-[10px] text-slate-400 mt-1 pl-1">9:49 pm</span>
@@ -703,8 +703,8 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
           </div>
 
           <div className="space-y-16 sm:space-y-24 max-w-5xl mx-auto">
-            {/* Row 1: APPOINTMENTS - Side by side on md: (768px+) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-center">
+            {/* Row 1: APPOINTMENTS - Side by side */}
+            <div className="grid grid-cols-1 min-[640px]:grid-cols-2 gap-8 lg:gap-14 items-center">
               <div>
                 <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#11a297] mb-2 block">
                   APPOINTMENTS
@@ -828,10 +828,10 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               </div>
             </div>
 
-            {/* Row 2: REMINDERS AND REPORTS - Card on Left, Text on Right on md: */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-center">
+            {/* Row 2: REMINDERS AND REPORTS - Card on Left, Text on Right */}
+            <div className="grid grid-cols-1 min-[640px]:grid-cols-2 gap-8 lg:gap-14 items-center">
               {/* Mockup 2: WhatsApp Reminders & PDF reports */}
-              <div className="order-2 md:order-1 bg-[#eef7f6] p-6 sm:p-8 rounded-[28px] flex items-center justify-center">
+              <div className="order-2 min-[640px]:order-1 bg-[#eef7f6] p-6 sm:p-8 rounded-[28px] flex items-center justify-center">
                 <div className="w-full max-w-[390px] bg-white rounded-2xl shadow-sm border border-slate-200/60 overflow-hidden">
                   <div className="p-4 border-b border-slate-100 flex items-center gap-3 bg-slate-50">
                     <div className="w-8 h-8 rounded-full bg-[#11a297] text-white font-bold text-xs flex items-center justify-center shadow-xs">
@@ -899,7 +899,7 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
                 </div>
               </div>
 
-              <div className="order-1 md:order-2">
+              <div className="order-1 min-[640px]:order-2">
                 <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#11a297] mb-2 block">
                   REMINDERS AND REPORTS
                 </span>
@@ -927,8 +927,8 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               </div>
             </div>
 
-            {/* Row 3: PRESCRIPTIONS - Text on Left, Card on Right on md: */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-center">
+            {/* Row 3: PRESCRIPTIONS - Text on Left, Card on Right */}
+            <div className="grid grid-cols-1 min-[640px]:grid-cols-2 gap-8 lg:gap-14 items-center">
               <div>
                 <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#11a297] mb-2 block">
                   PRESCRIPTIONS
@@ -1010,10 +1010,10 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               </div>
             </div>
 
-            {/* Row 4: FOLLOW-UPS - Card on Left, Text on Right on md: */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-center">
+            {/* Row 4: FOLLOW-UPS - Card on Left, Text on Right */}
+            <div className="grid grid-cols-1 min-[640px]:grid-cols-2 gap-8 lg:gap-14 items-center">
               {/* Mockup 4: Follow-ups & Automations verbatim from screenshot */}
-              <div className="order-2 md:order-1 bg-[#eef7f6] p-6 sm:p-8 rounded-[28px] flex items-center justify-center">
+              <div className="order-2 min-[640px]:order-1 bg-[#eef7f6] p-6 sm:p-8 rounded-[28px] flex items-center justify-center">
                 <div className="w-full max-w-[390px] bg-white rounded-2xl shadow-sm border border-slate-200/60 overflow-hidden">
                   <div className="p-4 border-b border-slate-100 flex items-center justify-between">
                     <div className="flex items-center gap-2">
@@ -1099,7 +1099,7 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
                 </div>
               </div>
 
-              <div className="order-1 md:order-2">
+              <div className="order-1 min-[640px]:order-2">
                 <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#11a297] mb-2 block">
                   FOLLOW-UPS
                 </span>
@@ -1137,7 +1137,7 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               The dashboard opens on what a clinic owner checks first, and each number opens its list.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto text-left mb-16">
+            <div className="grid grid-cols-2 min-[640px]:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto text-left mb-16">
               {/* Card 1 */}
               <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs">
                 <div className="w-8 h-8 rounded-lg bg-teal-50 border border-teal-100 flex items-center justify-center text-[#11a297] mb-4">
@@ -1191,11 +1191,11 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
               {/* Comparison Table matching screenshot */}
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs overflow-hidden text-left">
                 {/* Table Header */}
-                <div className="grid grid-cols-1 md:grid-cols-2 border-b border-slate-200/80 bg-slate-50/50">
+                <div className="grid grid-cols-1 min-[640px]:grid-cols-2 border-b border-slate-200/80 bg-slate-50/50">
                   <div className="px-6 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-400">
                     TODAY
                   </div>
-                  <div className="px-6 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#11a297] border-t md:border-t-0 md:border-l border-slate-200/80 bg-teal-50/30">
+                  <div className="px-6 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#11a297] border-t min-[640px]:border-t-0 min-[640px]:border-l border-slate-200/80 bg-teal-50/30">
                     WITH ISUITE AI – CLINIC
                   </div>
                 </div>
@@ -1203,48 +1203,48 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
                 {/* Table Rows */}
                 <div className="divide-y divide-slate-200/80 text-xs sm:text-[13px]">
                   {/* Row 1 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="grid grid-cols-1 min-[640px]:grid-cols-2">
                     <div className="px-6 py-4 flex items-center gap-3 text-slate-600">
                       <span className="text-slate-400 font-bold shrink-0">✕</span>
                       <span>WhatsApp messages wait until the desk is free</span>
                     </div>
-                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 md:border-l border-slate-200/80 bg-teal-50/10">
+                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 min-[640px]:border-l border-slate-200/80 bg-teal-50/10">
                       <span className="text-[#11a297] font-bold shrink-0">✓</span>
                       <span>Timings, fees and bookings answered in seconds</span>
                     </div>
                   </div>
 
                   {/* Row 2 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="grid grid-cols-1 min-[640px]:grid-cols-2">
                     <div className="px-6 py-4 flex items-center gap-3 text-slate-600">
                       <span className="text-slate-400 font-bold shrink-0">✕</span>
                       <span>Reminder calls fill the morning</span>
                     </div>
-                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 md:border-l border-slate-200/80 bg-teal-50/10">
+                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 min-[640px]:border-l border-slate-200/80 bg-teal-50/10">
                       <span className="text-[#11a297] font-bold shrink-0">✓</span>
                       <span>Reminders go out on their own</span>
                     </div>
                   </div>
 
                   {/* Row 3 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="grid grid-cols-1 min-[640px]:grid-cols-2">
                     <div className="px-6 py-4 flex items-center gap-3 text-slate-600">
                       <span className="text-slate-400 font-bold shrink-0">✕</span>
                       <span>Patients who were due back are forgotten</span>
                     </div>
-                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 md:border-l border-slate-200/80 bg-teal-50/10">
+                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 min-[640px]:border-l border-slate-200/80 bg-teal-50/10">
                       <span className="text-[#11a297] font-bold shrink-0">✓</span>
                       <span>The next visit is saved, and the patient is reminded</span>
                     </div>
                   </div>
 
                   {/* Row 4 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="grid grid-cols-1 min-[640px]:grid-cols-2">
                     <div className="px-6 py-4 flex items-center gap-3 text-slate-600">
                       <span className="text-slate-400 font-bold shrink-0">✕</span>
                       <span>Reports collected in person, or lost in a personal phone</span>
                     </div>
-                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 md:border-l border-slate-200/80 bg-teal-50/10">
+                    <div className="px-6 py-4 flex items-center gap-3 text-slate-800 min-[640px]:border-l border-slate-200/80 bg-teal-50/10">
                       <span className="text-[#11a297] font-bold shrink-0">✓</span>
                       <span>Reports sent from the patient's own page, and kept there</span>
                     </div>
@@ -1287,7 +1287,7 @@ export default function ClinicPage({ onOpenDemo, onOpenTrial, onNavigateHome }) 
                 Careful with patients
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 text-left">
+              <div className="grid grid-cols-1 min-[640px]:grid-cols-2 gap-6 sm:gap-8 text-left">
                 {/* Card 1: Where it fits */}
                 <div className="bg-white rounded-3xl p-7 sm:p-9 border border-slate-200/80 shadow-xs flex flex-col justify-start">
                   <div className="w-10 h-10 rounded-xl bg-teal-50 border border-teal-100/70 flex items-center justify-center text-[#11a297] mb-6">
