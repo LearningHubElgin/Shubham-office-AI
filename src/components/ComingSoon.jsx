@@ -28,7 +28,7 @@ export default function ComingSoon({ onNotifyTrade }) {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header matching isuite.ai */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12 head reveal">
           <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1663ff] mb-2.5">
             COMING SOON
           </p>
@@ -41,7 +41,7 @@ export default function ComingSoon({ onNotifyTrade }) {
         </div>
 
         {/* 2-Column Grid with dashed/dotted borders matching isuite.ai */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 max-w-4xl mx-auto soon-grid reveal stagger">
           {soonList.map((item) => {
             const Icon = item.icon;
             return (

@@ -14,7 +14,7 @@ export default function CTABanner({ onOpenDemo, onFindProduct }) {
 
   return (
     <section className="py-20 sm:py-28 bg-[#f8fafc] border-t border-slate-200/60">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center cta-band reveal">
         
         {/* Main Headline */}
         <h2 className="text-3xl sm:text-4xl md:text-[42px] font-bold text-[#06122e] tracking-[-0.03em] leading-[1.15] text-balance">
