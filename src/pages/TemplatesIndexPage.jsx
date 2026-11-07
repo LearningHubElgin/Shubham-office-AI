@@ -20,8 +20,11 @@ export default function TemplatesIndexPage({ onNavigateRoute, onNavigateHome, on
   return (
     <div className="min-h-screen bg-[#f8fafc] text-[#06122e] font-sans selection:bg-[#001d55] selection:text-white flex flex-col">
       <Navbar
+        variant="light"
         onOpenDemo={onOpenDemo}
         onOpenTrial={onOpenTrial}
+        onNavigateHome={onNavigateHome}
+        onNavigateRoute={onNavigateRoute}
         onSelectIndustry={(ind) => onNavigateRoute && onNavigateRoute(`/${ind}/`)}
       />
 
