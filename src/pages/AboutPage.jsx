@@ -1,174 +1,181 @@
-import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import React from 'react';
+import ContentPage from '../components/ContentPage';
+import { aboutData } from '../data/pages/about';
 import { brandConfig } from '../data/brandConfig';
-import { Shield, Sparkles, Heart, Building2, MapPin, Mail, Phone, ExternalLink } from 'lucide-react';
 
-export default function AboutPage({ onNavigateHome, onNavigateRoute, onOpenDemo, onOpenTrial, onOpenPolicyModal }) {
-  useEffect(() => {
-    document.title = 'About iSuite AI – MnT Future, Software Company in Madurai';
-    window.scrollTo(0, 0);
-  }, []);
+export default function AboutPage({
+  onNavigateHome,
+  onNavigateRoute,
+  onOpenDemo,
+  onOpenTrial,
+  onOpenPolicyModal
+}) {
+  const handleLink = (e, path) => {
+    if (onNavigateRoute) {
+      e.preventDefault();
+      onNavigateRoute(path);
+    }
+  };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-[#06122e]">
-      {/* Header */}
-      <Navbar
-        onSelectIndustry={(ind) => onNavigateRoute(`/${ind === 'clinic' ? 'clinics' : ind === 'gym' ? 'gyms' : ind === 'salon' ? 'salons' : ind}/`)}
-        onOpenDemo={onOpenDemo}
-        onOpenTrial={onOpenTrial}
-        onNavigateHome={onNavigateHome}
-      />
+    <ContentPage
+      title={aboutData.title}
+      metaDescription={aboutData.metaDescription}
+      eyebrow={aboutData.eyebrow}
+      heading={aboutData.heading}
+      lead={aboutData.lead}
+      activePage="about"
+      jsonLd={aboutData.jsonLd}
+      onNavigateHome={onNavigateHome}
+      onNavigateRoute={onNavigateRoute}
+      onOpenDemo={onOpenDemo}
+      onOpenTrial={onOpenTrial}
+      onOpenPolicyModal={onOpenPolicyModal}
+    >
+      <div className="space-y-6">
+        <h2 className="text-[24px] sm:text-[28px] md:text-[34px] font-semibold text-[#06122e] tracking-tight mt-8 mb-4">
+          Why we built it
+        </h2>
+        <p className="mb-4">
+          Most business software sold in India was designed for desk workers in the US or Europe: complex forms, endless dropdowns, and screens that only fit on a laptop.
+        </p>
+        <p className="mb-4">
+          Small and mid-sized businesses don’t work that way. The owner is on a scooter. The front desk is juggling three people in line and an enquiry on WhatsApp. A lead that doesn’t get answered in three minutes goes to the competitor down the road.
+        </p>
+        <p className="mb-4">
+          We built iSuite AI to solve that one problem: every lead answered instantly, every follow-up on time, and every booking, fee or token tracked without a spreadsheet. We started with{' '}
+          <a
+            href="/clinics/"
+            onClick={(e) => handleLink(e, '/clinics/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            clinics
+          </a>
+          , then added{' '}
+          <a
+            href="/coaching/"
+            onClick={(e) => handleLink(e, '/coaching/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            coaching institutes
+          </a>
+          ,{' '}
+          <a
+            href="/real-estate/"
+            onClick={(e) => handleLink(e, '/real-estate/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            real estate
+          </a>
+          ,{' '}
+          <a
+            href="/gyms/"
+            onClick={(e) => handleLink(e, '/gyms/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            gyms
+          </a>
+          ,{' '}
+          <a
+            href="/salons/"
+            onClick={(e) => handleLink(e, '/salons/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            salons
+          </a>
+          ,{' '}
+          <a
+            href="/field-service/"
+            onClick={(e) => handleLink(e, '/field-service/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            field service
+          </a>{' '}
+          and{' '}
+          <a
+            href="/turf/"
+            onClick={(e) => handleLink(e, '/turf/')}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            turfs
+          </a>{' '}
+          — because each trade needs slightly different fields, but every trade needs to answer on WhatsApp.
+        </p>
 
-      {/* Hero Section */}
-      <section className="pt-32 sm:pt-40 pb-16 sm:pb-24 bg-gradient-to-b from-[#001845] via-[#001f5c] to-[#00153d] text-white text-center relative overflow-hidden">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+        <h2 className="text-[24px] sm:text-[28px] md:text-[34px] font-semibold text-[#06122e] tracking-tight mt-10 mb-4">
+          What we believe
+        </h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            <b>Every customer deserves an answer,</b> even when the shop is closed.
+          </li>
+          <li>
+            <b>Software is only useful if your team actually uses it,</b> so iSuite AI is simple, and works on the phone.
+          </li>
+          <li>
+            <b>AI should know when to ask.</b> Ours checks with you before it guesses, and hands over to a person when needed.
+          </li>
+          <li>
+            <b>Your data is yours.</b> It stays in India, and we never sell it.
+          </li>
+        </ul>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 rise">
-          <p className="text-xs sm:text-[13px] font-semibold uppercase tracking-[0.18em] text-[#38bdf8] mb-3">
-            ABOUT
-          </p>
-          <h1 className="text-3xl sm:text-5xl font-bold tracking-[-0.03em] leading-tight mb-5">
-            Built in Madurai, for how India sells
-          </h1>
-          <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto font-normal leading-relaxed">
-            iSuite AI is made by MnT Future (Magizh NexGen Technologies), a technology company in Madurai, Tamil Nadu. We build it for the businesses around us — the clinics, coaching institutes, builders, gyms, salons, service companies and turfs that talk to their customers on WhatsApp every day.
-          </p>
+        <h2 className="text-[24px] sm:text-[28px] md:text-[34px] font-semibold text-[#06122e] tracking-tight mt-10 mb-4">
+          The company
+        </h2>
+        <p className="mb-4">
+          MnT Future was founded by{' '}
+          <a
+            href="https://www.linkedin.com/in/udhayaseelan-renganathan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            Udhayaseelan Renganathan
+          </a>
+          , who leads iSuite AI from Madurai.
+        </p>
+
+        {/* Semantic address box */}
+        <div className="my-5 p-5 sm:p-6 rounded-[18px] bg-white border border-[#e5e9f0] shadow-xs">
+          <address className="not-italic space-y-1 text-[15px] sm:text-[16px] text-[#202c45] font-normal leading-relaxed">
+            <p className="font-semibold text-[#06122e]">
+              Magizh NexGen Technologies
+            </p>
+            <p>
+              3/501, Subash Street, Muneeswarar Nagar, Iyer Bungalow, Madurai - 625014, Tamil Nadu, India
+            </p>
+            <p className="text-slate-600">
+              GSTIN: 33EACPR6502N1ZH
+            </p>
+            <p className="pt-1">
+              <a href="tel:+918220947112" className="text-[#1663ff] hover:underline">
+                +91 82209 47112
+              </a>{' '}
+              ·{' '}
+              <a href="mailto:info@mntfuture.com" className="text-[#1663ff] hover:underline">
+                info@mntfuture.com
+              </a>
+            </p>
+          </address>
         </div>
-      </section>
 
-      {/* Main Content Body */}
-      <section className="py-16 sm:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          
-          {/* Section: Why we built it */}
-          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-xs head reveal space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#06122e] tracking-tight">
-              Why we built it
-            </h2>
-            <div className="space-y-4 text-sm sm:text-[15px] text-slate-600 leading-relaxed font-normal">
-              <p>
-                Indian customers message before they buy. They ask the price at 10 at night, send a voice note in Tanglish, and buy from whoever answers first. Most businesses answer when someone is free, keep leads on three phones and a notebook, and forget to follow up.
-              </p>
-              <p>
-                The software meant to help usually does one part of the job — a broadcast tool, a chatbot with menus, or a sales tool built for another country. So we built one system for the whole business behind the conversation — it answers, books, bills, collects and follows up, in the customer’s own language, with ₹ and GST from the start.
-              </p>
-              <p>
-                Then we made it fit each trade. A clinic needs doctors’ diaries, prescriptions and reminders; an institute, batches, attendance and fees in instalments; a builder, every flat on one board and a booking amount that books it; a gym, check-ins, renewals and PT packs; a salon, a front desk by stylist and each stylist’s commission; a service company, a jobs board, technicians billing on the spot and maintenance contracts; a turf, a court board by the hour, peak prices and regular teams.
-              </p>
-              <p className="pt-2 text-slate-800 font-medium">
-                So iSuite AI is not one generic tool but a product for each: <a href="/clinics/" className="text-blue-600 underline">iSuite AI – Clinic</a>, <a href="/coaching/" className="text-blue-600 underline">iSuite AI – Coaching Institute</a>, <a href="/real-estate/" className="text-blue-600 underline">iSuite AI – Real Estate</a>, <a href="/gyms/" className="text-blue-600 underline">iSuite AI – Gym & Fitness Studio</a>, <a href="/salons/" className="text-blue-600 underline">iSuite AI – Salon & Spa</a>, <a href="/field-service/" className="text-blue-600 underline">iSuite AI – Field Service & AMC</a> and <a href="/turf/" className="text-blue-600 underline">iSuite AI – Turf</a> — each the whole system for its business, with its own words, setup and rules, on one platform underneath.
-              </p>
-            </div>
-          </div>
-
-          {/* Section: What we believe */}
-          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-xs head reveal space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#06122e] tracking-tight">
-              What we believe
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                <div className="flex items-center gap-2 text-blue-600 font-bold text-sm">
-                  <Sparkles className="w-4 h-4" />
-                  <span>Immediate Answers</span>
-                </div>
-                <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
-                  Every customer deserves an answer, even when the shop is closed.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm">
-                  <Heart className="w-4 h-4" />
-                  <span>Simplicity</span>
-                </div>
-                <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
-                  Software is only useful if your team actually uses it, so iSuite AI is simple, and works on the phone.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                <div className="flex items-center gap-2 text-purple-600 font-bold text-sm">
-                  <Shield className="w-4 h-4" />
-                  <span>Responsible AI</span>
-                </div>
-                <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
-                  AI should know when to ask. Ours checks with you before it guesses, and hands over to a person when needed.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                <div className="flex items-center gap-2 text-rose-600 font-bold text-sm">
-                  <Building2 className="w-4 h-4" />
-                  <span>Data Sovereignty</span>
-                </div>
-                <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
-                  Your data is yours. It stays in India, and we never sell it.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section: The company */}
-          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-xs head reveal space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#06122e] tracking-tight">
-              The company
-            </h2>
-            <div className="space-y-4 text-sm sm:text-[15px] text-slate-600 leading-relaxed font-normal">
-              <p>
-                MnT Future was founded by{' '}
-                <a
-                  href="https://www.linkedin.com/in/udhayaseelan-renganathan/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-bold text-blue-600 hover:underline inline-flex items-center gap-1"
-                >
-                  <span>Udhayaseelan Renganathan</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-                , who leads iSuite AI from Madurai.
-              </p>
-
-              <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 text-xs sm:text-[13px] space-y-2.5">
-                <p className="font-bold text-slate-900 text-sm">Magizh NexGen Technologies</p>
-                <p className="text-slate-600">
-                  3/501, Subash Street, Muneeswarar Nagar, Iyer Bungalow, Madurai - 625014, Tamil Nadu, India
-                </p>
-                <p className="text-slate-600">
-                  <span className="font-semibold text-slate-800">GSTIN:</span> 33EACPR6502N1ZH
-                </p>
-                <div className="pt-2 flex flex-wrap gap-4 text-slate-700">
-                  <a href="tel:+918220947112" className="hover:text-blue-600 transition-colors">
-                    +91 82209 47112
-                  </a>
-                  <span>·</span>
-                  <a href="mailto:info@mntfuture.com" className="hover:text-blue-600 transition-colors">
-                    info@mntfuture.com
-                  </a>
-                </div>
-              </div>
-
-              <p className="text-xs text-slate-500 pt-2">
-                MnT Future’s own website is{' '}
-                <a href="https://mntfuture.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
-                  mntfuture.com
-                </a>
-                . iSuite AI is not iSuite ERP or aisuite, and is not connected with either.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Footer */}
-      <Footer
-        onSelectIndustry={(ind) => onNavigateRoute(`/${ind === 'clinic' ? 'clinics' : ind === 'gym' ? 'gyms' : ind === 'salon' ? 'salons' : ind}/`)}
-        onOpenDemo={onOpenDemo}
-        onOpenPolicyModal={onOpenPolicyModal}
-      />
-    </div>
+        <p className="mb-2">
+          MnT Future’s own website is{' '}
+          <a
+            href="https://mntfuture.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+          >
+            mntfuture.com
+          </a>
+          .
+        </p>
+        <p className="text-sm text-slate-500 font-normal">
+          iSuite AI is not iSuite ERP or aisuite, and is not connected with either.
+        </p>
+      </div>
+    </ContentPage>
   );
 }
-

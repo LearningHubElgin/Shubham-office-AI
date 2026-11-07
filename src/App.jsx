@@ -401,6 +401,7 @@ export default function App() {
               onOpenDemo={() => handleOpenDemo()}
               onOpenTrial={() => handleOpenTrial()}
               onSelectIndustry={handleSelectIndustry}
+              onNavigateRoute={navigateToRoute}
             />
 
             {/* 2. Hero Section */}

@@ -58,6 +58,9 @@ export default function PricingPage({ onNavigateHome, onNavigateRoute, onOpenDem
     <div className="min-h-screen bg-[#f8fafc] text-[#06122e]">
       {/* Header */}
       <Navbar
+        variant="light"
+        activePage="pricing"
+        onNavigateRoute={onNavigateRoute}
         onSelectIndustry={(ind) => onNavigateRoute(`/${ind === 'clinic' ? 'clinics' : ind === 'gym' ? 'gyms' : ind === 'salon' ? 'salons' : ind}/`)}
         onOpenDemo={onOpenDemo}
         onOpenTrial={onOpenTrial}

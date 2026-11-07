@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Stethoscope, 
   GraduationCap, 
@@ -40,6 +40,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { brandConfig, allProductsNavList, comingSoonList, productsMegaMenu, comingSoonChips } from '../data/brandConfig';
+import ProductsMegaMenu from './ProductsMegaMenu';
 
 const iconLookup = {
   clinic: Stethoscope,
@@ -72,6 +73,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
+  const buttonRef = useRef(null);
 
   // Dynamic theme colors
   const accentColor = data.accentColor || (data.id === 'coaching' ? '#7357ff' : data.id === 'real-estate' ? '#e08600' : '#11a297');
@@ -301,124 +303,23 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
             {/* Products Mega-Dropdown */}
             <div className="relative">
               <button
+                ref={buttonRef}
                 onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
                 onMouseEnter={() => setProductsDropdownOpen(true)}
                 className="flex items-center gap-1 hover:text-amber-500 transition-colors cursor-pointer py-2 uppercase"
+                aria-expanded={productsDropdownOpen}
               >
                 <span>PRODUCTS</span>
-                <ChevronDown className="w-3 h-3 opacity-70" />
+                <ChevronDown className={`w-3 h-3 opacity-70 transition-transform duration-200 ${productsDropdownOpen ? 'rotate-180 opacity-100' : ''}`} />
               </button>
 
-              {productsDropdownOpen && (
-                <div
-                  onMouseLeave={() => setProductsDropdownOpen(false)}
-                  className="absolute top-full right-0 md:right-[-24px] mt-2 w-[640px] max-w-[calc(100vw-32px)] rounded-[24px] shadow-[0_24px_60px_-28px_rgba(0,12,43,0.38),0_6px_18px_-10px_rgba(0,12,43,0.2)] p-2.5 sm:p-3 bg-white border border-slate-200/80 text-[#06122e] animate-drop-right z-50 grid grid-cols-1 sm:grid-cols-2 gap-1 text-left"
-                >
-                  {/* Column 1: Clinic, Real Estate, Salon & Spa, Turf */}
-                  <div className="flex flex-col gap-0.5">
-                    {productsMegaMenu.col1.map((p) => {
-                      const isCurrent = p.id === data.id;
-                      const ProdIcon = iconLookup[p.id] || Stethoscope;
-                      return (
-                        <button
-                          key={p.id}
-                          onClick={() => handleProductClick(p.route)}
-                          className={`w-full text-left p-2.5 sm:p-3 rounded-2xl transition-all flex items-start gap-3 cursor-pointer ${
-                            isCurrent
-                              ? 'bg-slate-100/90 font-semibold text-slate-900 shadow-2xs'
-                              : 'hover:bg-slate-50 text-slate-700'
-                          }`}
-                        >
-                          <div 
-                            className="w-9 h-9 rounded-xl flex items-center justify-center text-white shrink-0 shadow-xs mt-0.5"
-                            style={{ backgroundColor: p.color }}
-                          >
-                            <ProdIcon className="w-4 h-4 stroke-[2.2]" />
-                          </div>
-                          <div className="min-w-0">
-                            <div className="text-[13.5px] font-semibold text-[#06122e] leading-tight">
-                              {p.fullName}
-                            </div>
-                            <div className="text-[11.5px] text-slate-500 leading-snug mt-1 line-clamp-2 font-normal">
-                              {p.desc}
-                            </div>
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  {/* Column 2: Coaching, Gym, Field Service */}
-                  <div className="flex flex-col gap-0.5">
-                    {productsMegaMenu.col2.map((p) => {
-                      const isCurrent = p.id === data.id;
-                      const ProdIcon = iconLookup[p.id] || GraduationCap;
-                      return (
-                        <button
-                          key={p.id}
-                          onClick={() => handleProductClick(p.route)}
-                          className={`w-full text-left p-2.5 sm:p-3 rounded-2xl transition-all flex items-start gap-3 cursor-pointer ${
-                            isCurrent
-                              ? 'bg-slate-100/90 font-semibold text-slate-900 shadow-2xs'
-                              : 'hover:bg-slate-50 text-slate-700'
-                          }`}
-                        >
-                          <div 
-                            className="w-9 h-9 rounded-xl flex items-center justify-center text-white shrink-0 shadow-xs mt-0.5"
-                            style={{ backgroundColor: p.color }}
-                          >
-                            <ProdIcon className="w-4 h-4 stroke-[2.2]" />
-                          </div>
-                          <div className="min-w-0">
-                            <div className="text-[13.5px] font-semibold text-[#06122e] leading-tight">
-                              {p.fullName}
-                            </div>
-                            <div className="text-[11.5px] text-slate-500 leading-snug mt-1 line-clamp-2 font-normal">
-                              {p.desc}
-                            </div>
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  {/* Bottom Row spanning both columns */}
-                  <div className="sm:col-span-2 pt-2.5 mt-1 border-t border-slate-100">
-                    <div className="text-[10px] text-slate-400 font-bold tracking-[0.14em] px-2 mb-2 uppercase">
-                      COMING SOON
-                    </div>
-                    <div className="flex flex-wrap items-center gap-2 px-1">
-                      {comingSoonChips.map((cs) => {
-                        const CsIcon = cs.icon === 'Truck' ? Truck : cs.icon === 'ShoppingCart' ? ShoppingCart : Utensils;
-                        return (
-                          <a
-                            key={cs.name}
-                            href="/#soon"
-                            onClick={() => setProductsDropdownOpen(false)}
-                            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#f6f7f9] hover:bg-slate-200/70 text-[#475569] hover:text-[#06122e] text-xs font-medium transition-colors"
-                          >
-                            <span className="w-5 h-5 rounded-full bg-[#e7ebf3] flex items-center justify-center text-slate-600 shrink-0">
-                              <CsIcon className="w-3 h-3" />
-                            </span>
-                            <span>{cs.name}</span>
-                          </a>
-                        );
-                      })}
-                    </div>
-
-                    <div className="pt-2 mt-2">
-                      <a 
-                        href="/pricing/" 
-                        onClick={() => setProductsDropdownOpen(false)}
-                        className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs sm:text-[13px] font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors"
-                      >
-                        <span>Plans and pricing for every product</span>
-                        <span>→</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              )}
+              <ProductsMegaMenu
+                isOpen={productsDropdownOpen}
+                onClose={() => setProductsDropdownOpen(false)}
+                anchorRef={buttonRef}
+                currentProductId={data.id}
+                onSelectProduct={(route) => handleProductClick(route)}
+              />
             </div>
 
             <a
