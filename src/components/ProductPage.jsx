@@ -19,6 +19,7 @@ import {
   Menu,
   X,
   Users,
+  Languages,
   Megaphone,
   Calendar,
   Clock,
@@ -66,6 +67,8 @@ const iconLookup = {
   Stethoscope,
   Building2,
   CheckCircle2,
+  Languages,
+  Smartphone,
 };
 
 export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onOpenDemo, onOpenTrial }) {
@@ -1645,15 +1648,20 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
 
               {/* Pills row */}
               <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5 max-w-4xl mx-auto chips reveal">
-                {data.speaksSection.chips.map((chip, ci) => (
-                  <span 
-                    key={ci}
-                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100/90 text-slate-700 border border-slate-200/80 shadow-2xs"
-                  >
-                    <Check className="w-3.5 h-3.5" style={{ color: accentColor }} />
-                    <span>{chip}</span>
-                  </span>
-                ))}
+                {data.speaksSection.chips.map((chip, ci) => {
+                  const chipText = typeof chip === 'string' ? chip : chip.text;
+                  const ChipIcon = typeof chip === 'string' ? Check : iconLookup[chip.icon] || Check;
+
+                  return (
+                    <span
+                      key={ci}
+                      className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100/90 text-slate-700 border border-slate-200/80 shadow-2xs"
+                    >
+                      <ChipIcon className="w-3.5 h-3.5" style={{ color: accentColor }} />
+                      <span>{chipText}</span>
+                    </span>
+                  );
+                })}
               </div>
             </div>
 
