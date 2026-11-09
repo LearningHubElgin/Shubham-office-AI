@@ -17,7 +17,7 @@ export const coachingData = {
     subtitle: 'Enquiries, admissions, batches, attendance and fees in one app — and an AI that answers students and parents and books demo classes on WhatsApp at any hour. Fees go in instalments, reminded on their own.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
+      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
     ],
     trustChips: [
       '7-day free trial',
@@ -508,7 +508,7 @@ export const coachingData = {
       {
         prefix: 'Not sure which package fits? ',
         linkText: 'Book a free 45-minute demo.',
-        linkUrl: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
       },
       {
         text: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from iSuite AI. On Coaching Growth, online fee payments go through your own Razorpay account. ',
@@ -605,10 +605,10 @@ export const coachingData = {
     buttonPrimary: { text: 'Start free trial', href: '#plans' },
     buttonSecondary: {
       text: 'Book a demo',
-      href: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
     },
-    callText: 'Or call +91 82209 47112',
-    callHref: 'tel:+918220947112',
+    callText: 'Or call +91 93486 33365',
+    callHref: 'tel:+919348633365',
   },
 
   // 11. The iSuite AI Family

@@ -149,8 +149,8 @@ export default function AboutPage({
               GSTIN: 33EACPR6502N1ZH
             </p>
             <p className="pt-1">
-              <a href="tel:+918220947112" className="text-[#1663ff] hover:underline">
-                +91 82209 47112
+              <a href="tel:+919348633365" className="text-[#1663ff] hover:underline">
+                +91 93486 33365
               </a>{' '}
               ·{' '}
               <a href="mailto:info@mntfuture.com" className="text-[#1663ff] hover:underline">

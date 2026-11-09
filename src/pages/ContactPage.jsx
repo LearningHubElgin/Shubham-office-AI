@@ -53,11 +53,15 @@ export default function ContactPage({
           Sign in at{' '}
           <a
             href={contactData.links.appLogin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#1663ff] underline hover:text-blue-700 font-medium"
+            onClick={(e) => {
+              if (onNavigateRoute) {
+                e.preventDefault();
+                onNavigateRoute('login');
+              }
+            }}
+            className="text-[#1663ff] underline hover:text-blue-700 font-medium cursor-pointer"
           >
-            app.isuite.ai
+            Sign in portal
           </a>
           . For help with your account, message us on WhatsApp from the number your company registered, or write to{' '}
           <a

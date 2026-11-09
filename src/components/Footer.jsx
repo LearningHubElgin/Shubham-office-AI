@@ -1,13 +1,15 @@
 import React from 'react';
 import { allProductsNavList } from '../data/brandConfig';
 
-export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal }) {
+export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal, onOpenAdmin, onNavigateRoute }) {
   const handleNav = (e, route) => {
     if (route.startsWith('http') || route.startsWith('#')) return;
-    if (onSelectIndustry) {
-      e.preventDefault();
-      const slug = route.replace(/\//g, '');
-      onSelectIndustry(slug);
+    e.preventDefault();
+    const cleanRoute = route.replace(/\//g, '');
+    if (onNavigateRoute) {
+      onNavigateRoute(cleanRoute);
+    } else if (onSelectIndustry) {
+      onSelectIndustry(cleanRoute);
     }
   };
 
@@ -156,9 +158,8 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
                 </li>
                 <li>
                   <a
-                    href="https://app.isuite.ai/login"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/login"
+                    onClick={(e) => handleNav(e, '/login')}
                     className="hover:text-[#1663ff] transition-colors text-left block"
                   >
                     Login
@@ -175,7 +176,7 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li>
                   <a
-                    href="https://wa.me/918220947112"
+                    href="https://wa.me/919348633365"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-[#1663ff] transition-colors block"
@@ -185,10 +186,10 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
                 </li>
                 <li>
                   <a
-                    href="tel:+918220947112"
+                    href="tel:+919348633365"
                     className="hover:text-[#1663ff] transition-colors block"
                   >
-                    +91 82209 47112
+                    +91 93486 33365
                   </a>
                 </li>
                 <li>
@@ -241,6 +242,17 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
                     MnT Future
                   </a>
                 </li>
+                {onOpenAdmin && (
+                  <li>
+                    <button
+                      type="button"
+                      onClick={onOpenAdmin}
+                      className="hover:text-[#1663ff] transition-colors text-left block cursor-pointer text-slate-500 font-medium"
+                    >
+                      Admin Portal
+                    </button>
+                  </li>
+                )}
               </ul>
             </div>
           </div>

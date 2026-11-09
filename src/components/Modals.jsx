@@ -298,6 +298,15 @@ export default function Modals({
                 </button>
               </div>
 
+              <div className="text-center pt-1">
+                <a
+                  href="/app/signup"
+                  className="text-xs font-semibold text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1"
+                >
+                  Or launch live interactive in-browser app demo →
+                </a>
+              </div>
+
               <p className="text-[11px] text-gray-500 text-center">
                 Instant WhatsApp bot setup link will be delivered within 30 seconds.
               </p>
@@ -395,7 +404,7 @@ export default function Modals({
                     <strong>30-Day Money-Back Guarantee:</strong> At Mktph Techcenter Technologies, we want you to experience genuine operational ROI. If within 30 calendar days of going live with iSuite AI you are not fully satisfied with our software, you are entitled to a 100% refund of your software subscription fees.
                   </p>
                   <p>
-                    <strong>Cancellation Process:</strong> Simply send an email to <span className="text-blue-600">info@mktphtech.com</span> or message our support number at <span className="text-blue-600">+91 83203 47712</span> with your account ID. Refunds are credited back to the original UPI/card within 5-7 business days.
+                    <strong>Cancellation Process:</strong> Simply send an email to <span className="text-blue-600">info@mktphtech.com</span> or message our support number at <span className="text-blue-600">+91 93486 33365</span> with your account ID. Refunds are credited back to the original UPI/card within 5-7 business days.
                   </p>
                 </>
               )}
@@ -447,7 +456,7 @@ export default function Modals({
                     <strong>Mktph Techcenter Technologies:</strong> A unit of Mkt Future, based in Madurai, Tamil Nadu. We specialize in vertical enterprise automation, deep AI language models for regional Indian languages, and frictionless WhatsApp commerce.
                   </p>
                   <p>
-                    Headquarters: Madurai, Tamil Nadu, India. Contact: info@mktphtech.com | Phone: +91 83203 47712.
+                    Headquarters: Madurai, Tamil Nadu, India. Contact: info@mktphtech.com | Phone: +91 93486 33365.
                   </p>
                 </>
               )}

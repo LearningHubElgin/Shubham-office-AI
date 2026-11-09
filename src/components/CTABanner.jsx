@@ -48,10 +48,10 @@ export default function CTABanner({ onOpenDemo, onFindProduct }) {
         <p className="text-xs sm:text-[13px] text-slate-400 font-normal">
           Free trial on every product · free 45-minute demo · or call{' '}
           <a
-            href="tel:+918220947112"
+            href="tel:+919348633365"
             className="underline hover:text-slate-600 transition-colors"
           >
-            +91 82209 47112
+            +91 93486 33365
           </a>
         </p>
 

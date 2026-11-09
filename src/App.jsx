@@ -11,6 +11,7 @@ import FAQSection from './components/FAQSection';
 import CTABanner from './components/CTABanner';
 import Footer from './components/Footer';
 import Modals from './components/Modals';
+import AdminPortalModal from './components/AdminPortalModal';
 
 // Product pages
 import ClinicPage from './pages/ClinicPage';
@@ -29,6 +30,8 @@ import TemplatesIndexPage from './pages/TemplatesIndexPage';
 import TemplateDetailPage from './pages/TemplateDetailPage';
 import PolicyPage from './pages/PolicyPage';
 import NotFoundPage from './pages/NotFoundPage';
+import LoginPage from './pages/LoginPage';
+import AppRoot from './app/AppRoot';
 
 import { CheckCircle2 } from 'lucide-react';
 import { brandConfig } from './data/brandConfig';
@@ -42,7 +45,22 @@ export default function App() {
     // Normalize path to have trailing slash if not root
     const path = rawPath.replace(/\/$/, '') + '/';
 
+    // 0. Logged-in App Demo routes
+    if (path.startsWith('/app/') || path === '/app' || rawPath === '/app') {
+      const subRoute = rawPath.replace(/^\/app\/?/, '');
+      return { name: 'app', subRoute };
+    }
+    if (path.startsWith('/signup') || hash === '#signup') {
+      return { name: 'app', subRoute: 'signup' };
+    }
+
     // 1. Core Home
+    if (path.startsWith('/login') || hash === '#login') {
+      return { name: 'login' };
+    }
+    if (path.startsWith('/admin') || hash === '#admin') {
+      return { name: 'admin' };
+    }
     if (rawPath === '' || rawPath === '/') {
       return { name: 'home' };
     }
@@ -118,6 +136,13 @@ export default function App() {
   const [policyModalOpen, setPolicyModalOpen] = useState(false);
   const [policyTitle, setPolicyTitle] = useState('');
   const [selectedTradeOrIndustry, setSelectedTradeOrIndustry] = useState('');
+  const [adminModalOpen, setAdminModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (currentRoute.name === 'admin') {
+      setAdminModalOpen(true);
+    }
+  }, [currentRoute]);
   
   // Toast notification state
   const [toastMessage, setToastMessage] = useState(null);
@@ -152,7 +177,8 @@ export default function App() {
   }, [currentRoute]);
 
   const navigateToRoute = (route) => {
-    window.history.pushState({}, '', route);
+    const cleanRoute = route.startsWith('/') ? route : `/${route}`;
+    window.history.pushState({}, '', cleanRoute);
     setCurrentRoute(getRouteFromUrl());
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -381,6 +407,21 @@ export default function App() {
           />
         );
 
+      case 'app':
+      case 'login':
+        return (
+          <AppRoot
+            initialSubRoute={currentRoute.subRoute || (currentRoute.name === 'login' ? 'login' : 'dashboard')}
+          />
+        );
+
+      case 'admin':
+        return (
+          <LoginPage
+            onNavigateHome={navigateToHome}
+          />
+        );
+
       case 'not-found':
         return (
           <NotFoundPage
@@ -451,6 +492,8 @@ export default function App() {
               onSelectIndustry={handleSelectIndustry}
               onOpenDemo={handleOpenDemo}
               onOpenPolicyModal={handleOpenPolicyModal}
+              onOpenAdmin={() => setAdminModalOpen(true)}
+              onNavigateRoute={navigateToRoute}
             />
           </>
         );
@@ -471,6 +514,12 @@ export default function App() {
         policyTitle={policyTitle}
         onCloseAll={handleCloseAllModals}
         onShowToast={showToast}
+      />
+
+      {/* Admin Portal Modal */}
+      <AdminPortalModal
+        isOpen={adminModalOpen}
+        onClose={() => setAdminModalOpen(false)}
       />
 
       {/* Toast Notification Alert */}

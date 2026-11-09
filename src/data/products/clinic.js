@@ -17,7 +17,7 @@ export const clinicData = {
     subtitle: "Run your dental, skin, eye or physio clinic on one app. It is clinic software made for Indian clinics: each doctor's diary, the day's OPD board, patients, prescriptions and GST bills. An AI answers patients and books, moves or cancels on WhatsApp at any hour, and reminders and follow-ups go out on their own.",
     buttons: [
       { text: 'Start free trial', href: '#pricing', primary: true },
-      { text: 'Book a demo', href: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
+      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹11,999 a year + GST',
@@ -419,7 +419,7 @@ export const clinicData = {
       {
         prefix: 'Not sure which package fits? ',
         linkText: 'Book a free 45-minute demo',
-        linkUrl: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
       },
       {
         prefix: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from iSuite AI. ',
@@ -526,10 +526,10 @@ export const clinicData = {
     buttonPrimary: { text: 'Start free trial', href: '#plans' },
     buttonSecondary: {
       text: 'Book a demo',
-      href: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
     },
-    callText: 'Or call +91 82209 47112',
-    callHref: 'tel:+918220947112',
+    callText: 'Or call +91 93486 33365',
+    callHref: 'tel:+919348633365',
   },
 
   // 11. The iSuite AI Family

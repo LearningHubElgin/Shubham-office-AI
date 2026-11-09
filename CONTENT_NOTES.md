@@ -82,8 +82,8 @@ Live page text and metadata extracted directly from the production site `https:/
 
 ### Contact (`/contact/`)
 - **Title**: `Contact — iSuite AI`
-- **WhatsApp**: `+91 82209 47112` (`https://wa.me/918220947112`)
-- **Phone**: `+91 82209 47112`
+- **WhatsApp**: `+91 93486 33365` (`https://wa.me/919348633365`)
+- **Phone**: `+91 93486 33365`
 - **Email**: `info@mntfuture.com`
 - **Address**: Madurai, Tamil Nadu, India
 

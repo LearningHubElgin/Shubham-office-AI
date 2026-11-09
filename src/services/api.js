@@ -55,3 +55,34 @@ export async function fetchAllLeads() {
   return handleResponse(response);
 }
 
+export async function loginAdmin(email, password) {
+  const response = await fetch(`${API_BASE}/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password }),
+  });
+  return handleResponse(response);
+}
+
+export async function fetchWorkspaceAppData(industry = 'clinic') {
+  const response = await fetch(`${API_BASE}/app/data?industry=${encodeURIComponent(industry)}`);
+  return handleResponse(response);
+}
+
+export async function createCustomerAPI(customer, industry = 'clinic') {
+  const response = await fetch(`${API_BASE}/customers`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ customer, industry }),
+  });
+  return handleResponse(response);
+}
+
+export async function sendChatMessageAPI(convId, sender, text, channel = 'whatsapp') {
+  const response = await fetch(`${API_BASE}/conversations/message`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ convId, sender, text, channel }),
+  });
+  return handleResponse(response);
+}
