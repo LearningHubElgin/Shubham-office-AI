@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, CheckCircle2, Sparkles, Send, Calendar, Clock, Phone, Building, User, Mail, ShieldCheck } from 'lucide-react';
+import { X, CheckCircle2, Sparkles, Send, Calendar, Clock, Phone, Building, User, Mail, ShieldCheck, Loader2 } from 'lucide-react';
 import { industries } from '../data/industryData';
+import { submitDemoRequest, submitTrialRequest, submitNotifySubscription } from '../services/api';
 
 export default function Modals({
   demoModalOpen,
@@ -36,22 +37,70 @@ export default function Modals({
     trade: selectedTradeOrIndustry || 'Wholesale & Distribution',
   });
 
-  const handleDemoSubmit = (e) => {
+  const [loadingDemo, setLoadingDemo] = useState(false);
+  const [loadingTrial, setLoadingTrial] = useState(false);
+  const [loadingNotify, setLoadingNotify] = useState(false);
+
+  const handleDemoSubmit = async (e) => {
     e.preventDefault();
-    onShowToast(`Demo requested! Our product engineer will call ${demoForm.phone} within 15 minutes.`);
-    onCloseAll();
+    setLoadingDemo(true);
+    try {
+      const res = await submitDemoRequest(demoForm);
+      onShowToast(res.message || `Demo requested! Our product engineer will call ${demoForm.phone} within 15 minutes.`);
+      onCloseAll();
+      setDemoForm({
+        name: '',
+        phone: '',
+        email: '',
+        industry: selectedTradeOrIndustry || 'clinic',
+        preferredTime: 'Morning (10 AM - 1 PM)',
+      });
+    } catch (err) {
+      onShowToast(`❌ Error: ${err.message || 'Could not connect to backend'}`);
+    } finally {
+      setLoadingDemo(false);
+    }
   };
 
-  const handleTrialSubmit = (e) => {
+  const handleTrialSubmit = async (e) => {
     e.preventDefault();
-    onShowToast(`🎉 14-Day Free Pilot created for ${trialForm.businessName}! Check your WhatsApp.`);
-    onCloseAll();
+    setLoadingTrial(true);
+    try {
+      const res = await submitTrialRequest(trialForm);
+      onShowToast(res.message || `🎉 14-Day Free Pilot created for ${trialForm.businessName}! Check your WhatsApp.`);
+      onCloseAll();
+      setTrialForm({
+        businessName: '',
+        contactName: '',
+        phone: '',
+        industry: selectedTradeOrIndustry || 'clinic',
+        language: 'Tamil + Tanglish',
+      });
+    } catch (err) {
+      onShowToast(`❌ Error: ${err.message || 'Could not connect to backend'}`);
+    } finally {
+      setLoadingTrial(false);
+    }
   };
 
-  const handleNotifySubmit = (e) => {
+  const handleNotifySubmit = async (e) => {
     e.preventDefault();
-    onShowToast(`Subscribed! You will receive VIP early access to ${notifyForm.trade} on WhatsApp.`);
-    onCloseAll();
+    setLoadingNotify(true);
+    try {
+      const res = await submitNotifySubscription(notifyForm);
+      onShowToast(res.message || `Subscribed! You will receive VIP early access to ${notifyForm.trade} on WhatsApp.`);
+      onCloseAll();
+      setNotifyForm({
+        businessName: '',
+        phone: '',
+        email: '',
+        trade: selectedTradeOrIndustry || 'Wholesale & Distribution',
+      });
+    } catch (err) {
+      onShowToast(`❌ Error: ${err.message || 'Could not connect to backend'}`);
+    } finally {
+      setLoadingNotify(false);
+    }
   };
 
   return (
@@ -142,9 +191,17 @@ export default function Modals({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/25 transition-all text-sm"
+                  disabled={loadingDemo}
+                  className="w-full py-3 px-4 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-blue-500/25 transition-all text-sm flex items-center justify-center gap-2"
                 >
-                  Schedule Guided Demo
+                  {loadingDemo ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Saving Request...
+                    </>
+                  ) : (
+                    'Schedule Guided Demo'
+                  )}
                 </button>
               </div>
 
@@ -227,9 +284,17 @@ export default function Modals({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 rounded-xl font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-lg shadow-emerald-500/25 transition-all text-sm"
+                  disabled={loadingTrial}
+                  className="w-full py-3 px-4 rounded-xl font-bold text-white bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-emerald-500/25 transition-all text-sm flex items-center justify-center gap-2"
                 >
-                  Activate My 14-Day Free Pilot
+                  {loadingTrial ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Creating Free Pilot...
+                    </>
+                  ) : (
+                    'Activate My 14-Day Free Pilot'
+                  )}
                 </button>
               </div>
 
@@ -291,9 +356,17 @@ export default function Modals({
 
               <button
                 type="submit"
-                className="w-full py-3 px-4 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md transition-all text-sm"
+                disabled={loadingNotify}
+                className="w-full py-3 px-4 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed shadow-md transition-all text-sm flex items-center justify-center gap-2"
               >
-                Send Me Early Access Alert
+                {loadingNotify ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Subscribing...
+                  </>
+                ) : (
+                  'Send Me Early Access Alert'
+                )}
               </button>
             </form>
           </div>
