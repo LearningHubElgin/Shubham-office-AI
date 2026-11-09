@@ -1,30 +1,103 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, session
 from database import (
     insert_demo,
     insert_trial,
     insert_notify,
     insert_contact,
     get_all_leads,
-    get_connection
+    authenticate_user,
+    get_app_data,
+    db_add_customer,
+    db_add_message,
+    get_mysql_connection,
+    check_mysql
 )
 
 leads_bp = Blueprint("leads", __name__, url_prefix="/api")
 
 @leads_bp.route("/health", methods=["GET"])
 def health_check():
-    db_status = "connected"
-    try:
-        conn = get_connection(with_db=False)
-        conn.close()
-    except Exception as e:
-        db_status = f"disconnected: {e}"
-
+    mysql_ok, msg = check_mysql()
     return jsonify({
         "status": "ok",
         "service": "isuite-ai-backend",
-        "database": db_status
+        "mysql_status": "connected" if mysql_ok else f"pending ({msg})",
+        "database": "active"
     }), 200
 
+# ----------------- App Data & Database Synchronization APIs -----------------
+@leads_bp.route("/app/data", methods=["GET"])
+def fetch_app_workspace_data():
+    """Returns complete real SQL data for any selected industry."""
+    industry = request.args.get("industry", "clinic").strip().lower()
+    try:
+        data = get_app_data(industry)
+        return jsonify({
+            "success": True,
+            "data": data
+        }), 200
+    except Exception as e:
+        return jsonify({"error": f"Database fetch error: {str(e)}"}), 500
+
+@leads_bp.route("/customers", methods=["POST"])
+def create_customer():
+    """Adds a customer directly into the active SQL database."""
+    body = request.get_json(silent=True) or {}
+    cust = body.get("customer") or body
+    industry = body.get("industry") or cust.get("industry") or "clinic"
+    try:
+        cid = db_add_customer(cust, industry)
+        return jsonify({
+            "success": True,
+            "message": "Customer saved to database",
+            "id": cid
+        }), 201
+    except Exception as e:
+        return jsonify({"error": f"Database insertion error: {str(e)}"}), 500
+
+@leads_bp.route("/conversations/message", methods=["POST"])
+def add_chat_message():
+    """Appends a new chat message into the active SQL database."""
+    body = request.get_json(silent=True) or {}
+    conv_id = body.get("convId") or body.get("conv_id")
+    sender = body.get("sender", "customer")
+    text = body.get("text", "")
+    channel = body.get("channel", "whatsapp")
+
+    if not conv_id or not text:
+        return jsonify({"error": "convId and text are required"}), 400
+
+    try:
+        new_msg = db_add_message(conv_id, sender, text, channel)
+        return jsonify({
+            "success": True,
+            "message": "Message saved to database",
+            "data": new_msg
+        }), 200
+    except Exception as e:
+        return jsonify({"error": f"Database message error: {str(e)}"}), 500
+
+# ----------------- Authentication APIs -----------------
+@leads_bp.route("/auth/login", methods=["POST"])
+def login():
+    data = request.get_json(silent=True) or {}
+    email = (data.get("email") or "").strip()
+    password = (data.get("password") or "").strip()
+
+    if not email or not password:
+        return jsonify({"error": "Email and password are required."}), 400
+
+    user = authenticate_user(email, password)
+    if not user:
+        return jsonify({"error": "That email and password don't match. Check both and try again."}), 401
+
+    return jsonify({
+        "success": True,
+        "message": f"Welcome back, {user['email']}!",
+        "user": user
+    }), 200
+
+# ----------------- Lead Form APIs -----------------
 # 1. Demo Booking API
 @leads_bp.route("/leads/demo", methods=["POST"])
 def book_demo():

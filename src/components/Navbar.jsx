@@ -176,6 +176,12 @@ export default function Navbar({
         <div className="flex items-center gap-4 sm:gap-5">
           <a
             href={brandConfig.loginUrl}
+            onClick={(e) => {
+              if (onNavigateRoute) {
+                e.preventDefault();
+                onNavigateRoute('login');
+              }
+            }}
             className={`text-[11px] font-medium tracking-[0.09em] uppercase transition-colors cursor-pointer ${
               isLight ? 'text-[#06122e]/80 hover:text-[#06122e]' : 'text-white/80 hover:text-white'
             }`}
@@ -302,6 +308,13 @@ export default function Navbar({
           }`}>
             <a
               href={brandConfig.loginUrl}
+              onClick={(e) => {
+                setMobileMenuOpen(false);
+                if (onNavigateRoute) {
+                  e.preventDefault();
+                  onNavigateRoute('login');
+                }
+              }}
               className={`w-full py-2.5 text-xs font-semibold uppercase tracking-wider text-center border rounded-full block transition-colors ${
                 isLight ? 'border-slate-300 text-[#06122e] hover:bg-slate-50' : 'border-white/30 text-white hover:bg-white/10'
               }`}
@@ -321,7 +334,7 @@ export default function Navbar({
               START FREE TRIAL
             </button>
             <a
-              href="https://wa.me/918220947112?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI."
+              href="https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI."
               target="_blank"
               rel="noopener noreferrer"
               className={`w-full py-2.5 text-xs font-medium uppercase tracking-wider text-center rounded-full block transition-colors ${

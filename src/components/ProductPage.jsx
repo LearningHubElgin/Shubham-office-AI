@@ -1812,8 +1812,9 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                     </ul>
                   </div>
 
-                  <a
-                    href={plan.buyUrl}
+                  <button
+                    type="button"
+                    onClick={() => onOpenTrial ? onOpenTrial() : (window.location.href = '/pricing/')}
                     className={`w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider text-center text-white shadow-md transition-all cursor-pointer block ${
                       isPopular
                         ? 'hover:opacity-90'
@@ -1822,7 +1823,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                     style={isPopular ? { backgroundColor: accentColor } : {}}
                   >
                     Start {plan.trialText ? plan.trialText.split(' ')[0] : '14'}-Day Free Trial
-                  </a>
+                  </button>
                 </div>
               );
             })}

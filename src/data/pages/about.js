@@ -27,7 +27,7 @@ export const aboutData = {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+91-82209-47112',
+      telephone: '+91-93486-33365',
       contactType: 'customer support',
       email: 'info@mntfuture.com'
     }

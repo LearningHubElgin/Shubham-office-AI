@@ -19,7 +19,7 @@ export const realEstateData = {
     subtitle: 'Leads, site visits, every flat, bookings, payment plans, paperwork and brokers in one app, made for builders, developers and plot promoters in India — and an AI that answers buyers and books site visits on WhatsApp at any hour. A booking amount paid in full books the flat, if it is still free or held for that buyer.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
+      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
     ],
     trustChips: [
       '14-day free trial',
@@ -548,7 +548,7 @@ export const realEstateData = {
       {
         prefix: 'Not sure which package fits? ',
         linkText: 'Book a free 45-minute demo.',
-        linkUrl: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
       },
       {
         text: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from iSuite AI. Online payments go through your own Razorpay account. ',
@@ -655,10 +655,10 @@ export const realEstateData = {
     buttonPrimary: { text: 'Start free trial', href: '#plans' },
     buttonSecondary: {
       text: 'Book a demo',
-      href: 'https://wa.me/918220947112?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
     },
-    callText: 'Or call +91 82209 47112',
-    callHref: 'tel:+918220947112',
+    callText: 'Or call +91 93486 33365',
+    callHref: 'tel:+919348633365',
   },
 
   // 11. The iSuite AI Family

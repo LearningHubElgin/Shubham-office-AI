@@ -200,15 +200,16 @@ export default function PricingPage({ onNavigateHome, onNavigateRoute, onOpenDem
                     </ul>
                   </div>
 
-                  <a
-                    href={plan.buyUrl}
+                  <button
+                    type="button"
+                    onClick={() => onOpenTrial ? onOpenTrial() : null}
                     className={`w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider text-center text-white shadow-md transition-all cursor-pointer block ${
                       isPopular ? 'hover:opacity-90' : 'bg-[#001d55] hover:bg-[#002773]'
                     }`}
                     style={isPopular ? { backgroundColor: accentColor } : {}}
                   >
                     Start {plan.trialText ? plan.trialText.split(' ')[0] : '14'}-Day Free Trial
-                  </a>
+                  </button>
                 </div>
               );
             })}

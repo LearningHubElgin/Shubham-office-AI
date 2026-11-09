@@ -48,7 +48,7 @@ A complete, fully responsive, production-ready single-page SaaS landing page for
 
 10. **CTA Banner & Comprehensive Footer**
     - High-conversion dark card: *"Your next enquiry is already waiting. Make sure it doesn't wait for your team."*
-    - 5-column comprehensive footer with product links, legal policies (Terms, Privacy, 30-Day Money-Back Guarantee Refund, Shipping, Data Deletion), contact info (`+91 83203 47712`, `info@mktphtech.com`, Madurai, Tamil Nadu, India), and copyright © 2026 Mktph Techcenter Technologies, a unit of Mkt Future.
+    - 5-column comprehensive footer with product links, legal policies (Terms, Privacy, 30-Day Money-Back Guarantee Refund, Shipping, Data Deletion), contact info (`+91 93486 33365`, `info@mktphtech.com`, Madurai, Tamil Nadu, India), and copyright © 2026 Mktph Techcenter Technologies, a unit of Mkt Future.
 
 ---
 

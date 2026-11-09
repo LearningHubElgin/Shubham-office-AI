@@ -19,7 +19,7 @@ export const gymData = {
     subtitle: 'For gyms and yoga, Zumba and CrossFit studios: members, QR check-ins, renewals and freezes in one app, from ₹7,999 a year + GST. An AI answers plans and prices and books free trials on WhatsApp, Instagram and web chat at any hour, and members renew by link.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: "https://wa.me/918220947112?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI.", primary: false, isExternal: true },
+      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI.", primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹7,999 a year + GST',
@@ -415,10 +415,10 @@ export const gymData = {
     },
     buttonSecondary: {
       text: 'Book a Live Demo',
-      href: "https://wa.me/918220947112?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Gym.",
+      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Gym.",
     },
-    callText: 'Or call +91 82209 47112 to talk with our team',
-    callHref: 'tel:+918220947112',
+    callText: 'Or call +91 93486 33365 to talk with our team',
+    callHref: 'tel:+919348633365',
   },
 
   // 11. Family Section
