@@ -133,7 +133,7 @@ export default function AboutPage({
           >
             Udhayaseelan Renganathan
           </a>
-          {' '}and team in Madurai.
+          {' '}and team in Kolkata.
         </p>
 
         {/* Semantic address box */}

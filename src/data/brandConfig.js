@@ -15,7 +15,7 @@ export const brandConfig = {
   gstin: '33EACPR6502N1ZH',
   year: '2026',
   tagline: 'Run your whole business on one app, made for your industry — one platform, one product for each trade.',
-  headquarters: 'Madurai, Tamil Nadu, India',
+  headquarters: 'Kolkata, West Bengal, India',
   phone: '+91 93486 33365',
   phoneFormatted: '+91 93486 33365',
   phoneTel: 'tel:+919348633365',
@@ -33,7 +33,7 @@ export const brandConfig = {
     icon: '/logo.png',
   },
   copyrightText: '© 2026 LearningHub Software Solution. All rights reserved.',
-  madeInText: 'Made in Madurai, for businesses across India.',
+  madeInText: 'Made in Kolkata, for businesses across India.',
 };
 
 export const allProductsNavList = [

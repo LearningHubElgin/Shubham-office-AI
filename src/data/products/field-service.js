@@ -371,7 +371,7 @@ export const fieldServiceData = {
       {
         id: 'what-is',
         question: 'What is Karttik AI – Field Service & AMC?',
-        answer: 'Karttik AI – Field Service & AMC is field service management software made in Madurai for Indian service teams. It gives you a jobs board by technician, a mobile view for technicians on the road, GST bills on the spot, equipment records, and AMC contracts. Field Service Growth adds an AI dispatcher on WhatsApp.',
+        answer: 'Karttik AI – Field Service & AMC is field service management software made in Kolkata for Indian service teams. It gives you a jobs board by technician, a mobile view for technicians on the road, GST bills on the spot, equipment records, and AMC contracts. Field Service Growth adds an AI dispatcher on WhatsApp.',
       },
       {
         id: 'amc-difference',

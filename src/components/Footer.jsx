@@ -201,7 +201,7 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
                   </a>
                 </li>
                 <li className="text-slate-500">
-                  Madurai, Tamil Nadu, India
+                  Kolkata, West Bengal, India
                 </li>
               </ul>
             </div>
@@ -264,7 +264,7 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
             © 2026 LearningHub Software Solution. All rights reserved.
           </div>
           <div>
-            Made in Madurai, for businesses across India.
+            Made in Kolkata, for businesses across India.
           </div>
         </div>
 

@@ -453,10 +453,10 @@ export default function Modals({
               {policyTitle === 'About Us' && (
                 <>
                   <p>
-                    <strong>LearningHub Software Solution:</strong> Based in Madurai, Tamil Nadu, we specialize in vertical enterprise automation, deep AI language models for regional Indian languages, and frictionless WhatsApp commerce.
+                    <strong>LearningHub Software Solution:</strong> Based in Kolkata, West Bengal, we specialize in vertical enterprise automation, deep AI language models for regional Indian languages, and frictionless WhatsApp commerce.
                   </p>
                   <p>
-                    Headquarters: Madurai, Tamil Nadu, India. Contact: info@mntfuture.com | Phone: +91 93486 33365.
+                    Headquarters: Kolkata, West Bengal, India. Contact: info@mntfuture.com | Phone: +91 93486 33365.
                   </p>
                 </>
               )}
