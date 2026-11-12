@@ -51,8 +51,19 @@ function AppContent({ initialSubRoute = 'dashboard' }) {
 
   const [currentTab, setCurrentTab] = useState(getSubRouteFromPath);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
   const [quickNewModal, setQuickNewModal] = useState({ open: false, mode: 'customer' });
+
+  // Reset mobile drawer state when crossing tablet/desktop breakpoint
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const onChange = (e) => {
+      if (e.matches) setMobileSidebarOpen(false);
+    };
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
 
   // Sync route on popstate
   useEffect(() => {
@@ -128,44 +139,51 @@ function AppContent({ initialSubRoute = 'dashboard' }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#f3f5f9] flex flex-col font-sans text-gray-900 selection:bg-blue-600 selection:text-white">
-      {/* 1. Global Demo Notice Ribbon */}
-      <DemoRibbon />
+    <div className="min-h-screen bg-[#f3f5f9] font-sans text-gray-900 selection:bg-blue-600 selection:text-white">
+      {/* 1. Always-Fixed Sidebar Across All Devices */}
+      <Sidebar
+        currentRoute={currentTab}
+        currentTab={currentTab}
+        onNavigate={navigateTo}
+        onSelectTab={navigateTo}
+        collapsed={sidebarCollapsed}
+        onToggleCollapse={() => setSidebarCollapsed((prev) => !prev)}
+        isMobileOpen={mobileSidebarOpen}
+        onOpenMobile={() => setMobileSidebarOpen(true)}
+        onCloseMobile={() => setMobileSidebarOpen(false)}
+      />
 
-      <div className="flex flex-1 relative overflow-hidden">
-        {/* 2. Desktop Collapsible Sidebar */}
-        <Sidebar
-          currentRoute={currentTab}
-          currentTab={currentTab}
+      {/* 2. Main Workspace Viewport Offset by Fixed Sidebar */}
+      <div
+        className={`min-h-screen flex flex-col min-w-0 overflow-x-clip pb-16 md:pb-0 transition-[padding] duration-300 pl-14 ${
+          sidebarCollapsed ? 'md:pl-20' : 'md:pl-64'
+        }`}
+      >
+        {/* Global Demo Notice Ribbon */}
+        <DemoRibbon />
+
+        {/* Sticky Top Bar */}
+        <TopBar
+          onOpenMobileMenu={() => setMobileSidebarOpen((prev) => !prev)}
+          onOpenCommandPalette={() => setCommandPaletteOpen(true)}
+          onOpenQuickNew={(mode) => setQuickNewModal({ open: true, mode: mode || 'customer' })}
           onNavigate={navigateTo}
-          onSelectTab={navigateTo}
-          collapsed={sidebarCollapsed}
-          onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+          onNavigateTab={navigateTo}
         />
 
-        {/* 3. Main Workspace Viewport */}
-        <div className="flex-1 flex flex-col min-w-0 pb-16 md:pb-0">
-          {/* Top Bar */}
-          <TopBar
-            onOpenCommandPalette={() => setCommandPaletteOpen(true)}
-            onOpenQuickNew={(mode) => setQuickNewModal({ open: true, mode: mode || 'customer' })}
-            onNavigate={navigateTo}
-            onNavigateTab={navigateTo}
-          />
-
-          {/* Page Container */}
-          <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto animate-in fade-in duration-200">
-            {renderPage()}
-          </main>
-        </div>
+        {/* Page Container */}
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto animate-in fade-in duration-200">
+          {renderPage()}
+        </main>
       </div>
 
-      {/* 4. Mobile Bottom Navigation */}
+      {/* 3. Mobile Bottom Navigation */}
       <MobileBottomNav
         currentRoute={currentTab}
         currentTab={currentTab}
         onNavigate={navigateTo}
         onSelectTab={navigateTo}
+        onOpenDrawer={() => setMobileSidebarOpen(true)}
       />
 
       {/* 5. ⌘K Command Palette */}
