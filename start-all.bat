@@ -1,14 +1,14 @@
 @echo off
-title iSuite AI - Full Stack Launcher
+title Karttik AI - Full Stack Launcher
 echo ========================================================
-echo   Launching iSuite AI Backend (Flask) & Frontend (Vite)
+echo   Launching Karttik AI Backend (Flask) ^& Frontend (Vite)
 echo ========================================================
 if exist "%~dp0backend\venv\Scripts\activate.bat" (
-  start "iSuite AI - Backend" cmd /k "cd /d %~dp0backend && call venv\Scripts\activate.bat && python app.py"
+  start "Karttik AI - Backend" cmd /k "cd /d %~dp0backend && call venv\Scripts\activate.bat && python app.py"
 ) else (
-  start "iSuite AI - Backend" cmd /k "cd /d %~dp0backend && python app.py"
+  start "Karttik AI - Backend" cmd /k "cd /d %~dp0backend && python app.py"
 )
-start "iSuite AI - Frontend" cmd /k "cd /d %~dp0 && npm run dev"
+start "Karttik AI - Frontend" cmd /k "cd /d %~dp0 && npm run dev"
 echo.
 echo Both servers have been launched in separate windows:
 echo   - Marketing Site: http://localhost:5173

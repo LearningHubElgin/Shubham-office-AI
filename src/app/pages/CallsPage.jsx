@@ -119,7 +119,7 @@ export default function CallsPage() {
       time: 'Just now',
       sentiment: 'Normal',
       recordingUrl: 'https://example.com/rec.mp3',
-      summary: `Direct call to ${dialNumber} placed via iSuite Cloud Softphone.`,
+      summary: `Direct call to ${dialNumber} placed via Karttik Cloud Softphone.`,
       transcript: [
         { speaker: 'Staff', time: '00:01', text: 'Vanakkam, this is front desk.' },
         { speaker: 'Customer', time: '00:05', text: 'Yes, thank you for calling.' }
@@ -140,7 +140,7 @@ export default function CallsPage() {
             <span className="p-2 rounded-xl bg-blue-50 text-blue-600">
               <Phone className="w-5 h-5" />
             </span>
-            <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">iSuite Phone & AI Call Logs</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">Karttik Phone & AI Call Logs</h1>
           </div>
           <p className="text-xs sm:text-sm text-gray-500 mt-1">
             Cloud softphone dialer, call recordings, speech-to-text transcripts, and AI takeaway summaries.
@@ -160,7 +160,7 @@ export default function CallsPage() {
 
       {activeTab === 'dialer' && (
         <div className="max-w-xs mx-auto bg-white rounded-3xl border border-gray-200/80 shadow-xl p-6 text-center space-y-5 animate-in zoom-in-95 duration-150">
-          <div className="text-xs text-gray-400 font-medium">iSuite VoIP Softphone</div>
+          <div className="text-xs text-gray-400 font-medium">Karttik VoIP Softphone</div>
           
           <input
             type="text"

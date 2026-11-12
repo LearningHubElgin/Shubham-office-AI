@@ -1,10 +1,10 @@
-// Product Data: iSuite AI – Turf
+// Product Data: Karttik AI – Turf
 export const turfData = {
   id: 'turf',
   slug: 'turf',
-  title: 'Turf Booking & Management Software | iSuite AI – Turf',
+  title: 'Turf Booking & Management Software | Karttik AI – Turf',
   metaDescription: 'Turf booking software for box cricket, football and badminton courts: one court board, peak prices, online advance, AI on WhatsApp, from ₹6,999 a year + GST.',
-  canonicalUrl: 'https://isuite.ai/turf/',
+  canonicalUrl: 'https://karttik.ai/turf/',
   themeColor: '#001845',
   locale: 'en_IN',
   ogImage: '/assets/img/og-turf.jpg',
@@ -13,13 +13,13 @@ export const turfData = {
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Turf',
+    badge: 'Karttik AI – Turf',
     h1Main: 'Turf booking software',
     h1Accent: 'with an AI that books your slots',
     subtitle: 'Run your box cricket, football, badminton or pickleball turf on one app: a court board by the hour with the ground in halves, peak and weekend prices, cash and UPI at the desk, online advance, regular teams and an AI that books slots on WhatsApp at any hour.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Turf.", primary: false, isExternal: true },
+      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Turf.", primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹6,999 a year + GST',
@@ -81,8 +81,8 @@ export const turfData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'AT A GLANCE',
-    h2: 'iSuite AI – Turf at a glance',
-    intro: 'iSuite AI – Turf is turf management and booking software for box cricket, football and badminton turfs. Every court’s day sits on one board past midnight, with peak rates, online advances straight into your own Razorpay, and an AI on WhatsApp that books free slots. Plans start from ₹6,999 a year + GST with a 7-day free trial. There is zero commission on your bookings.',
+    h2: 'Karttik AI – Turf at a glance',
+    intro: 'Karttik AI – Turf is turf management and booking software for box cricket, football and badminton turfs. Every court’s day sits on one board past midnight, with peak rates, online advances straight into your own Razorpay, and an AI on WhatsApp that books free slots. Plans start from ₹6,999 a year + GST with a 7-day free trial. There is zero commission on your bookings.',
     facts: [
       {
         label: 'WHAT IT IS',
@@ -102,7 +102,7 @@ export const turfData = {
       },
       {
         label: 'ZERO COMMISSION',
-        desc: 'All online advances go directly into your own Razorpay account. iSuite AI charges zero per-booking commission.',
+        desc: 'All online advances go directly into your own Razorpay account. Karttik AI charges zero per-booking commission.',
       },
       {
         label: 'WORKS ON',
@@ -256,7 +256,7 @@ export const turfData = {
     h2: 'It works the way a turf does',
     comparisonHeader: {
       left: 'TODAY',
-      right: 'WITH ISUITE AI – TURF',
+      right: 'WITH KARTTIK AI – TURF',
     },
     rows: [
       {
@@ -291,7 +291,7 @@ export const turfData = {
     cards: [
       {
         title: 'Where it fits',
-        text: 'iSuite AI – Turf is built for box cricket grounds, football turfs, badminton halls and multi-sport complexes. It manages your court schedule, desk cash, online advances, regular teams, hour packs and customer records. Your existing physical floodlight controls stay as they are.',
+        text: 'Karttik AI – Turf is built for box cricket grounds, football turfs, badminton halls and multi-sport complexes. It manages your court schedule, desk cash, online advances, regular teams, hour packs and customer records. Your existing physical floodlight controls stay as they are.',
       },
       {
         title: 'What the AI is told never to do',
@@ -328,7 +328,7 @@ export const turfData = {
           { title: 'Regular teams & packs', description: 'Pre-paid hour packages and multi-week corporate reservations' },
           { title: 'Desk register on Android', description: 'Collect cash and UPI at the desk with clean daily balance reports' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=turf&package=basic',
+        buyUrl: 'https://app.karttik.ai/buy?industry=turf&package=basic',
       },
       {
         name: 'Turf with Academy',
@@ -348,7 +348,7 @@ export const turfData = {
           { title: 'GST invoices & custom letterhead', description: 'Corporate booking receipts and tournament sponsorship proposals' },
           { title: 'Tournament scheduler', description: 'Knockout and league tournament match bracket organization' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=turf&package=academy',
+        buyUrl: 'https://app.karttik.ai/buy?industry=turf&package=academy',
       },
     ],
     footnotes: [
@@ -371,12 +371,12 @@ export const turfData = {
       {
         id: 'what-is',
         question: 'What is turf booking software?',
-        answer: 'Turf booking software runs a turf’s bookings: every court’s slots on one board, prices by the hour, payments at the desk and online, and a record of each customer. iSuite AI – Turf adds an AI that answers players on WhatsApp, offers free slots with prices, holds one and, with your Razorpay connected, sends the advance link.',
+        answer: 'Turf booking software runs a turf’s bookings: every court’s slots on one board, prices by the hour, payments at the desk and online, and a record of each customer. Karttik AI – Turf adds an AI that answers players on WhatsApp, offers free slots with prices, holds one and, with your Razorpay connected, sends the advance link.',
       },
       {
         id: 'cost',
         question: 'How much does turf booking software cost in India?',
-        answer: 'iSuite AI – Turf has two plans: Turf at ₹6,999 a year + GST, and Turf with Academy, which adds a second user, batches, attendance and memberships, at ₹12,999 a year + GST. Both start with a 7-day free trial. There is zero commission on your bookings.',
+        answer: 'Karttik AI – Turf has two plans: Turf at ₹6,999 a year + GST, and Turf with Academy, which adds a second user, batches, attendance and memberships, at ₹12,999 a year + GST. Both start with a 7-day free trial. There is zero commission on your bookings.',
       },
       {
         id: 'split-ground',
@@ -390,7 +390,7 @@ export const turfData = {
       },
       {
         id: 'commission',
-        question: 'Does iSuite AI take a percentage of my bookings?',
+        question: 'Does Karttik AI take a percentage of my bookings?',
         answer: 'No. Zero commission. Advances and payments go directly into your own Razorpay account and straight to your bank.',
       },
     ],
@@ -400,14 +400,14 @@ export const turfData = {
   ctaBanner: {
     eyebrow: 'START YOUR FREE TRIAL',
     h2: 'Every slot booked. Every rupee counted.',
-    sub: 'Get your turf on iSuite AI today with a 7-day free trial. We set up your courts, rates and rules with you 1-on-1 on WhatsApp.',
+    sub: 'Get your turf on Karttik AI today with a 7-day free trial. We set up your courts, rates and rules with you 1-on-1 on WhatsApp.',
     buttonPrimary: {
       text: 'Start 7-Day Free Trial',
       href: '#plans',
     },
     buttonSecondary: {
       text: 'Book a Live Demo',
-      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Turf.",
+      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Turf.",
     },
     callText: 'Or call +91 93486 33365 to talk with our team',
     callHref: 'tel:+919348633365',
@@ -415,7 +415,7 @@ export const turfData = {
 
   // 11. Family Section
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'Every product is built around the way its industry runs — with its own screens, tools and AI.',
     templateLink: '/templates/',

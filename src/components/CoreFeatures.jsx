@@ -89,7 +89,7 @@ export default function CoreFeatures({ onOpenDemo }) {
             Everything your business runs on, in one app
           </h2>
           <p className="mt-4 sm:mt-5 text-[15px] sm:text-[17px] text-[#475569] max-w-[700px] mx-auto leading-relaxed font-normal">
-            Every iSuite AI is built on one platform, so each improvement reaches all of them the day it ships. Which of these parts come with your product and plan is on the pricing page.
+            Every Karttik AI is built on one platform, so each improvement reaches all of them the day it ships. Which of these parts come with your product and plan is on the pricing page.
           </p>
         </div>
 

@@ -19,10 +19,10 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
         
         {/* Brand Header */}
         <div className="mb-10 sm:mb-12">
-          <a href="/" className="inline-block mb-3.5" aria-label="iSuite AI home">
+          <a href="/" className="inline-block mb-3.5" aria-label="Karttik AI home">
             <img
               src="/logo-wordmark.png"
-              alt="iSuite AI"
+              alt="Karttik AI"
               className="h-8 sm:h-9 w-auto object-contain"
             />
           </a>
@@ -120,12 +120,12 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
             </div>
           </div>
 
-          {/* Column 2: ISUITE AI (top) + TALK TO US (bottom) */}
+          {/* Column 2: KARTTIK AI (top) + TALK TO US (bottom) */}
           <div className="space-y-8 sm:space-y-10">
-            {/* iSuite AI Group */}
+            {/* Karttik AI Group */}
             <div>
               <h4 className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-400 mb-3.5">
-                ISUITE AI
+                KARTTIK AI
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li>
@@ -262,7 +262,7 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
         {/* Bottom Bar & Copyright: exact match to isuite.ai */}
         <div className="pt-8 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-normal">
           <div>
-            © 2026 Magizh NexGen Technologies. iSuite AI is a product of MnT Future.
+            © 2026 Magizh NexGen Technologies. Karttik AI is a product of MnT Future.
           </div>
           <div>
             Made in Madurai, for businesses across India.

@@ -59,14 +59,14 @@ export default function CTABanner({ onOpenDemo, onFindProduct }) {
         <div className="mt-14 sm:mt-16 mb-4 flex justify-center">
           <img
             src="/icon-192.png"
-            alt="iSuite AI"
+            alt="Karttik AI"
             className="w-24 h-24 sm:w-28 sm:h-28 object-contain"
           />
         </div>
 
         {/* Slogan beneath emblem */}
         <p className="text-xs sm:text-[13px] text-slate-400 font-normal">
-          iSuite AI — run your whole business on one app, made for your industry.
+          Karttik AI — run your whole business on one app, made for your industry.
         </p>
 
       </div>

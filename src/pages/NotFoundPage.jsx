@@ -6,7 +6,7 @@ import { ArrowLeft, Home, Building2, Stethoscope, GraduationCap } from 'lucide-r
 export default function NotFoundPage({ onNavigateHome, onNavigateRoute, onOpenDemo, onOpenTrial }) {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = '404 - Page Not Found | iSuite AI';
+    document.title = '404 - Page Not Found | Karttik AI';
   }, []);
 
   return (

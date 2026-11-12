@@ -1,23 +1,23 @@
-// Product Data: iSuite AI – Coaching Institute
+// Product Data: Karttik AI – Coaching Institute
 export const coachingData = {
   id: 'coaching',
   slug: 'coaching',
-  title: 'Coaching Institute Management Software with AI | iSuite AI',
+  title: 'Coaching Institute Management Software with AI | Karttik AI',
   metaDescription: 'Coaching institute management software for India: admissions, batches, attendance, fees in instalments, parent alerts, and an AI that books demo classes.',
-  canonicalUrl: 'https://isuite.ai/coaching/',
+  canonicalUrl: 'https://karttik.ai/coaching/',
   themeColor: '#001d55',
   locale: 'en_IN',
   ogImage: '/assets/img/og-coaching.jpg',
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Coaching Institute',
+    badge: 'Karttik AI – Coaching Institute',
     h1Main: 'Coaching institute management software,',
     h1Accent: 'with an AI counsellor',
     subtitle: 'Enquiries, admissions, batches, attendance and fees in one app — and an AI that answers students and parents and books demo classes on WhatsApp at any hour. Fees go in instalments, reminded on their own.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
+      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.', primary: false, isExternal: true },
     ],
     trustChips: [
       '7-day free trial',
@@ -94,8 +94,8 @@ export const coachingData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'At a glance',
-    h2: 'iSuite AI – Coaching Institute at a glance',
-    intro: 'iSuite AI – Coaching Institute is coaching institute management software for NEET, JEE, board-exam and tuition centres in India. It runs enquiries, admissions, batches, attendance and fee instalments in one app, and its AI counsellor answers parents on WhatsApp, in their language, and books demo classes. Plans start from ₹11,999 a year + GST, with a 7-day free trial.',
+    h2: 'Karttik AI – Coaching Institute at a glance',
+    intro: 'Karttik AI – Coaching Institute is coaching institute management software for NEET, JEE, board-exam and tuition centres in India. It runs enquiries, admissions, batches, attendance and fee instalments in one app, and its AI counsellor answers parents on WhatsApp, in their language, and books demo classes. Plans start from ₹11,999 a year + GST, with a 7-day free trial.',
     facts: [
       {
         label: 'WHAT IT IS',
@@ -384,7 +384,7 @@ export const coachingData = {
     h2: 'Made for coaching centres and tuition classes',
     comparisonHeader: {
       left: 'TODAY',
-      right: 'WITH ISUITE AI – COACHING INSTITUTE',
+      right: 'WITH KARTTIK AI – COACHING INSTITUTE',
     },
     rows: [
       {
@@ -420,7 +420,7 @@ export const coachingData = {
       {
         title: 'Where it fits',
         icon: 'Layers',
-        text: 'Not a school ERP or an LMS. iSuite AI – Coaching Institute keeps enquiries, admissions, batches, attendance, fees and the conversations with students and parents; live classes, tests, marks and timetables stay where you keep them.',
+        text: 'Not a school ERP or an LMS. Karttik AI – Coaching Institute keeps enquiries, admissions, batches, attendance, fees and the conversations with students and parents; live classes, tests, marks and timetables stay where you keep them.',
       },
       {
         title: 'What the AI is told never to do',
@@ -450,7 +450,7 @@ export const coachingData = {
         pricePeriod: '/ year + GST',
         trialText: '7 days free',
         description: 'For tuition centres and small institutes: enquiries to admissions, batches with seats and attendance, fees in instalments with WhatsApp reminders paid at the desk, monthly fee plans, invoices on your letterhead, demo class bookings, email campaigns, and an AI counsellor on WhatsApp.',
-        buyUrl: 'https://app.isuite.ai/buy?package=80dfcf40-2c30-4746-b9ed-365eb23edac2&cycle=yearly&industry=coaching',
+        buyUrl: 'https://app.karttik.ai/buy?package=80dfcf40-2c30-4746-b9ed-365eb23edac2&cycle=yearly&industry=coaching',
         limits: '2 users · 1,000 emails a month · ₹1,000 AI credits a year',
         features: [
           { title: 'Unified inbox', description: 'WhatsApp, Instagram, Messenger and web chat in one inbox for the whole team' },
@@ -475,7 +475,7 @@ export const coachingData = {
           { title: 'Bookings', description: 'Calendars and booking pages' },
           { title: 'Batches', description: 'Your own kind of batch, with the fields you choose — and who is in each.' },
           { title: 'Attendance', description: "Each batch's attendance, a student's month on their page, and a WhatsApp alert to parents the same day a student is absent." },
-          { title: 'Calls (iSuite Phone)', description: 'Call enquiries from your own SIM, logged on the student' },
+          { title: 'Calls (Karttik Phone)', description: 'Call enquiries from your own SIM, logged on the student' },
           { title: 'Call recordings', description: 'Recordings of those calls, saved to the student' },
           { title: 'WhatsApp calls', description: 'Students call your WhatsApp number and it rings on the web and in the app; call them back on WhatsApp' },
           { title: 'Team reports', description: 'AI agent and handoff reports' },
@@ -489,7 +489,7 @@ export const coachingData = {
         pricePeriod: '/ year + GST',
         trialText: '7 days free',
         description: 'For growing institutes: everything in Coaching Basic, plus online fee payments through your own Razorpay, admission campaigns from Meta ads with the ads report, expenses and GST books, a store with stock and orders, Studio for marketing posts, and API access.',
-        buyUrl: 'https://app.isuite.ai/buy?package=034e3591-bdcb-4944-9af2-6a5cca21889f&cycle=yearly&industry=coaching',
+        buyUrl: 'https://app.karttik.ai/buy?package=034e3591-bdcb-4944-9af2-6a5cca21889f&cycle=yearly&industry=coaching',
         limits: '3 users · 2,000 emails a month · ₹2,000 AI credits a year · Unlimited products',
         leadFeature: 'Everything in Coaching Basic, plus:',
         features: [
@@ -508,10 +508,10 @@ export const coachingData = {
       {
         prefix: 'Not sure which package fits? ',
         linkText: 'Book a free 45-minute demo.',
-        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.',
       },
       {
-        text: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from iSuite AI. On Coaching Growth, online fee payments go through your own Razorpay account. ',
+        text: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from Karttik AI. On Coaching Growth, online fee payments go through your own Razorpay account. ',
         linkText: 'Compare with every plan',
         linkUrl: '/pricing/#coaching',
       },
@@ -527,11 +527,11 @@ export const coachingData = {
       {
         id: 'faq-1',
         question: 'What is coaching institute management software?',
-        answer: "Coaching institute management software keeps an institute's daily work in one place: enquiries and admissions, batches and seats, attendance, fees and the messages with students and parents. iSuite AI – Coaching Institute does all of this and adds an AI counsellor that answers enquiries on WhatsApp, Instagram and web chat and books demo classes.",
+        answer: "Coaching institute management software keeps an institute's daily work in one place: enquiries and admissions, batches and seats, attendance, fees and the messages with students and parents. Karttik AI – Coaching Institute does all of this and adds an AI counsellor that answers enquiries on WhatsApp, Instagram and web chat and books demo classes.",
       },
       {
         id: 'faq-2',
-        question: 'How much does iSuite AI – Coaching Institute cost?',
+        question: 'How much does Karttik AI – Coaching Institute cost?',
         answer: 'Coaching Basic is ₹11,999 a year + GST, and Coaching Growth is ₹17,999 a year + GST. Both include AI credits. Growth adds more users, Razorpay payment links, Meta lead ads, the ads report, Studio, purchases and books, the store and API access. Both start with a 7-day free trial. Meta bills WhatsApp message charges separately.',
       },
       {
@@ -577,7 +577,7 @@ export const coachingData = {
       {
         id: 'faq-11',
         question: 'Is there a coaching institute management app?',
-        answer: 'Yes, for your team. The iSuite AI Android app carries the whole system: chats, enquiries, students, batches, attendance and fees, with notifications, plus calls from your own SIM with recordings and AI transcripts. There is no separate student or parent app; students and parents get reminders, alerts and answers on WhatsApp.',
+        answer: 'Yes, for your team. The Karttik AI Android app carries the whole system: chats, enquiries, students, batches, attendance and fees, with notifications, plus calls from your own SIM with recordings and AI transcripts. There is no separate student or parent app; students and parents get reminders, alerts and answers on WhatsApp.',
       },
       {
         id: 'faq-12',
@@ -592,28 +592,28 @@ export const coachingData = {
       {
         id: 'faq-14',
         question: 'Do we need the WhatsApp Business API?',
-        answer: 'Yes, and we set it up with you. Your institute\'s number is connected to Meta\'s official WhatsApp Business Platform, the API, so the AI, reminders and batch messages can run on it. Meta approves the number and each message template, usually in one to two weeks, and bills WhatsApp message charges separately from iSuite AI.',
+        answer: 'Yes, and we set it up with you. Your institute\'s number is connected to Meta\'s official WhatsApp Business Platform, the API, so the AI, reminders and batch messages can run on it. Meta approves the number and each message template, usually in one to two weeks, and bills WhatsApp message charges separately from Karttik AI.',
       },
     ],
   },
 
   // 10. CTA Banner
   ctaBanner: {
-    eyebrow: 'iSuite AI – Coaching Institute',
+    eyebrow: 'Karttik AI – Coaching Institute',
     h2: 'Fill your batches, and collect every instalment on time.',
     sub: 'Start a free trial on the plan that fits your institute, or see it first on a free 45-minute demo.',
     buttonPrimary: { text: 'Start free trial', href: '#plans' },
     buttonSecondary: {
       text: 'Book a demo',
-      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.',
     },
     callText: 'Or call +91 93486 33365',
     callHref: 'tel:+919348633365',
   },
 
-  // 11. The iSuite AI Family
+  // 11. The Karttik AI Family
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'One platform underneath — the AI, payments, marketing and calls — and each product made whole for its own trade.',
     moreLink: {
@@ -628,7 +628,7 @@ export const coachingData = {
     softwareApplication: {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      name: 'iSuite AI – Coaching Institute',
+      name: 'Karttik AI – Coaching Institute',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web, Android',
       offers: [

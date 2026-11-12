@@ -108,7 +108,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
             your business runs
           </h2>
           <p className="mt-4 sm:mt-5 text-[15px] sm:text-[17px] text-[#475569] max-w-[680px] mx-auto leading-relaxed font-normal">
-            Each iSuite AI runs its trade end to end — from the first enquiry to the bill, the payment and the next visit, instalment or renewal.
+            Each Karttik AI runs its trade end to end — from the first enquiry to the bill, the payment and the next visit, instalment or renewal.
           </p>
         </div>
 
@@ -165,7 +165,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
                 >
                   <CurrentIcon className="w-2.5 h-2.5 stroke-[2.5]" />
                 </span>
-                <span>iSuite AI – {currentIndustry.name}</span>
+                <span>Karttik AI – {currentIndustry.name}</span>
               </div>
 
               {/* Title with wrapping matching isuite.ai */}
@@ -215,7 +215,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
                 }}
                 className="px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#06122e] hover:bg-black transition-all shadow-sm active:scale-95 cursor-pointer"
               >
-                Explore iSuite AI – {currentIndustry.shortName}
+                Explore Karttik AI – {currentIndustry.shortName}
               </button>
 
               <span className="text-xs text-slate-500 font-normal">
@@ -285,7 +285,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
                     <div className="bg-[#06122e] text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-[90%] shadow-md flex items-center gap-2">
                       <div className="flex items-center gap-1 text-[10.5px] font-semibold text-[#38bdf8] mr-1">
                         <Sparkles className="w-3 h-3 text-[#38bdf8]" />
-                        <span>iSuite AI</span>
+                        <span>Karttik AI</span>
                       </div>
                       <div className="flex items-center gap-1.5 py-0.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] typing-dot-1"></span>
@@ -302,7 +302,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
                     <div className="bg-[#06122e] text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-[90%] text-xs sm:text-[13px] leading-relaxed shadow-md">
                       <div className="flex items-center gap-1 text-[10.5px] font-semibold text-[#38bdf8] mb-1">
                         <Sparkles className="w-3 h-3 text-[#38bdf8]" />
-                        <span>iSuite AI</span>
+                        <span>Karttik AI</span>
                       </div>
                       <p className="text-white/95 leading-relaxed">
                         {dialogues[1]?.text}
@@ -332,7 +332,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
                     <div className="bg-[#06122e] text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-[90%] shadow-md flex items-center gap-2">
                       <div className="flex items-center gap-1 text-[10.5px] font-semibold text-[#38bdf8] mr-1">
                         <Sparkles className="w-3 h-3 text-[#38bdf8]" />
-                        <span>iSuite AI</span>
+                        <span>Karttik AI</span>
                       </div>
                       <div className="flex items-center gap-1.5 py-0.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] typing-dot-1"></span>
@@ -349,7 +349,7 @@ export default function IndustryPreview({ activeIndustryId, onSelectIndustry, on
                     <div className="bg-[#06122e] text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-[90%] text-xs sm:text-[13px] leading-relaxed shadow-md">
                       <div className="flex items-center gap-1 text-[10.5px] font-semibold text-[#38bdf8] mb-1">
                         <Sparkles className="w-3 h-3 text-[#38bdf8]" />
-                        <span>iSuite AI</span>
+                        <span>Karttik AI</span>
                       </div>
                       <p className="text-white/95 leading-relaxed">
                         {dialogues[3]?.text}

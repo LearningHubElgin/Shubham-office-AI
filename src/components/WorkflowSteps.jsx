@@ -90,7 +90,7 @@ export default function WorkflowSteps({ onOpenDemo }) {
 
         {/* Bottom Footnote Notice: exact match to isuite.ai */}
         <p className="mt-8 sm:mt-10 text-center text-[11px] sm:text-xs text-slate-400 font-normal max-w-2xl mx-auto leading-relaxed">
-          Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks. WhatsApp message charges are billed by Meta, separately from iSuite AI.
+          Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks. WhatsApp message charges are billed by Meta, separately from Karttik AI.
         </p>
 
       </div>

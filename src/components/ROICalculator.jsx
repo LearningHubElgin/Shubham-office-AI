@@ -53,7 +53,7 @@ export default function ROICalculator({ onOpenTrial }) {
             See how much time & revenue you recover each month
           </h2>
           <p className="mt-3 text-base sm:text-lg text-[#475569]">
-            Adjust your monthly inquiry volume and team size to calculate your estimated return with iSuite AI.
+            Adjust your monthly inquiry volume and team size to calculate your estimated return with Karttik AI.
           </p>
         </div>
 

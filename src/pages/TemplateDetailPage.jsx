@@ -12,7 +12,7 @@ export default function TemplateDetailPage({ slug, onNavigateRoute, onNavigateHo
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = `${meta.title} | iSuite AI`;
+    document.title = `${meta.title} | Karttik AI`;
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement('meta');

@@ -280,8 +280,8 @@ export default function MarketingPage() {
           </div>
 
           <div className="p-3 bg-gray-50 rounded-xl font-mono text-xs text-gray-700 space-y-1">
-            <p><span className="text-gray-400">Page:</span> iSuite AI Business Solutions</p>
-            <p><span className="text-gray-400">Webhook URL:</span> https://app.isuite.ai/webhook/meta-leads</p>
+            <p><span className="text-gray-400">Page:</span> Karttik AI Business Solutions</p>
+            <p><span className="text-gray-400">Webhook URL:</span> https://app.karttik.ai/webhook/meta-leads</p>
             <p><span className="text-gray-400">Speed:</span> Instant auto-greeting in ~3.8 seconds</p>
           </div>
 

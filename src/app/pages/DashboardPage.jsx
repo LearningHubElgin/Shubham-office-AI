@@ -127,7 +127,7 @@ export default function DashboardPage({ onNavigate, onNavigateTab }) {
                   <Bot className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-base">iSuite AI Autopilot Performance</h3>
+                  <h3 className="font-bold text-base">Karttik AI Autopilot Performance</h3>
                   <p className="text-xs text-blue-200/80">Automated WhatsApp & Instagram conversations</p>
                 </div>
               </div>

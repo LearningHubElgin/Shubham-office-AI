@@ -606,7 +606,7 @@ export default function DocumentsPage() {
 
               {/* Footer Note */}
               <div className="border-t border-gray-100 pt-3 text-[11px] text-gray-400 text-center">
-                This is a computer-generated invoice issued by iSuite AI. No physical signature required.
+                This is a computer-generated invoice issued by Karttik AI. No physical signature required.
               </div>
             </div>
           </div>

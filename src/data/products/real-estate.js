@@ -1,10 +1,10 @@
-// Product Data: iSuite AI – Real Estate
+// Product Data: Karttik AI – Real Estate
 export const realEstateData = {
   id: 'real-estate',
   slug: 'real-estate',
-  title: 'Real Estate Software for Builders in India | iSuite AI',
+  title: 'Real Estate Software for Builders in India | Karttik AI',
   metaDescription: 'Real estate software for builders: Meta ad leads, site visits, a live flats board, booking links, cost sheets, Tamil AI replies, from ₹19,999 a year + GST.',
-  canonicalUrl: 'https://isuite.ai/real-estate/',
+  canonicalUrl: 'https://karttik.ai/real-estate/',
   themeColor: '#001d55',
   accentColor: '#e08600',
   accentBright: '#ffc56b',
@@ -13,13 +13,13 @@ export const realEstateData = {
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Real Estate',
+    badge: 'Karttik AI – Real Estate',
     h1Main: 'Real estate software for builders,',
     h1Accent: 'with an AI that answers buyers',
     subtitle: 'Leads, site visits, every flat, bookings, payment plans, paperwork and brokers in one app, made for builders, developers and plot promoters in India — and an AI that answers buyers and books site visits on WhatsApp at any hour. A booking amount paid in full books the flat, if it is still free or held for that buyer.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
+      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.', primary: false, isExternal: true },
     ],
     trustChips: [
       '14-day free trial',
@@ -96,8 +96,8 @@ export const realEstateData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'At a glance',
-    h2: 'iSuite AI – Real Estate at a glance',
-    intro: 'iSuite AI – Real Estate is real estate software for builders, developers and plot promoters in India: one app for enquiries, site visits, a live flats board, bookings, payment plans, cost sheets and brokers, with an AI that answers buyers in Tamil, Tanglish or English. Priced from ₹19,999 a year + GST, with a 14-day free trial.',
+    h2: 'Karttik AI – Real Estate at a glance',
+    intro: 'Karttik AI – Real Estate is real estate software for builders, developers and plot promoters in India: one app for enquiries, site visits, a live flats board, bookings, payment plans, cost sheets and brokers, with an AI that answers buyers in Tamil, Tanglish or English. Priced from ₹19,999 a year + GST, with a 14-day free trial.',
     facts: [
       {
         label: 'WHAT IT IS',
@@ -425,7 +425,7 @@ export const realEstateData = {
     h2: 'It speaks the way a sales office does',
     comparisonHeader: {
       left: 'TODAY',
-      right: 'WITH ISUITE AI – REAL ESTATE',
+      right: 'WITH KARTTIK AI – REAL ESTATE',
     },
     rows: [
       {
@@ -461,7 +461,7 @@ export const realEstateData = {
       {
         title: 'Where it fits',
         icon: 'Layers',
-        text: 'Not a construction ERP. iSuite AI – Real Estate keeps enquiries, site visits, flats, bookings, payment plans, brokers and the conversations with buyers; construction, site purchases and stock stay where you keep them, and so can your books.',
+        text: 'Not a construction ERP. Karttik AI – Real Estate keeps enquiries, site visits, flats, bookings, payment plans, brokers and the conversations with buyers; construction, site purchases and stock stay where you keep them, and so can your books.',
       },
       {
         title: 'What the AI is set never to do',
@@ -491,7 +491,7 @@ export const realEstateData = {
         pricePeriod: '/ year + GST',
         trialText: '14 days free',
         description: 'For builders with one or two projects: enquiries from Meta ads, every flat\'s status on one board, site visits, an AI that answers buyers on WhatsApp, cost sheets, a booking amount paid online that books the flat if it is still free for that buyer, payment plans with reminders, and channel partner commissions.',
-        buyUrl: 'https://app.isuite.ai/buy?package=8eb84492-d2f5-4f47-a340-bef49fada81b&cycle=yearly&industry=real-estate',
+        buyUrl: 'https://app.karttik.ai/buy?package=8eb84492-d2f5-4f47-a340-bef49fada81b&cycle=yearly&industry=real-estate',
         limits: '3 users · 1,000 emails a month · ₹750 AI credits a month',
         features: [
           { title: 'Unified inbox', description: 'WhatsApp, Instagram, Messenger and web chat in one inbox for the whole team' },
@@ -513,7 +513,7 @@ export const realEstateData = {
           { title: 'Properties', description: 'Your own kind of property, with the fields you choose — and who is in each.' },
           { title: 'Units & channel partners', description: 'Every flat or plot on one board — available, held, booked, sold — what each buyer is looking for, and your channel partners with their commissions.' },
           { title: 'Cost sheets', description: "A flat's price line by line — base, floor rise, parking, GST, stamp duty — with your logo, or on your own letterhead with Custom quotation design, sent to the buyer on WhatsApp." },
-          { title: 'Calls (iSuite Phone)', description: 'Call enquiries from your own SIM, logged on the buyer' },
+          { title: 'Calls (Karttik Phone)', description: 'Call enquiries from your own SIM, logged on the buyer' },
           { title: 'Call recordings', description: 'Recordings of those calls, saved to the buyer' },
           { title: 'WhatsApp calls', description: 'Buyers call your WhatsApp number and it rings on the web and in the app; call them back on WhatsApp' },
         ],
@@ -526,7 +526,7 @@ export const realEstateData = {
         pricePeriod: '/ year + GST',
         trialText: '14 days free',
         description: 'For builders with a sales team: everything in Real Estate Basic, plus demand letters by construction stage, cost sheets and letters on your own letterhead, quotations and GST invoices, expenses and GST books, email campaigns, team reports, the ads report and Studio for marketing posts.',
-        buyUrl: 'https://app.isuite.ai/buy?package=2f09568a-07b1-4937-9509-9a583ffdb3fd&cycle=yearly&industry=real-estate',
+        buyUrl: 'https://app.karttik.ai/buy?package=2f09568a-07b1-4937-9509-9a583ffdb3fd&cycle=yearly&industry=real-estate',
         limits: '8 users · 4,000 emails a month · ₹1,500 AI credits a month',
         leadFeature: 'Everything in Real Estate Basic, plus:',
         features: [
@@ -548,10 +548,10 @@ export const realEstateData = {
       {
         prefix: 'Not sure which package fits? ',
         linkText: 'Book a free 45-minute demo.',
-        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.',
       },
       {
-        text: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from iSuite AI. Online payments go through your own Razorpay account. ',
+        text: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from Karttik AI. Online payments go through your own Razorpay account. ',
         linkText: 'Compare with every plan',
         linkUrl: '/pricing/#realestate',
       },
@@ -566,12 +566,12 @@ export const realEstateData = {
     faqs: [
       {
         id: 'faq-1',
-        question: 'What is iSuite AI – Real Estate?',
-        answer: 'iSuite AI – Real Estate is real estate software for builders, developers and plot promoters in India. It keeps enquiries from Meta ads and WhatsApp, site visits, every flat on a live board, booking amounts, payment plans, cost sheets and broker commissions in one app, with an AI that answers buyers. Real Estate Growth adds demand letters.',
+        question: 'What is Karttik AI – Real Estate?',
+        answer: 'Karttik AI – Real Estate is real estate software for builders, developers and plot promoters in India. It keeps enquiries from Meta ads and WhatsApp, site visits, every flat on a live board, booking amounts, payment plans, cost sheets and broker commissions in one app, with an AI that answers buyers. Real Estate Growth adds demand letters.',
       },
       {
         id: 'faq-2',
-        question: 'How much does iSuite AI – Real Estate cost?',
+        question: 'How much does Karttik AI – Real Estate cost?',
         answer: 'Real Estate Basic is ₹19,999 a year + GST, with 3 users. Real Estate Growth is ₹34,999 a year + GST, with 8 users, demand letters, GST invoices, team reports and the ads report. Both include free AI credits every month and start with a 14-day free trial. Meta bills WhatsApp message charges separately.',
       },
       {
@@ -582,7 +582,7 @@ export const realEstateData = {
       {
         id: 'faq-4',
         question: 'Can two salespeople hold or sell the same flat?',
-        answer: 'No. In iSuite AI – Real Estate a flat or plot can be held for only one buyer at a time, until the day you choose. When the hold ends, it goes back on sale by itself, and the buyers who asked for a flat like it are listed for your team to call.',
+        answer: 'No. In Karttik AI – Real Estate a flat or plot can be held for only one buyer at a time, until the day you choose. When the hold ends, it goes back on sale by itself, and the buyers who asked for a flat like it are listed for your team to call.',
       },
       {
         id: 'faq-5',
@@ -597,7 +597,7 @@ export const realEstateData = {
       {
         id: 'faq-7',
         question: 'What is a cost sheet for a flat?',
-        answer: 'A cost sheet lists a flat\'s price line by line: base price per sq ft, floor rise, car parking, amenities, deposits, corpus fund, GST, stamp duty and registration. In iSuite AI – Real Estate you set the lines once per project; each flat\'s sheet is worked out from its area and floor and sent as a PDF on WhatsApp.',
+        answer: 'A cost sheet lists a flat\'s price line by line: base price per sq ft, floor rise, car parking, amenities, deposits, corpus fund, GST, stamp duty and registration. In Karttik AI – Real Estate you set the lines once per project; each flat\'s sheet is worked out from its area and floor and sent as a PDF on WhatsApp.',
       },
       {
         id: 'faq-8',
@@ -627,7 +627,7 @@ export const realEstateData = {
       {
         id: 'faq-13',
         question: 'Does it work on mobile for the sales team?',
-        answer: 'Yes, on Android. Your sales team can use the whole app in the iSuite AI Android app, with alerts for new chats. They can call buyers from their own SIM. With the phone\'s call recording on, recordings are saved to the buyer, and with transcripts switched on, the AI writes one, so a manager can check what was promised.',
+        answer: 'Yes, on Android. Your sales team can use the whole app in the Karttik AI Android app, with alerts for new chats. They can call buyers from their own SIM. With the phone\'s call recording on, recordings are saved to the buyer, and with transcripts switched on, the AI writes one, so a manager can check what was promised.',
       },
       {
         id: 'faq-14',
@@ -637,7 +637,7 @@ export const realEstateData = {
       {
         id: 'faq-15',
         question: 'Does it replace our ERP or accounting software?',
-        answer: 'Not your ERP. iSuite AI – Real Estate runs the sales office: enquiries, site visits, flats, bookings, payment plans, cost sheets and brokers. Construction, site purchases and stock stay in your ERP. Your accounting software can stay too, though Real Estate Growth adds GST invoices and purchases and books if you want them here. It is not for managing rentals.',
+        answer: 'Not your ERP. Karttik AI – Real Estate runs the sales office: enquiries, site visits, flats, bookings, payment plans, cost sheets and brokers. Construction, site purchases and stock stay in your ERP. Your accounting software can stay too, though Real Estate Growth adds GST invoices and purchases and books if you want them here. It is not for managing rentals.',
       },
       {
         id: 'faq-16',
@@ -649,21 +649,21 @@ export const realEstateData = {
 
   // 10. CTA Banner
   ctaBanner: {
-    eyebrow: 'iSuite AI – Real Estate',
+    eyebrow: 'Karttik AI – Real Estate',
     h2: 'Answer buyers tonight. Book the flat tomorrow.',
     sub: 'Start a 14-day free trial on the plan that fits your projects, or see it first on a free 45-minute demo.',
     buttonPrimary: { text: 'Start free trial', href: '#plans' },
     buttonSecondary: {
       text: 'Book a demo',
-      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.',
     },
     callText: 'Or call +91 93486 33365',
     callHref: 'tel:+919348633365',
   },
 
-  // 11. The iSuite AI Family
+  // 11. The Karttik AI Family
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'One platform underneath — the AI, payments, marketing and calls — and each product made whole for its own trade.',
     moreLink: {
@@ -678,7 +678,7 @@ export const realEstateData = {
     softwareApplication: {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      name: 'iSuite AI – Real Estate',
+      name: 'Karttik AI – Real Estate',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web, Android',
       offers: [

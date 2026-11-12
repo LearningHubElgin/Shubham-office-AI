@@ -111,7 +111,7 @@ export default function ComparisonMatrix({ onSelectIndustry, onOpenDemo }) {
             fit every business
           </h2>
           <p className="mt-4 sm:mt-5 text-[15px] sm:text-[17px] text-[#475569] max-w-[720px] mx-auto leading-relaxed font-normal">
-            Generic software makes you learn its words and build your own setup. Each iSuite AI arrives already shaped like your business — its screens, its tools, its numbers and its rules.
+            Generic software makes you learn its words and build your own setup. Each Karttik AI arrives already shaped like your business — its screens, its tools, its numbers and its rules.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function ComparisonMatrix({ onSelectIndustry, onOpenDemo }) {
                     </div>
                     <div>
                       <span className="text-[10px] sm:text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-0.5">
-                        ISUITE AI
+                        KARTTIK AI
                       </span>
                       <h3 className="text-lg sm:text-xl font-bold text-[#06122e] leading-snug">
                         {trade.name}

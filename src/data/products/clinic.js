@@ -1,23 +1,23 @@
-// Product Data: iSuite AI – Clinic
+// Product Data: Karttik AI – Clinic
 export const clinicData = {
   id: 'clinic',
   slug: 'clinics',
-  title: 'Clinic Management Software with AI Front Desk | iSuite AI',
+  title: 'Clinic Management Software with AI Front Desk | Karttik AI',
   metaDescription: 'Run your dental, skin, eye or physio clinic on one app with an AI front desk that answers and books appointments on WhatsApp 24/7.',
-  canonicalUrl: 'https://isuite.ai/clinics/',
+  canonicalUrl: 'https://karttik.ai/clinics/',
   themeColor: '#001845',
   locale: 'en_IN',
   ogImage: '/assets/img/og-clinic.jpg',
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Clinic',
+    badge: 'Karttik AI – Clinic',
     h1Main: 'Clinic management software',
     h1Accent: 'with an AI front desk',
     subtitle: "Run your dental, skin, eye or physio clinic on one app. It is clinic software made for Indian clinics: each doctor's diary, the day's OPD board, patients, prescriptions and GST bills. An AI answers patients and books, moves or cancels on WhatsApp at any hour, and reminders and follow-ups go out on their own.",
     buttons: [
       { text: 'Start free trial', href: '#pricing', primary: true },
-      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.', primary: false, isExternal: true },
+      { text: 'Book a demo', href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.', primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹11,999 a year + GST',
@@ -65,8 +65,8 @@ export const clinicData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'AT A GLANCE',
-    h2: 'iSuite AI – Clinic at a glance',
-    intro: "iSuite AI – Clinic is clinic management software for Indian clinics: each doctor's diary, the day's OPD board, patient records, prescriptions and GST bills in one app, with an AI front desk that answers patients and books on WhatsApp. Plans start from ₹11,999 a year + GST, with a 7-day free trial. Made in Madurai and set up with you.",
+    h2: 'Karttik AI – Clinic at a glance',
+    intro: "Karttik AI – Clinic is clinic management software for Indian clinics: each doctor's diary, the day's OPD board, patient records, prescriptions and GST bills in one app, with an AI front desk that answers patients and books on WhatsApp. Plans start from ₹11,999 a year + GST, with a 7-day free trial. Made in Madurai and set up with you.",
     facts: [
       {
         label: 'WHAT IT IS',
@@ -276,7 +276,7 @@ export const clinicData = {
     h2: 'It speaks the way a clinic does',
     comparisonHeader: {
       left: 'Today',
-      right: 'With iSuite AI – Clinic',
+      right: 'With Karttik AI – Clinic',
     },
     rows: [
       {
@@ -327,7 +327,7 @@ export const clinicData = {
       {
         title: 'Where it fits',
         icon: 'Layers',
-        text: 'Not a full EMR. iSuite AI – Clinic keeps appointments, patient details and files, vitals, prescriptions, visit summaries and bills. Dental charting, lab result entry, pharmacy stock and ABDM health records are not in it, so a clinic that needs those keeps its EMR or lab software alongside.',
+        text: 'Not a full EMR. Karttik AI – Clinic keeps appointments, patient details and files, vitals, prescriptions, visit summaries and bills. Dental charting, lab result entry, pharmacy stock and ABDM health records are not in it, so a clinic that needs those keeps its EMR or lab software alongside.',
       },
       {
         title: 'What the AI is set never to do',
@@ -357,7 +357,7 @@ export const clinicData = {
         pricePeriod: '/ year + GST',
         trialText: 'Includes 7-day free trial',
         description: 'For a clinic with one doctor or a small team: an AI receptionist that answers patients and books appointments on WhatsApp, reminders, patient files, prescriptions, bills and treatment fees in parts paid at the desk, health packages, and calls from your own SIM.',
-        buyUrl: 'https://app.isuite.ai/buy?package=54783cc5-a1b7-4476-920b-7ef3c721ea3c&cycle=yearly&industry=clinics',
+        buyUrl: 'https://app.karttik.ai/buy?package=54783cc5-a1b7-4476-920b-7ef3c721ea3c&cycle=yearly&industry=clinics',
         limits: [
           '2 users',
           '1,000 emails a month',
@@ -381,7 +381,7 @@ export const clinicData = {
           { title: 'Instagram comment & DM automation', description: 'Reply to comments on your posts, DM the people who comment, and answer Instagram DMs automatically' },
           { title: 'Appointments', description: 'Calendars and appointment pages' },
           { title: 'Prescriptions', description: "A patient's prescriptions and visit summaries — medicines, tests, advice and the next visit — printed with the clinic's name and logo, or on its own letterhead with Custom quotation design, and sent on WhatsApp." },
-          { title: 'Calls (iSuite Phone)', description: 'Call enquiries from your own SIM, logged on the patient' },
+          { title: 'Calls (Karttik Phone)', description: 'Call enquiries from your own SIM, logged on the patient' },
           { title: 'Call recordings', description: 'Recordings of those calls, saved to the patient' },
           { title: 'WhatsApp calls', description: 'Patients call your WhatsApp number and it rings on the web and in the app; call them back on WhatsApp' },
           { title: 'Team reports', description: 'AI agent and handoff reports' },
@@ -395,7 +395,7 @@ export const clinicData = {
         pricePeriod: '/ year + GST',
         trialText: 'Includes 7-day free trial',
         description: 'For busy and multi-doctor clinics: everything in Clinic Basic, plus treatment estimates, prescriptions and bills on your own letterhead, expenses and GST books, email campaigns, web forms, Meta ad leads with the ads report, and Studio for marketing posts.',
-        buyUrl: 'https://app.isuite.ai/buy?package=48496eb4-4dd6-4d50-8878-0f9c2c1dfd00&cycle=yearly&industry=clinics',
+        buyUrl: 'https://app.karttik.ai/buy?package=48496eb4-4dd6-4d50-8878-0f9c2c1dfd00&cycle=yearly&industry=clinics',
         limits: [
           '4 users',
           '2,000 emails a month',
@@ -419,10 +419,10 @@ export const clinicData = {
       {
         prefix: 'Not sure which package fits? ',
         linkText: 'Book a free 45-minute demo',
-        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+        linkUrl: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.',
       },
       {
-        prefix: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from iSuite AI. ',
+        prefix: 'Meta decides approval for the WhatsApp Business Platform; it usually takes 1–2 weeks, and each WhatsApp template is approved by Meta too. WhatsApp message charges are billed by Meta, separately from Karttik AI. ',
         linkText: 'Compare with every plan',
         linkUrl: '/pricing/#clinic',
       },
@@ -437,12 +437,12 @@ export const clinicData = {
     faqs: [
       {
         id: 'clinic-faq-1',
-        question: 'What is iSuite AI – Clinic?',
-        answer: 'iSuite AI – Clinic is clinic management software made in Madurai for Indian clinics. It keeps a diary for each doctor, patient records and files, the day’s OPD board, prescriptions, GST bills and reminders in one app, with an AI front desk that answers patients and books, moves or cancels appointments on WhatsApp, Instagram, Messenger and web chat.',
+        question: 'What is Karttik AI – Clinic?',
+        answer: 'Karttik AI – Clinic is clinic management software made in Madurai for Indian clinics. It keeps a diary for each doctor, patient records and files, the day’s OPD board, prescriptions, GST bills and reminders in one app, with an AI front desk that answers patients and books, moves or cancels appointments on WhatsApp, Instagram, Messenger and web chat.',
       },
       {
         id: 'clinic-faq-2',
-        question: 'How much does iSuite AI – Clinic cost?',
+        question: 'How much does Karttik AI – Clinic cost?',
         answer: 'Clinic plans start from ₹11,999 a year + GST. Clinic Basic has 2 users. Clinic Growth, ₹22,999 a year + GST, has 4 users and adds treatment estimates, your own letterhead, email campaigns, Meta lead ads, and GSTR-1 and Tally exports. Both start with a 7-day free trial, and Meta bills WhatsApp charges separately.',
       },
       {
@@ -462,7 +462,7 @@ export const clinicData = {
       },
       {
         id: 'clinic-faq-6',
-        question: 'Is iSuite AI – Clinic an EMR?',
+        question: 'Is Karttik AI – Clinic an EMR?',
         answer: 'No, it is not a full electronic medical record system. It keeps appointments, patient details and files, vitals, prescriptions, visit summaries and bills. It does not do dental charting, lab result entry, pharmacy stock or ABDM health records, so clinics that need those keep their EMR or lab software alongside it.',
       },
       {
@@ -487,7 +487,7 @@ export const clinicData = {
       },
       {
         id: 'clinic-faq-11',
-        question: 'Which types of clinics is iSuite AI – Clinic made for?',
+        question: 'Which types of clinics is Karttik AI – Clinic made for?',
         answer: 'Clinics that run on appointments: dental, skin and aesthetic, eye, physiotherapy, ENT, paediatric, ayurveda and homeopathy clinics, polyclinics, and diagnostic labs that send reports to patients. Each doctor has a diary, each service has its own length and fee, and the clinic setup, with patient stages, reminder templates and roles, is ready the day you buy.',
       },
       {
@@ -498,16 +498,16 @@ export const clinicData = {
       {
         id: 'clinic-faq-13',
         question: 'Is there a clinic management app for Android?',
-        answer: 'Yes. The iSuite AI Android app holds the whole system, including the inbox, appointments, patients and alerts, so a doctor can work from the phone. It can also place calls from your own SIM, record them and add an AI transcript to the patient’s page. With WhatsApp calling switched on, patients who call your WhatsApp number ring in the app.',
+        answer: 'Yes. The Karttik AI Android app holds the whole system, including the inbox, appointments, patients and alerts, so a doctor can work from the phone. It can also place calls from your own SIM, record them and add an AI transcript to the patient’s page. With WhatsApp calling switched on, patients who call your WhatsApp number ring in the app.',
       },
       {
         id: 'clinic-faq-14',
-        question: 'How soon can a clinic start using iSuite AI?',
+        question: 'How soon can a clinic start using Karttik AI?',
         answer: 'The clinic setup is in place the day you buy: patient stages, the doctor’s diary and services, reminder and report templates, and Doctor and Front desk roles. You add your doctors, timings, fees and address. Meta approves your WhatsApp Business number, usually in 1–2 weeks, and the MnT Future team helps you through it.',
       },
       {
         id: 'clinic-faq-15',
-        question: 'Is there a free version of iSuite AI – Clinic?',
+        question: 'Is there a free version of Karttik AI – Clinic?',
         answer: 'There is no free-forever plan. Every clinic plan starts with a 7-day free trial: you approve Razorpay auto-debit at the start, and the first yearly payment is taken only when the trial ends. Cancel before then and you pay nothing. You can also see the software first on a free 45-minute demo.',
       },
       {
@@ -520,21 +520,21 @@ export const clinicData = {
 
   // 10. CTA Banner
   ctaBanner: {
-    eyebrow: 'iSuite AI – Clinic',
+    eyebrow: 'Karttik AI – Clinic',
     h2: 'Give your front desk an assistant that never sleeps.',
     sub: 'Start a 7-day free trial on the plan that fits your clinic, or see it first on a free 45-minute demo.',
     buttonPrimary: { text: 'Start free trial', href: '#plans' },
     buttonSecondary: {
       text: 'Book a demo',
-      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20iSuite%20AI.',
+      href: 'https://wa.me/919348633365?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20of%20Karttik%20AI.',
     },
     callText: 'Or call +91 93486 33365',
     callHref: 'tel:+919348633365',
   },
 
-  // 11. The iSuite AI Family
+  // 11. The Karttik AI Family
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'One platform underneath — the AI, payments, marketing and calls — and each product made whole for its own trade.',
     moreLink: null,
