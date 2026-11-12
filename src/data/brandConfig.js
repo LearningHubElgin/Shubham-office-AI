@@ -2,8 +2,8 @@
 // Easy to modify brand, company, contact details, or policy text across all pages.
 export const brandConfig = {
   brandName: 'Karttik AI',
-  companyName: 'MnT Future',
-  legalEntity: 'Magizh NexGen Technologies',
+  companyName: 'LearningHub Software Solution',
+  legalEntity: 'LearningHub Software Solution',
   founder: 'Udhayaseelan Renganathan',
   founderLinkedIn: 'https://www.linkedin.com/in/udhayaseelan-renganathan/',
   address: '3/501, Subash Street, Muneeswarar Nagar, Iyer Bungalow, Madurai - 625014, Tamil Nadu, India',
@@ -26,13 +26,13 @@ export const brandConfig = {
   appSignupUrl: '/app/signup',
   appDashboardUrl: '/app/',
   deleteAccountUrl: 'https://app.karttik.ai/delete-account',
-  companySiteUrl: 'https://mntfuture.com',
+  companySiteUrl: 'https://karttik.ai',
   logos: {
     dark: '/logo-wordmark.png',
     light: '/logo-white-wordmark.png',
     icon: '/logo.png',
   },
-  copyrightText: '© 2026 Magizh NexGen Technologies. Karttik AI is a product of MnT Future.',
+  copyrightText: '© 2026 LearningHub Software Solution. All rights reserved.',
   madeInText: 'Made in Madurai, for businesses across India.',
 };
 

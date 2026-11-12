@@ -374,7 +374,7 @@ export const gymData = {
       {
         id: 'what-is',
         question: 'What is Karttik AI – Gym & Fitness Studio?',
-        answer: 'Karttik AI – Gym & Fitness Studio is gym management software for Indian gyms and yoga, Zumba and CrossFit studios, made by MnT Future in Madurai. Enquiries, members, QR check-ins, memberships with freezes and online payments sit in one app, with an AI front desk that answers plans and books free trials. Gym Growth adds PT packs and body progress.',
+        answer: 'Karttik AI – Gym & Fitness Studio is gym management software for Indian gyms and yoga, Zumba and CrossFit studios, made by LearningHub Software Solution. Enquiries, members, QR check-ins, memberships with freezes and online payments sit in one app, with an AI front desk that answers plans and books free trials. Gym Growth adds PT packs and body progress.',
       },
       {
         id: 'cost',

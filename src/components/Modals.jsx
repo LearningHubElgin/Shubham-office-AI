@@ -401,10 +401,10 @@ export default function Modals({
               {policyTitle === 'Refund & Cancellation' && (
                 <>
                   <p>
-                    <strong>30-Day Money-Back Guarantee:</strong> At Mktph Techcenter Technologies, we want you to experience genuine operational ROI. If within 30 calendar days of going live with Karttik AI you are not fully satisfied with our software, you are entitled to a 100% refund of your software subscription fees.
+                    <strong>30-Day Money-Back Guarantee:</strong> At LearningHub Software Solution, we want you to experience genuine operational ROI. If within 30 calendar days of going live with Karttik AI you are not fully satisfied with our software, you are entitled to a 100% refund of your software subscription fees.
                   </p>
                   <p>
-                    <strong>Cancellation Process:</strong> Simply send an email to <span className="text-blue-600">info@mktphtech.com</span> or message our support number at <span className="text-blue-600">+91 93486 33365</span> with your account ID. Refunds are credited back to the original UPI/card within 5-7 business days.
+                    <strong>Cancellation Process:</strong> Simply send an email to <span className="text-blue-600">info@mntfuture.com</span> or message our support number at <span className="text-blue-600">+91 93486 33365</span> with your account ID. Refunds are credited back to the original UPI/card within 5-7 business days.
                   </p>
                 </>
               )}
@@ -453,10 +453,10 @@ export default function Modals({
               {policyTitle === 'About Us' && (
                 <>
                   <p>
-                    <strong>Mktph Techcenter Technologies:</strong> A unit of Mkt Future, based in Madurai, Tamil Nadu. We specialize in vertical enterprise automation, deep AI language models for regional Indian languages, and frictionless WhatsApp commerce.
+                    <strong>LearningHub Software Solution:</strong> Based in Madurai, Tamil Nadu, we specialize in vertical enterprise automation, deep AI language models for regional Indian languages, and frictionless WhatsApp commerce.
                   </p>
                   <p>
-                    Headquarters: Madurai, Tamil Nadu, India. Contact: info@mktphtech.com | Phone: +91 93486 33365.
+                    Headquarters: Madurai, Tamil Nadu, India. Contact: info@mntfuture.com | Phone: +91 93486 33365.
                   </p>
                 </>
               )}

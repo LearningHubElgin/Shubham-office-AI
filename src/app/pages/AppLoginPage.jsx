@@ -73,7 +73,7 @@ export default function AppLoginPage({ onNavigateToApp, onNavigateToSignup }) {
           </a>
         </div>
         <p className="text-[12px] text-gray-500 font-normal">
-          Karttik AI (Product of MnT Future)
+          Karttik AI (Product of LearningHub Software Solution)
         </p>
       </div>
 
@@ -198,7 +198,7 @@ export default function AppLoginPage({ onNavigateToApp, onNavigateToSignup }) {
       {/* Footer Credentials & Protection */}
       <div className="text-center pb-4 space-y-2">
         <p className="text-[11px] text-gray-400">
-          © 2026 Karttik AI (Product of MnT Future). All rights reserved.
+          © 2026 LearningHub Software Solution. All rights reserved.
         </p>
         <div className="flex items-center justify-center gap-4 text-[11px] text-gray-500 font-normal">
           <span className="flex items-center gap-1">

@@ -1,16 +1,16 @@
 export const aboutData = {
-  title: 'About Karttik AI – MnT Future, Software Company in Madurai',
+  title: 'About Karttik AI – LearningHub Software Solution',
   metaDescription:
-    'Karttik AI is made by MnT Future (Magizh NexGen Technologies) in Madurai, Tamil Nadu. We build WhatsApp-first AI software for clinics, coaching institutes, real estate, gyms, salons, field service and turfs across India.',
+    'Karttik AI is made by LearningHub Software Solution. We build WhatsApp-first AI software for clinics, coaching institutes, real estate, gyms, salons, field service and turfs across India.',
   eyebrow: 'About',
   heading: 'Built in Madurai, for how India sells',
   lead:
-    'Karttik AI is made by MnT Future (Magizh NexGen Technologies), a technology company in Madurai, Tamil Nadu. We build it for the businesses around us — the clinics, coaching institutes, builders, gyms, salons, service companies and turfs that talk to their customers on WhatsApp every day.',
+    'Karttik AI is built by LearningHub Software Solution. We build it for the businesses around us — the clinics, coaching institutes, builders, gyms, salons, service companies and turfs that talk to their customers on WhatsApp every day.',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'MnT Future (Magizh NexGen Technologies)',
-    url: 'https://mntfuture.com',
+    name: 'LearningHub Software Solution',
+    url: 'https://karttik.ai',
     logo: 'https://karttik.ai/logo-wordmark.png',
     founder: {
       '@type': 'Person',
