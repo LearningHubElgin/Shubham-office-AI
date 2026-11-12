@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { AppProvider, useAppStore } from './store/appStore';
-import DemoRibbon from './components/DemoRibbon';
 import Sidebar from './components/Sidebar';
 import TopBar from './components/TopBar';
 import MobileBottomNav from './components/MobileBottomNav';
@@ -159,9 +158,6 @@ function AppContent({ initialSubRoute = 'dashboard' }) {
           sidebarCollapsed ? 'md:pl-20' : 'md:pl-64'
         }`}
       >
-        {/* Global Demo Notice Ribbon */}
-        <DemoRibbon />
-
         {/* Sticky Top Bar */}
         <TopBar
           onOpenMobileMenu={() => setMobileSidebarOpen((prev) => !prev)}
