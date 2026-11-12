@@ -83,7 +83,7 @@ export const pricingData = {
     {
       id: 'gst',
       question: 'Is GST included in the price?',
-      answer: 'No. Every price is in rupees before GST, and 18% GST is added when you pay: Clinic Basic, for example, is ₹11,999 a year + GST. You buy from Magizh NexGen Technologies, GSTIN 33EACPR6502N1ZH, and get a GST invoice by email for every payment.',
+      answer: 'No. Every price is in rupees before GST, and 18% GST is added when you pay: Clinic Basic, for example, is ₹11,999 a year + GST. You buy from LearningHub Software Solution, GSTIN 33EACPR6502N1ZH, and get a GST invoice by email for every payment.',
     },
     {
       id: 'billing-frequency',

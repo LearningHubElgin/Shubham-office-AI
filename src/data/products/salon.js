@@ -371,7 +371,7 @@ export const salonData = {
       {
         id: 'what-is',
         question: 'What is Karttik AI – Salon & Spa?',
-        answer: 'Karttik AI – Salon & Spa is salon management software made by MnT Future in Madurai. It gives you a stylist day board, client cards with private colour notes, GST billing, visit reminders, and memberships. On Salon Growth, it also includes stylist commissions and an AI receptionist on WhatsApp.',
+        answer: 'Karttik AI – Salon & Spa is salon management software made by LearningHub Software Solution. It gives you a stylist day board, client cards with private colour notes, GST billing, visit reminders, and memberships. On Salon Growth, it also includes stylist commissions and an AI receptionist on WhatsApp.',
       },
       {
         id: 'ai-difference',

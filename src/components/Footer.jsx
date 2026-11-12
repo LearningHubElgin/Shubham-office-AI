@@ -234,12 +234,11 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
                 </li>
                 <li>
                   <a
-                    href="https://mntfuture.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/about/"
+                    onClick={(e) => handleNav(e, '/about/')}
                     className="hover:text-[#1663ff] transition-colors block"
                   >
-                    MnT Future
+                    LearningHub Software Solution
                   </a>
                 </li>
                 {onOpenAdmin && (
@@ -259,10 +258,10 @@ export default function Footer({ onSelectIndustry, onOpenDemo, onOpenPolicyModal
 
         </div>
 
-        {/* Bottom Bar & Copyright: exact match to isuite.ai */}
+        {/* Bottom Bar & Copyright */}
         <div className="pt-8 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-normal">
           <div>
-            © 2026 Magizh NexGen Technologies. Karttik AI is a product of MnT Future.
+            © 2026 LearningHub Software Solution. All rights reserved.
           </div>
           <div>
             Made in Madurai, for businesses across India.

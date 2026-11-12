@@ -15,7 +15,7 @@ export default function PolicyPage({ slug, onNavigateRoute, onNavigateHome, onOp
       metaDesc.name = 'description';
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = `${policy.title} for Karttik AI by Magizh NexGen Technologies.`;
+    metaDesc.content = `${policy.title} for Karttik AI by LearningHub Software Solution.`;
   }, [policy, slug]);
 
   return (

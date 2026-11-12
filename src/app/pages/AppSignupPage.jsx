@@ -436,7 +436,7 @@ export default function AppSignupPage({ initialIndustry = 'clinic', initialPlan 
 
       {/* Footer */}
       <div className="text-center pb-4 text-[11px] text-gray-400">
-        © 2026 Karttik AI (Product of MnT Future). All rights reserved.
+        © 2026 LearningHub Software Solution. All rights reserved.
       </div>
     </div>
   );

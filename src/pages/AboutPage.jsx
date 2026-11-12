@@ -124,7 +124,7 @@ export default function AboutPage({
           The company
         </h2>
         <p className="mb-4">
-          MnT Future was founded by{' '}
+          Karttik AI is a product of LearningHub Software Solution, built with{' '}
           <a
             href="https://www.linkedin.com/in/udhayaseelan-renganathan/"
             target="_blank"
@@ -133,14 +133,14 @@ export default function AboutPage({
           >
             Udhayaseelan Renganathan
           </a>
-          , who leads Karttik AI from Madurai.
+          {' '}and team in Madurai.
         </p>
 
         {/* Semantic address box */}
         <div className="my-5 p-5 sm:p-6 rounded-[18px] bg-white border border-[#e5e9f0] shadow-xs">
           <address className="not-italic space-y-1 text-[15px] sm:text-[16px] text-[#202c45] font-normal leading-relaxed">
             <p className="font-semibold text-[#06122e]">
-              Magizh NexGen Technologies
+              LearningHub Software Solution
             </p>
             <p>
               3/501, Subash Street, Muneeswarar Nagar, Iyer Bungalow, Madurai - 625014, Tamil Nadu, India
@@ -161,14 +161,12 @@ export default function AboutPage({
         </div>
 
         <p className="mb-2">
-          MnT Future’s own website is{' '}
+          Learn more at{' '}
           <a
-            href="https://mntfuture.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
             className="text-[#1663ff] underline hover:text-blue-700 font-medium"
           >
-            mntfuture.com
+            karttik.ai
           </a>
           .
         </p>

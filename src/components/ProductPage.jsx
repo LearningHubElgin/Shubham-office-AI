@@ -2096,7 +2096,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li><button onClick={onNavigateHome} className="hover:text-slate-900 text-left">About</button></li>
-                <li><a href={brandConfig.companySiteUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-900">{brandConfig.companyName}</a></li>
+                <li><a href="/about/" className="hover:text-slate-900">{brandConfig.companyName}</a></li>
                 <li><a href="/#policies" className="hover:text-slate-900">Terms & Privacy</a></li>
               </ul>
             </div>

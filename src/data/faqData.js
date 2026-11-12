@@ -67,7 +67,7 @@ export const faqs = [
   {
     id: 'who-makes-karttik',
     question: 'Who makes Karttik AI?',
-    answer: 'MnT Future, based in Madurai, Tamil Nadu. We build software for businesses in India.'
+    answer: 'LearningHub Software Solution, building software for businesses across India.'
   },
   {
     id: 'same-as-erp',
