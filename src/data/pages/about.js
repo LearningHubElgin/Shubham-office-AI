@@ -3,7 +3,7 @@ export const aboutData = {
   metaDescription:
     'Karttik AI is made by LearningHub Software Solution. We build WhatsApp-first AI software for clinics, coaching institutes, real estate, gyms, salons, field service and turfs across India.',
   eyebrow: 'About',
-  heading: 'Built in Madurai, for how India sells',
+  heading: 'Built in Kolkata, for how India sells',
   lead:
     'Karttik AI is built by LearningHub Software Solution. We build it for the businesses around us — the clinics, coaching institutes, builders, gyms, salons, service companies and turfs that talk to their customers on WhatsApp every day.',
   jsonLd: {

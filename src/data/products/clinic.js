@@ -66,7 +66,7 @@ export const clinicData = {
     id: 'at-a-glance',
     eyebrow: 'AT A GLANCE',
     h2: 'Karttik AI – Clinic at a glance',
-    intro: "Karttik AI – Clinic is clinic management software for Indian clinics: each doctor's diary, the day's OPD board, patient records, prescriptions and GST bills in one app, with an AI front desk that answers patients and books on WhatsApp. Plans start from ₹11,999 a year + GST, with a 7-day free trial. Made in Madurai and set up with you.",
+    intro: "Karttik AI – Clinic is clinic management software for Indian clinics: each doctor's diary, the day's OPD board, patient records, prescriptions and GST bills in one app, with an AI front desk that answers patients and books on WhatsApp. Plans start from ₹11,999 a year + GST, with a 7-day free trial. Made in Kolkata and set up with you.",
     facts: [
       {
         label: 'WHAT IT IS',
@@ -438,7 +438,7 @@ export const clinicData = {
       {
         id: 'clinic-faq-1',
         question: 'What is Karttik AI – Clinic?',
-        answer: 'Karttik AI – Clinic is clinic management software made in Madurai for Indian clinics. It keeps a diary for each doctor, patient records and files, the day’s OPD board, prescriptions, GST bills and reminders in one app, with an AI front desk that answers patients and books, moves or cancels appointments on WhatsApp, Instagram, Messenger and web chat.',
+        answer: 'Karttik AI – Clinic is clinic management software made in Kolkata for Indian clinics. It keeps a diary for each doctor, patient records and files, the day’s OPD board, prescriptions, GST bills and reminders in one app, with an AI front desk that answers patients and books, moves or cancels appointments on WhatsApp, Instagram, Messenger and web chat.',
       },
       {
         id: 'clinic-faq-2',
