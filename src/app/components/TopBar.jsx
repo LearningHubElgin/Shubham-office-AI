@@ -65,12 +65,13 @@ export default function TopBar({
 
   return (
     <header className="h-16 bg-white border-b border-gray-200/80 px-4 sm:px-6 flex items-center justify-between gap-4 sticky top-0 z-30 shadow-2xs select-none">
-      {/* Left: Mobile hamburger + Global Search / Command Palette */}
-      <div className="flex items-center gap-3 flex-1 max-w-lg">
+      {/* Left: Mobile menu toggle + Global Search / Command Palette */}
+      <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0 max-w-lg">
         <button
+          type="button"
           onClick={onOpenMobileMenu}
-          className="lg:hidden p-2 rounded-xl text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
-          aria-label="Open sidebar"
+          className="md:hidden p-2 rounded-xl text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors shrink-0 cursor-pointer"
+          aria-label="Toggle full sidebar"
         >
           <Menu className="w-5 h-5" />
         </button>
@@ -78,11 +79,11 @@ export default function TopBar({
         {/* Global Search Button that triggers Cmd+K */}
         <button
           onClick={onOpenCommandPalette}
-          className="w-full max-w-sm flex items-center justify-between px-3.5 py-2 rounded-xl bg-gray-50 border border-gray-200/80 text-gray-400 hover:border-blue-400 hover:bg-white transition-all text-xs cursor-pointer group shadow-2xs"
+          className="w-full max-w-sm min-w-0 flex items-center justify-between px-3 sm:px-3.5 py-2 rounded-xl bg-gray-50 border border-gray-200/80 text-gray-400 hover:border-blue-400 hover:bg-white transition-all text-xs cursor-pointer group shadow-2xs"
         >
-          <div className="flex items-center gap-2">
-            <Search className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors" />
-            <span className="text-gray-500 font-normal">Search {currentConfig.customerPlural}, chats, invoices...</span>
+          <div className="flex items-center gap-2 min-w-0">
+            <Search className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors shrink-0" />
+            <span className="text-gray-500 font-normal truncate">Search {currentConfig.customerPlural}, chats, invoices...</span>
           </div>
           <kbd className="hidden sm:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-gray-200/70 border border-gray-300 text-[10px] font-mono font-semibold text-gray-600">
             ⌘K
@@ -207,7 +208,7 @@ export default function TopBar({
           </button>
 
           {notifOpen && (
-            <div className="absolute right-0 mt-2 w-80 bg-white rounded-2xl shadow-xl border border-gray-200 p-3 z-50 animate-fadeIn text-xs">
+            <div className="absolute right-0 mt-2 w-72 sm:w-80 max-w-[calc(100vw-4.5rem)] bg-white rounded-2xl shadow-xl border border-gray-200 p-3 z-50 animate-fadeIn text-xs">
               <div className="flex items-center justify-between pb-2 border-b border-gray-100 px-1 mb-2">
                 <span className="font-bold text-gray-900">Notifications</span>
                 <span className="text-[10px] text-blue-600 font-semibold cursor-pointer">Mark all as read</span>
