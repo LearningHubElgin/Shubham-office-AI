@@ -147,10 +147,10 @@ export default function AIShowcase() {
               </p>
             </button>
 
-            {/* 5. ISUITE AI (Cols 2-3 of Row 2) */}
+            {/* 5. KARTTIK AI (Cols 2-3 of Row 2) */}
             <div className="sm:col-span-2 bg-white rounded-xl p-3.5 sm:p-4 text-[#06122e] shadow-md flex flex-col justify-between">
               <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider block mb-0.5">
-                ISUITE AI
+                KARTTIK AI
               </span>
               <p className="text-xs sm:text-[13px] text-[#06122e] font-medium leading-snug">
                 {activeSnippet.reply}

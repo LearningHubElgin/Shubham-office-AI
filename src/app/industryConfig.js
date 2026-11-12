@@ -1,5 +1,5 @@
 /**
- * Industry Configuration for iSuite AI Multi-Tenant Core (7 Products)
+ * Industry Configuration for Karttik AI Multi-Tenant Core (7 Products)
  * Supports dynamic labeling, pipeline stages, metrics, sample data, and rules.
  */
 

@@ -1,13 +1,13 @@
 export const faqs = [
   {
-    id: 'what-is-isuite',
-    question: 'What is iSuite AI?',
-    answer: 'iSuite AI is industry software with AI built in, made as one product per trade: Clinic, Coaching Institute, Real Estate, Gym & Fitness Studio, Salon & Spa, Field Service & AMC, and Turf.\n\nEach runs its business in one app — customers, bookings, bills, and payments — and most plans add an AI agent that answers customers on WhatsApp.'
+    id: 'what-is-karttik',
+    question: 'What is Karttik AI?',
+    answer: 'Karttik AI is industry software with AI built in, made as one product per trade: Clinic, Coaching Institute, Real Estate, Gym & Fitness Studio, Salon & Spa, Field Service & AMC, and Turf.\n\nEach runs its business in one app — customers, bookings, bills, and payments — and most plans add an AI agent that answers customers on WhatsApp.'
   },
   {
     id: 'just-whatsapp',
     question: 'Is it just a WhatsApp tool?',
-    answer: 'No. WhatsApp is where your customer writes and where the AI answers them, but iSuite AI is the whole operating system behind it: your records, bookings, bills, payments, instalments and renewals, marketing, calls, team roles, and reports, on the web and on Android.'
+    answer: 'No. WhatsApp is where your customer writes and where the AI answers them, but Karttik AI is the whole operating system behind it: your records, bookings, bills, payments, instalments and renewals, marketing, calls, team roles, and reports, on the web and on Android.'
   },
   {
     id: 'which-product',
@@ -32,17 +32,17 @@ export const faqs = [
   {
     id: 'whatsapp-api',
     question: 'Do I need the WhatsApp Business API?',
-    answer: "Yes. iSuite AI uses Meta's official WhatsApp Business Platform, not unofficial tools that get numbers blocked. We help you connect your number during setup; Meta decides approval and timing (usually 1–2 weeks). WhatsApp message charges are billed by Meta at Meta's rates."
+    answer: "Yes. Karttik AI uses Meta's official WhatsApp Business Platform, not unofficial tools that get numbers blocked. We help you connect your number during setup; Meta decides approval and timing (usually 1–2 weeks). WhatsApp message charges are billed by Meta at Meta's rates."
   },
   {
     id: 'how-is-ai-paid',
     question: 'How is the AI paid for?',
-    answer: "In iSuite AI credits, shown in rupees. Every plan with the AI agent comes with a bundle of free credits (a month's or a year's worth depending on the plan), which are used first. When you run out, you can top up inside the app (+ GST); purchased credits never expire."
+    answer: "In Karttik AI credits, shown in rupees. Every plan with the AI agent comes with a bundle of free credits (a month's or a year's worth depending on the plan), which are used first. When you run out, you can top up inside the app (+ GST); purchased credits never expire."
   },
   {
     id: 'mobile-app',
     question: 'Is there a mobile app?',
-    answer: 'Yes, for Android: you get notifications of new enquiries and calls from your own SIM can be recorded and saved to the customer. On iPhone, you can use iSuite AI from the browser at app.isuite.ai, where the inbox and customer records work fully.'
+    answer: 'Yes, for Android: you get notifications of new enquiries and calls from your own SIM can be recorded and saved to the customer. On iPhone, you can use Karttik AI from the browser at app.karttik.ai, where the inbox and customer records work fully.'
   },
   {
     id: 'where-data-stored',
@@ -65,13 +65,13 @@ export const faqs = [
     answer: 'You can cancel anytime before your next renewal by telling us on WhatsApp or email. Your plan stays active until the end of what you have paid for, with no further charges. We do not refund partially used plans or add-ons; if you were billed by error after cancelling, we refund in full.'
   },
   {
-    id: 'who-makes-isuite',
-    question: 'Who makes iSuite AI?',
+    id: 'who-makes-karttik',
+    question: 'Who makes Karttik AI?',
     answer: 'MnT Future, based in Madurai, Tamil Nadu. We build software for businesses in India.'
   },
   {
     id: 'same-as-erp',
-    question: 'Is iSuite AI the same as iSuite ERP or aisuite?',
-    answer: 'No. iSuite ERP is a separate enterprise ERP for large manufacturing and supply chains. aisuite is an open-source library for developers. iSuite AI is this: one platform with vertical SaaS products for local trades.'
+    question: 'Is Karttik AI a generic ERP or a developer tool?',
+    answer: 'No. Generic enterprise ERPs are built for large manufacturing and supply chains, and open-source AI wrappers are developer libraries. Karttik AI is one platform with purpose-built vertical SaaS products for local Indian trades.'
   }
 ];

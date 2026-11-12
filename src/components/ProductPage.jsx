@@ -92,7 +92,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
     window.scrollTo(0, 0);
 
     // Title & Meta
-    document.title = data.title || `${data.hero.badge} | iSuite AI`;
+    document.title = data.title || `${data.hero.badge} | Karttik AI`;
     
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
@@ -271,7 +271,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
             <button
               onClick={onNavigateHome}
               className="flex items-center shrink-0 cursor-pointer"
-              aria-label="iSuite AI home"
+              aria-label="Karttik AI home"
             >
               {isScrolled ? (
                 <img
@@ -364,7 +364,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
 
             <div className="pt-2 border-t border-white/10">
               <div className="text-[11px] font-bold uppercase tracking-wider text-white/50 mb-2">
-                MORE FROM ISUITE AI
+                MORE FROM KARTTIK AI
               </div>
               <div className="space-y-1 pl-1">
                 {allProductsNavList.map((p) => (
@@ -587,7 +587,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                     <div className="bg-[#001d55] text-white rounded-2xl rounded-tr-xs px-4 py-2.5 shadow-md">
                       <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: accentBright }}>
                         <Sparkles className="w-3.5 h-3.5" />
-                        <span>ISUITE AI</span>
+                        <span>KARTTIK AI</span>
                       </div>
                       <div className="flex items-center gap-1.5 py-1 px-1">
                         <span className="w-2 h-2 rounded-full typing-dot-1" style={{ backgroundColor: accentBright }}></span>
@@ -604,7 +604,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                     <div className="bg-[#001d55] text-white rounded-2xl rounded-tr-xs p-3.5 sm:p-4 shadow-md max-w-[88%] text-xs sm:text-[13px]">
                       <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-1.5" style={{ color: accentBright }}>
                         <Sparkles className="w-3.5 h-3.5" />
-                        <span>ISUITE AI</span>
+                        <span>KARTTIK AI</span>
                       </div>
                       <p className="leading-relaxed">
                         {data.hero.chatMessages[1].text}
@@ -634,7 +634,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                     <div className="bg-[#001d55] text-white rounded-2xl rounded-tr-xs px-4 py-2.5 shadow-md">
                       <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: accentBright }}>
                         <Sparkles className="w-3.5 h-3.5" />
-                        <span>ISUITE AI</span>
+                        <span>KARTTIK AI</span>
                       </div>
                       <div className="flex items-center gap-1.5 py-1 px-1">
                         <span className="w-2 h-2 rounded-full typing-dot-1" style={{ backgroundColor: accentBright }}></span>
@@ -651,7 +651,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                     <div className="bg-[#001d55] text-white rounded-2xl rounded-tr-xs p-3.5 shadow-md max-w-[88%] text-xs sm:text-[13px]">
                       <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-1.5" style={{ color: accentBright }}>
                         <Sparkles className="w-3.5 h-3.5" />
-                        <span>ISUITE AI</span>
+                        <span>KARTTIK AI</span>
                       </div>
                       <p className="leading-relaxed">
                         {data.hero.chatMessages[3].text}
@@ -1951,7 +1951,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
         </div>
       </section>
 
-      {/* 9. The iSuite AI Family Section */}
+      {/* 9. The Karttik AI Family Section */}
       <section className="py-20 sm:py-24 bg-[#f8fafc] border-t border-slate-200/60">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 text-center head reveal">
           
@@ -1982,7 +1982,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
                       <ProdIcon className="w-5 h-5" />
                     </div>
                     <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">
-                      ISUITE AI
+                      KARTTIK AI
                     </div>
                     <h4 className="text-base font-bold text-slate-900 mb-2 transition-colors">
                       {p.name}
@@ -2066,7 +2066,7 @@ export default function ProductPage({ data, onNavigateHome, onNavigateRoute, onO
             {/* Platform Column */}
             <div>
               <h4 className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-400 mb-3.5">
-                ISUITE AI
+                KARTTIK AI
               </h4>
               <ul className="space-y-2 text-xs sm:text-[13px] text-slate-600">
                 <li><a href="/#platform" className="hover:text-slate-900">The platform</a></li>

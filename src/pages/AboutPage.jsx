@@ -43,7 +43,7 @@ export default function AboutPage({
           Small and mid-sized businesses don’t work that way. The owner is on a scooter. The front desk is juggling three people in line and an enquiry on WhatsApp. A lead that doesn’t get answered in three minutes goes to the competitor down the road.
         </p>
         <p className="mb-4">
-          We built iSuite AI to solve that one problem: every lead answered instantly, every follow-up on time, and every booking, fee or token tracked without a spreadsheet. We started with{' '}
+          We built Karttik AI to solve that one problem: every lead answered instantly, every follow-up on time, and every booking, fee or token tracked without a spreadsheet. We started with{' '}
           <a
             href="/clinics/"
             onClick={(e) => handleLink(e, '/clinics/')}
@@ -110,7 +110,7 @@ export default function AboutPage({
             <b>Every customer deserves an answer,</b> even when the shop is closed.
           </li>
           <li>
-            <b>Software is only useful if your team actually uses it,</b> so iSuite AI is simple, and works on the phone.
+            <b>Software is only useful if your team actually uses it,</b> so Karttik AI is simple, and works on the phone.
           </li>
           <li>
             <b>AI should know when to ask.</b> Ours checks with you before it guesses, and hands over to a person when needed.
@@ -133,7 +133,7 @@ export default function AboutPage({
           >
             Udhayaseelan Renganathan
           </a>
-          , who leads iSuite AI from Madurai.
+          , who leads Karttik AI from Madurai.
         </p>
 
         {/* Semantic address box */}
@@ -173,7 +173,7 @@ export default function AboutPage({
           .
         </p>
         <p className="text-sm text-slate-500 font-normal">
-          iSuite AI is not iSuite ERP or aisuite, and is not connected with either.
+          Karttik AI is not a generic horizontal ERP or an open-source developer library — it is purpose-built vertical SaaS software for local Indian trades.
         </p>
       </div>
     </ContentPage>

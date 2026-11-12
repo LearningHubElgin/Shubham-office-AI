@@ -1,11 +1,11 @@
 export const matrixIndustries = [
-  { id: 'clinic', name: 'Clinic', tier: 'iSuite A1', price: '₹20k/yr' },
-  { id: 'coaching', name: 'Coaching', tier: 'iSuite A2', price: '₹24k/yr' },
-  { id: 'real-estate', name: 'Real Estate', tier: 'iSuite RE', price: '₹32k/yr' },
-  { id: 'gym', name: 'Gym & Fitness', tier: 'iSuite GYM', price: '₹22k/yr' },
-  { id: 'salon', name: 'Salon & Spa', tier: 'iSuite SALON', price: '₹20k/yr' },
-  { id: 'field-service', name: 'Field Service', tier: 'iSuite AMC', price: '₹28k/yr' },
-  { id: 'turf', name: 'Turf Arena', tier: 'iSuite TURF', price: '₹20k/yr' },
+  { id: 'clinic', name: 'Clinic', tier: 'Karttik A1', price: '₹20k/yr' },
+  { id: 'coaching', name: 'Coaching', tier: 'Karttik A2', price: '₹24k/yr' },
+  { id: 'real-estate', name: 'Real Estate', tier: 'Karttik RE', price: '₹32k/yr' },
+  { id: 'gym', name: 'Gym & Fitness', tier: 'Karttik GYM', price: '₹22k/yr' },
+  { id: 'salon', name: 'Salon & Spa', tier: 'Karttik SALON', price: '₹20k/yr' },
+  { id: 'field-service', name: 'Field Service', tier: 'Karttik AMC', price: '₹28k/yr' },
+  { id: 'turf', name: 'Turf Arena', tier: 'Karttik TURF', price: '₹20k/yr' },
 ];
 
 export const dayOneFeatures = [

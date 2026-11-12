@@ -95,18 +95,18 @@ export default function Navbar({
           href="/" 
           onClick={(e) => handleNavClick(e, '/')}
           className="flex items-center shrink-0 cursor-pointer" 
-          aria-label="iSuite AI home"
+          aria-label="Karttik AI home"
         >
           {isLight ? (
             <img
               src="/logo-wordmark.png"
-              alt="iSuite AI"
+              alt="Karttik AI"
               className="h-[28px] sm:h-[34px] w-auto object-contain transition-opacity duration-200"
             />
           ) : (
             <img
               src="/logo-white-wordmark.png"
-              alt="iSuite AI"
+              alt="Karttik AI"
               className="h-[28px] sm:h-[34px] w-auto object-contain transition-opacity duration-200"
             />
           )}
@@ -270,7 +270,7 @@ export default function Navbar({
             <div className={`text-[10px] font-bold tracking-[0.14em] uppercase px-2 py-1 ${
               isLight ? 'text-slate-400' : 'text-white/50'
             }`}>
-              ISUITE AI
+              KARTTIK AI
             </div>
             <a
               href="/#platform"
@@ -334,7 +334,7 @@ export default function Navbar({
               START FREE TRIAL
             </button>
             <a
-              href="https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI."
+              href="https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI."
               target="_blank"
               rel="noopener noreferrer"
               className={`w-full py-2.5 text-xs font-medium uppercase tracking-wider text-center rounded-full block transition-colors ${

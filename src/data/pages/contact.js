@@ -1,9 +1,9 @@
 import { brandConfig } from '../brandConfig';
 
 export const contactData = {
-  title: 'Contact — iSuite AI',
+  title: 'Contact — Karttik AI',
   metaDescription:
-    'Talk to the iSuite AI team on WhatsApp, by phone or by email. Book a free 45-minute demo on your own products.',
+    'Talk to the Karttik AI team on WhatsApp, by phone or by email. Book a free 45-minute demo on your own products.',
   eyebrow: 'Contact',
   heading: 'Talk to us',
   lead:
@@ -54,10 +54,10 @@ export const contactData = {
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contact — iSuite AI',
+    name: 'Contact — Karttik AI',
     description:
-      'Talk to the iSuite AI team on WhatsApp, by phone or by email. Book a free 45-minute demo on your own products.',
-    url: 'https://isuite.ai/contact/',
+      'Talk to the Karttik AI team on WhatsApp, by phone or by email. Book a free 45-minute demo on your own products.',
+    url: 'https://karttik.ai/contact/',
     mainEntity: {
       '@type': 'Organization',
       name: brandConfig.legalEntity,

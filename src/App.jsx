@@ -176,6 +176,17 @@ export default function App() {
     }
   }, [currentRoute]);
 
+  // Reset document title on home, login, and workspace routes
+  useEffect(() => {
+    if (currentRoute.name === 'home') {
+      document.title = 'Karttik AI – Business Software Made for Your Industry';
+    } else if (currentRoute.name === 'login') {
+      document.title = 'Sign in – Karttik AI';
+    } else if (currentRoute.name === 'app') {
+      document.title = 'Karttik AI Workspace';
+    }
+  }, [currentRoute]);
+
   const navigateToRoute = (route) => {
     const cleanRoute = route.startsWith('/') ? route : `/${route}`;
     window.history.pushState({}, '', cleanRoute);

@@ -44,7 +44,7 @@ export default function TeamPage() {
     {
       id: 'tm_3',
       name: 'Priya Narayanan',
-      email: 'priya.frontdesk@isuite.demo',
+      email: 'priya.frontdesk@karttik.demo',
       phone: '+91 94432 11988',
       role: 'Front Desk Coordinator',
       access: 'Front Desk Operator',

@@ -24,7 +24,7 @@ export default function AppSignupPage({ initialIndustry = 'clinic', initialPlan 
   const { switchIndustry, switchPlan, loginUser, setState } = useAppStore();
 
   const [step, setStep] = useState('details'); // 'details' | 'razorpay' | 'onboarding'
-  const [businessName, setBusinessName] = useState('iSuite Prime Enterprise');
+  const [businessName, setBusinessName] = useState('Karttik Prime Enterprise');
   const [selectedIndustry, setSelectedIndustry] = useState(initialIndustry);
   const [selectedPlan, setSelectedPlan] = useState(initialPlan);
   const [whatsappPhone, setWhatsappPhone] = useState('+91 93486 33365');
@@ -75,7 +75,7 @@ export default function AppSignupPage({ initialIndustry = 'clinic', initialPlan 
       {/* Top Header Logo */}
       <div className="w-full max-w-5xl flex items-center justify-between pt-2 px-2">
         <a href="/" className="flex items-center gap-2">
-          <img src="/logo-wordmark.png" alt="iSuite AI" className="h-8 w-auto object-contain" />
+          <img src="/logo-wordmark.png" alt="Karttik AI" className="h-8 w-auto object-contain" />
         </a>
 
         <button
@@ -436,7 +436,7 @@ export default function AppSignupPage({ initialIndustry = 'clinic', initialPlan 
 
       {/* Footer */}
       <div className="text-center pb-4 text-[11px] text-gray-400">
-        © 2026 iSuite AI (Product of MnT Future). All rights reserved.
+        © 2026 Karttik AI (Product of MnT Future). All rights reserved.
       </div>
     </div>
   );

@@ -122,7 +122,7 @@ export default function AdminPortalModal({ isOpen, onClose }) {
         {/* Modal Header */}
         <div className="flex items-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider mb-1">
           <ShieldCheck className="w-4 h-4" />
-          <span>iSuite AI Secure Admin Portal</span>
+          <span>Karttik AI Secure Admin Portal</span>
         </div>
 
         {!isLoggedIn ? (

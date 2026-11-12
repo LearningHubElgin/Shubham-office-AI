@@ -1,10 +1,10 @@
-// Product Data: iSuite AI – Salon & Spa
+// Product Data: Karttik AI – Salon & Spa
 export const salonData = {
   id: 'salon',
   slug: 'salons',
-  title: 'Salon Management Software India | iSuite AI – Salon & Spa',
+  title: 'Salon Management Software India | Karttik AI – Salon & Spa',
   metaDescription: 'Salon and spa management software for India: stylist board, walk-ins, GST bills, client cards, reminders. AI receptionist on Salon Growth. 14-day free trial.',
-  canonicalUrl: 'https://isuite.ai/salons/',
+  canonicalUrl: 'https://karttik.ai/salons/',
   themeColor: '#001845',
   locale: 'en_IN',
   ogImage: '/assets/img/og-salon.jpg',
@@ -13,13 +13,13 @@ export const salonData = {
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Salon & Spa',
+    badge: 'Karttik AI – Salon & Spa',
     h1Main: 'Salon management software,',
     h1Accent: 'with an AI receptionist on Salon Growth',
     subtitle: 'Run your salon, beauty parlour or spa on one app: the day’s board by stylist, walk-ins, GST bills, client cards and visit reminders in one place. With Salon Growth, an AI receptionist also books the service, the time and the stylist on WhatsApp at any hour, in Tamil, Tanglish or English.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Salon.", primary: false, isExternal: true },
+      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Salon.", primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹7,999 a year + GST',
@@ -81,8 +81,8 @@ export const salonData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'AT A GLANCE',
-    h2: 'iSuite AI – Salon & Spa at a glance',
-    intro: 'iSuite AI – Salon & Spa is salon management software for salons, beauty parlours and spas in India: the stylist board, walk-ins, GST bills, client cards and due-back reminders in one app. Plans start from ₹7,999 a year + GST, with a 14-day free trial. Salon Growth adds stylist commission and an AI receptionist that books on WhatsApp.',
+    h2: 'Karttik AI – Salon & Spa at a glance',
+    intro: 'Karttik AI – Salon & Spa is salon management software for salons, beauty parlours and spas in India: the stylist board, walk-ins, GST bills, client cards and due-back reminders in one app. Plans start from ₹7,999 a year + GST, with a 14-day free trial. Salon Growth adds stylist commission and an AI receptionist that books on WhatsApp.',
     facts: [
       {
         label: 'WHAT IT IS',
@@ -256,7 +256,7 @@ export const salonData = {
     h2: 'It works the way a salon floor does',
     comparisonHeader: {
       left: 'TODAY',
-      right: 'WITH ISUITE AI – SALON & SPA',
+      right: 'WITH KARTTIK AI – SALON & SPA',
     },
     rows: [
       {
@@ -291,7 +291,7 @@ export const salonData = {
     cards: [
       {
         title: 'Where it fits',
-        text: 'iSuite AI – Salon & Spa is built for independent salons, beauty parlours, unisex salons, nail studios and day spas. It manages appointments, walk-ins, billing, client cards, visit reminders, commissions, inventory and marketing. It connects to your existing receipt printer and card swipe machine.',
+        text: 'Karttik AI – Salon & Spa is built for independent salons, beauty parlours, unisex salons, nail studios and day spas. It manages appointments, walk-ins, billing, client cards, visit reminders, commissions, inventory and marketing. It connects to your existing receipt printer and card swipe machine.',
       },
       {
         title: 'What the AI is told never to do',
@@ -328,7 +328,7 @@ export const salonData = {
           { title: 'Due-back reminders', description: 'Manual and scheduled WhatsApp follow-ups for repeat visits' },
           { title: 'Razorpay payment links', description: 'Collect advance payments for bridal or luxury services' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=salons&package=basic',
+        buyUrl: 'https://app.karttik.ai/buy?industry=salons&package=basic',
       },
       {
         name: 'Salon Growth',
@@ -348,7 +348,7 @@ export const salonData = {
           { title: 'Expense tracking & GSTR exports', description: 'Track salon floor costs, consumables and tax filings' },
           { title: 'Advanced revenue analytics', description: 'Stylist productivity, client retention rate and chair occupancy' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=salons&package=growth',
+        buyUrl: 'https://app.karttik.ai/buy?industry=salons&package=growth',
       },
     ],
     footnotes: [
@@ -370,8 +370,8 @@ export const salonData = {
     faqs: [
       {
         id: 'what-is',
-        question: 'What is iSuite AI – Salon & Spa?',
-        answer: 'iSuite AI – Salon & Spa is salon management software made by MnT Future in Madurai. It gives you a stylist day board, client cards with private colour notes, GST billing, visit reminders, and memberships. On Salon Growth, it also includes stylist commissions and an AI receptionist on WhatsApp.',
+        question: 'What is Karttik AI – Salon & Spa?',
+        answer: 'Karttik AI – Salon & Spa is salon management software made by MnT Future in Madurai. It gives you a stylist day board, client cards with private colour notes, GST billing, visit reminders, and memberships. On Salon Growth, it also includes stylist commissions and an AI receptionist on WhatsApp.',
       },
       {
         id: 'ai-difference',
@@ -400,14 +400,14 @@ export const salonData = {
   ctaBanner: {
     eyebrow: 'START YOUR FREE TRIAL',
     h2: 'Every chair busy. Every client back.',
-    sub: 'Transform your salon front desk with iSuite AI today. Free 14-day trial with 1-on-1 setup on WhatsApp.',
+    sub: 'Transform your salon front desk with Karttik AI today. Free 14-day trial with 1-on-1 setup on WhatsApp.',
     buttonPrimary: {
       text: 'Start 14-Day Free Trial',
       href: '#plans',
     },
     buttonSecondary: {
       text: 'Book a Live Demo',
-      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Salon.",
+      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Salon.",
     },
     callText: 'Or call +91 93486 33365 to talk with our team',
     callHref: 'tel:+919348633365',
@@ -415,7 +415,7 @@ export const salonData = {
 
   // 11. Family Section
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'Every product is built around the way its industry runs — with its own screens, tools and AI.',
     templateLink: '/templates/',

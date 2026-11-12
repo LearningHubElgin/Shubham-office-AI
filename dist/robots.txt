@@ -1,5 +1,5 @@
-# robots.txt for https://isuite.ai: the whole site is public. The app
-# (https://app.isuite.ai) is a separate host.
+# robots.txt for https://karttik.ai: the whole site is public. The app
+# (https://app.karttik.ai) is a separate host.
 
 User-agent: *
 Allow: /
@@ -33,7 +33,7 @@ Allow: /
 User-agent: Claude-User
 Allow: /
 
-# AI training, so the models know iSuite AI
+# AI training, so the models know Karttik AI
 User-agent: GPTBot
 Allow: /
 
@@ -52,4 +52,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://isuite.ai/sitemap.xml
+Sitemap: https://karttik.ai/sitemap.xml

@@ -85,7 +85,7 @@ export default function InboxPage() {
         const aiMsg = {
           id: `ai_${Date.now()}`,
           sender: 'ai',
-          text: 'Vanakkam! Ungal kelvi pathivu seiyappattathu. iSuite AI team is following up immediately.',
+          text: 'Vanakkam! Ungal kelvi pathivu seiyappattathu. Karttik AI team is following up immediately.',
           time: 'Just now',
           channel: 'whatsapp',
           status: 'read',
@@ -404,7 +404,7 @@ export default function InboxPage() {
                   {isAi && (
                     <div className="flex items-center gap-1 text-[10px] text-blue-200 font-bold mb-1">
                       <Bot className="w-3 h-3" />
-                      <span>iSuite AI Assistant</span>
+                      <span>Karttik AI Assistant</span>
                     </div>
                   )}
 
@@ -516,7 +516,7 @@ export default function InboxPage() {
         {/* Quick Actions */}
         <div className="space-y-1.5 pt-2 border-t border-gray-100">
           <button
-            onClick={() => alert(`Call initiated to ${activeConv?.phone} via iSuite Phone`)}
+            onClick={() => alert(`Call initiated to ${activeConv?.phone} via Karttik Phone`)}
             className="w-full py-2 px-3 rounded-xl bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-800 font-semibold text-xs flex items-center justify-center gap-2 cursor-pointer"
           >
             <Phone className="w-3.5 h-3.5 text-blue-600" />

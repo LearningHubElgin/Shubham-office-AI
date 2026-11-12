@@ -8,14 +8,14 @@ export default function PolicyPage({ slug, onNavigateRoute, onNavigateHome, onOp
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = `${policy.title} | iSuite AI`;
+    document.title = `${policy.title} | Karttik AI`;
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement('meta');
       metaDesc.name = 'description';
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = `${policy.title} for iSuite AI by Magizh NexGen Technologies.`;
+    metaDesc.content = `${policy.title} for Karttik AI by Magizh NexGen Technologies.`;
   }, [policy, slug]);
 
   return (

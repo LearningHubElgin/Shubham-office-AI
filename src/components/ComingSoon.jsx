@@ -61,7 +61,7 @@ export default function ComingSoon({ onNotifyTrade }) {
                       {/* Texts */}
                       <div>
                         <span className="text-[10px] sm:text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-0.5">
-                          ISUITE AI
+                          KARTTIK AI
                         </span>
                         <h3 className="text-base sm:text-[17px] font-bold text-[#06122e] leading-snug">
                           {item.name}

@@ -193,7 +193,7 @@ export const AppProvider = ({ children }) => {
       isLoggedIn: true, // Demo app keeps you logged in
       workspace: {
         id: 'ws_madurai_01',
-        businessName: 'iSuite AI Demo Enterprise',
+        businessName: 'Karttik AI Demo Enterprise',
         industry: 'clinic',
         plan: 'growth', // 'basic' | 'growth'
         credits: 8420,
@@ -363,7 +363,7 @@ export const AppProvider = ({ children }) => {
       dbEngine: 'SQLite (backend/isuite.db)',
       workspace: {
         id: 'ws_madurai_01',
-        businessName: 'iSuite AI Demo Enterprise',
+        businessName: 'Karttik AI Demo Enterprise',
         industry: ind,
         plan: 'growth',
         credits: 8420,

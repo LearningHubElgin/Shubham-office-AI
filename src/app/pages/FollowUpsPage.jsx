@@ -208,7 +208,7 @@ export default function FollowUpsPage() {
                   </button>
                 )}
                 <button
-                  onClick={() => alert(`Call triggered to ${t.phone} via iSuite Phone`)}
+                  onClick={() => alert(`Call triggered to ${t.phone} via Karttik Phone`)}
                   className="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-1 cursor-pointer"
                 >
                   <Phone className="w-3 h-3" /> Call

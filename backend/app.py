@@ -25,7 +25,7 @@ def create_app():
     @app.route("/")
     def index():
         return jsonify({
-            "message": "iSuite AI Backend API is running with MySQL + Flask",
+            "message": "Karttik AI Backend API is running with MySQL + Flask",
             "endpoints": [
                 "/api/health",
                 "/api/leads/demo",

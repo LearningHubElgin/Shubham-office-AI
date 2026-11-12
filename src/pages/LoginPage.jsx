@@ -133,7 +133,7 @@ export default function LoginPage({ onNavigateHome }) {
           {/* Top Bar */}
           <div className="flex flex-wrap items-center justify-between pb-6 border-b border-gray-200 gap-4 mb-6">
             <div className="flex items-center gap-3">
-              <img src="/logo-wordmark.png" alt="iSuite AI" className="h-8 w-auto object-contain" />
+              <img src="/logo-wordmark.png" alt="Karttik AI" className="h-8 w-auto object-contain" />
               <span className="text-xs font-semibold px-2.5 py-1 bg-blue-100 text-blue-800 rounded-full">
                 Admin Console
               </span>
@@ -333,12 +333,12 @@ export default function LoginPage({ onNavigateHome }) {
         <div className="inline-block mb-1">
           <img
             src="/logo-wordmark.png"
-            alt="iSuite AI"
+            alt="Karttik AI"
             className="h-9 sm:h-10 w-auto object-contain mx-auto"
           />
         </div>
         <p className="text-[12px] text-gray-500 font-normal">
-          iSuite AI (Product of MnT Future)
+          Karttik AI (Product of MnT Future)
         </p>
       </div>
 
@@ -474,7 +474,7 @@ export default function LoginPage({ onNavigateHome }) {
       {/* Footer Credentials & Protection */}
       <div className="text-center pb-4 space-y-2">
         <p className="text-[11px] text-gray-400">
-          © 2026 iSuite AI (Product of MnT Future). All rights reserved.
+          © 2026 Karttik AI (Product of MnT Future). All rights reserved.
         </p>
         <div className="flex items-center justify-center gap-4 text-[11px] text-gray-500 font-normal">
           <span className="flex items-center gap-1">

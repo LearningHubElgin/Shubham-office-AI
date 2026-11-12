@@ -231,7 +231,7 @@ export default function Modals({
             </div>
 
             <h3 className="text-2xl font-bold text-gray-950 mb-2">
-              Start Your Free iSuite AI Pilot
+              Start Your Free Karttik AI Pilot
             </h3>
             <p className="text-xs sm:text-sm text-gray-600 mb-6">
               Launch your official WhatsApp Business bot in test mode with sample bookings, customer pipeline, and GST billing.
@@ -401,7 +401,7 @@ export default function Modals({
               {policyTitle === 'Refund & Cancellation' && (
                 <>
                   <p>
-                    <strong>30-Day Money-Back Guarantee:</strong> At Mktph Techcenter Technologies, we want you to experience genuine operational ROI. If within 30 calendar days of going live with iSuite AI you are not fully satisfied with our software, you are entitled to a 100% refund of your software subscription fees.
+                    <strong>30-Day Money-Back Guarantee:</strong> At Mktph Techcenter Technologies, we want you to experience genuine operational ROI. If within 30 calendar days of going live with Karttik AI you are not fully satisfied with our software, you are entitled to a 100% refund of your software subscription fees.
                   </p>
                   <p>
                     <strong>Cancellation Process:</strong> Simply send an email to <span className="text-blue-600">info@mktphtech.com</span> or message our support number at <span className="text-blue-600">+91 93486 33365</span> with your account ID. Refunds are credited back to the original UPI/card within 5-7 business days.
@@ -412,7 +412,7 @@ export default function Modals({
               {policyTitle === 'Privacy Policy' && (
                 <>
                   <p>
-                    <strong>Data Privacy & Security:</strong> We respect your customer and patient privacy. All data stored in iSuite AI (including patient records, booking rosters, and customer phone numbers) is encrypted using AES-256 at rest and TLS 1.3 in transit.
+                    <strong>Data Privacy & Security:</strong> We respect your customer and patient privacy. All data stored in Karttik AI (including patient records, booking rosters, and customer phone numbers) is encrypted using AES-256 at rest and TLS 1.3 in transit.
                   </p>
                   <p>
                     <strong>Data Ownership:</strong> You retain 100% legal ownership of your customer lists and operational data. We do not sell, rent, or share your contact records with third-party advertising networks.
@@ -423,7 +423,7 @@ export default function Modals({
               {policyTitle === 'Terms of Service' && (
                 <>
                   <p>
-                    <strong>Platform License:</strong> iSuite AI is licensed as a cloud-hosted Software-as-a-Service (SaaS). Subscribers are granted non-exclusive rights to manage business operations for their registered branches.
+                    <strong>Platform License:</strong> Karttik AI is licensed as a cloud-hosted Software-as-a-Service (SaaS). Subscribers are granted non-exclusive rights to manage business operations for their registered branches.
                   </p>
                   <p>
                     <strong>Meta Cloud API Terms:</strong> Broadcast messaging must comply with WhatsApp Business Messaging Policies regarding spam and opt-in consent.
@@ -434,7 +434,7 @@ export default function Modals({
               {policyTitle === 'Shipping & Delivery' && (
                 <>
                   <p>
-                    <strong>Digital Delivery:</strong> iSuite AI is a digital software product. Account activation, WhatsApp Cloud API provisioning, and administrative access credentials are provided digitally via email and WhatsApp immediately upon payment.
+                    <strong>Digital Delivery:</strong> Karttik AI is a digital software product. Account activation, WhatsApp Cloud API provisioning, and administrative access credentials are provided digitally via email and WhatsApp immediately upon payment.
                   </p>
                   <p>
                     Optional hardware scanner accessories (barcode guns, receipt printers) are shipped via express courier within 3-5 business days across India.
@@ -464,7 +464,7 @@ export default function Modals({
               {policyTitle === 'Templates' && (
                 <>
                   <p>
-                    <strong>Pre-Approved WhatsApp Templates:</strong> iSuite AI comes pre-loaded with over 150 Meta-approved utility and marketing templates for appointment confirmation, prescription dispatch, fee dues reminders, site visit booking, and festive greetings.
+                    <strong>Pre-Approved WhatsApp Templates:</strong> Karttik AI comes pre-loaded with over 150 Meta-approved utility and marketing templates for appointment confirmation, prescription dispatch, fee dues reminders, site visit booking, and festive greetings.
                   </p>
                 </>
               )}

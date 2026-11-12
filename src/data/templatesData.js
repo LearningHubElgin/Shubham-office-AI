@@ -5,48 +5,48 @@ export const templatesList = [
     title: 'AMC contract format: a free annual maintenance contract in Word',
     shortTitle: 'AMC contract format',
     description: 'A complete annual maintenance contract in Word, with comprehensive or labour-only cover, GST, and visit checklists for AC, RO, CCTV and solar.',
-    productName: 'iSuite AI – Field Service & AMC',
+    productName: 'Karttik AI – Field Service & AMC',
     productRoute: '/field-service/',
     badge: 'SERVICE & AMC',
     updatedDate: '24 October 2026',
     metaDescription: 'Free AMC contract format in Word for AC, RO, CCTV and solar service in India: equipment list, visits, response time, GST, renewal and visit checklists.',
-    canonicalUrl: 'https://isuite.ai/templates/amc-contract-format/',
+    canonicalUrl: 'https://karttik.ai/templates/amc-contract-format/',
   },
   {
     slug: 'builder-demand-letter-format',
     title: 'Builder demand letter format, for the buyer and the bank',
     shortTitle: 'Builder demand letter format',
     description: 'A demand letter for under-construction flats in Word: the buyer’s letter, the home-loan bank’s letter, the CLP stage table, GST, and Tamil and Hindi notes.',
-    productName: 'iSuite AI – Real Estate',
+    productName: 'Karttik AI – Real Estate',
     productRoute: '/real-estate/',
     badge: 'REAL ESTATE',
     updatedDate: '24 October 2026',
     metaDescription: 'Free builder demand letter format in Word: the letter to the buyer, the version for their home-loan bank, the CLP table, GST, and Tamil and Hindi notes.',
-    canonicalUrl: 'https://isuite.ai/templates/builder-demand-letter-format/',
+    canonicalUrl: 'https://karttik.ai/templates/builder-demand-letter-format/',
   },
   {
     slug: 'fee-reminder-messages',
     title: 'Fees reminder message to parents: free templates to copy',
     shortTitle: 'Fee reminder messages',
     description: 'Fee reminders for coaching and tuition classes — before, on and after the due date, instalments, receipts and fee hikes — in English, Tamil, Tanglish and Hindi.',
-    productName: 'iSuite AI – Coaching Institute',
+    productName: 'Karttik AI – Coaching Institute',
     productRoute: '/coaching/',
     badge: 'COACHING',
     updatedDate: '24 October 2026',
     metaDescription: 'Free fees reminder messages to parents and students: before, on and after the due date, instalments, receipts, fee hikes. In English, Tamil, Tanglish and Hindi.',
-    canonicalUrl: 'https://isuite.ai/templates/fee-reminder-messages/',
+    canonicalUrl: 'https://karttik.ai/templates/fee-reminder-messages/',
   },
   {
     slug: 'gym-fee-reminder-message',
     title: 'Gym fee reminder messages for WhatsApp, in four languages',
     shortTitle: 'Gym fee reminder messages',
     description: 'Renewal, expiry, freeze, PT pack and thank-you messages for gyms and fitness studios, ready to copy in English, Tamil, Tanglish and Hindi.',
-    productName: 'iSuite AI – Gym & Fitness Studio',
+    productName: 'Karttik AI – Gym & Fitness Studio',
     productRoute: '/gyms/',
     badge: 'GYM & FITNESS',
     updatedDate: '24 October 2026',
     metaDescription: 'Free gym fee reminder messages for WhatsApp: 7 days, 3 days, today, expired, freeze, PT packs and offers, in English, Tamil, Tanglish and Hindi.',
-    canonicalUrl: 'https://isuite.ai/templates/gym-fee-reminder-message/',
+    canonicalUrl: 'https://karttik.ai/templates/gym-fee-reminder-message/',
   },
 ];
 
@@ -54,7 +54,7 @@ export const templatesContent = {
   'amc-contract-format': {
     title: 'AMC contract format: a free annual maintenance contract in Word',
     intro: 'A complete AMC contract format for service companies in India, free to copy or download in Word: the parties, the equipment list, comprehensive or labour-only cover, visits a year, breakdown response time, GST, renewal and signatures. Fill in the blanks, strike out what does not apply, and check it with your lawyer before your customer signs.',
-    productName: 'iSuite AI – Field Service & AMC',
+    productName: 'Karttik AI – Field Service & AMC',
     productRoute: '/field-service/',
     blocks: [
       {
@@ -131,7 +131,7 @@ RO PURIFIER SERVICE:
   'builder-demand-letter-format': {
     title: 'Builder demand letter format, for the buyer and the bank',
     intro: 'A free builder demand letter format for under-construction flats in India: the letter to the buyer, the version for their home-loan bank, the construction-linked payment plan table, the GST line and a Word file. Fill in the fields, attach the architect’s certificate, and have your lawyer or CA look it over once.',
-    productName: 'iSuite AI – Real Estate',
+    productName: 'Karttik AI – Real Estate',
     productRoute: '/real-estate/',
     blocks: [
       {
@@ -216,7 +216,7 @@ Authorized Signatory`,
   'fee-reminder-messages': {
     title: 'Fees reminder message to parents: free templates to copy',
     intro: 'Every fees reminder message to parents a coaching centre or tuition class needs: before, on and after the due date, instalments, part payments, receipts, a fee hike notice and a holiday version, plus messages for adult students. Each is in English, Tamil, Tanglish and Hindi. Change the words in [brackets], then send.',
-    productName: 'iSuite AI – Coaching Institute',
+    productName: 'Karttik AI – Coaching Institute',
     productRoute: '/coaching/',
     blocks: [
       {
@@ -270,7 +270,7 @@ HINDI:
   'gym-fee-reminder-message': {
     title: 'Gym fee reminder messages for WhatsApp, in four languages',
     intro: 'Nine sample gym fee reminder messages for WhatsApp, ready to copy: membership ending in 7 days, 3 days and today, expired, freeze ending, PT pack running low, fees received, welcome back and a festival offer. Each comes in English, Tamil, Tanglish and Hindi. Fill in the brackets and send; timing tips and Meta’s template rules follow.',
-    productName: 'iSuite AI – Gym & Fitness Studio',
+    productName: 'Karttik AI – Gym & Fitness Studio',
     productRoute: '/gyms/',
     blocks: [
       {

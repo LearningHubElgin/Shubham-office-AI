@@ -137,7 +137,7 @@ export default function Hero({ onSelectIndustry }) {
 
           {/* Family Lead: exact match */}
           <p className="mt-5 sm:mt-6 text-[15px] sm:text-lg text-white/75 max-w-[740px] mx-auto leading-[1.5] font-normal">
-            Run your whole business on one app: customers, bookings, billing, payments, renewals, marketing and calls in one place — with an AI that answers and follows up on WhatsApp, in Tamil, Tanglish or English. Pick the iSuite AI made for your trade, ready the day you start.
+            Run your whole business on one app: customers, bookings, billing, payments, renewals, marketing and calls in one place — with an AI that answers and follows up on WhatsApp, in Tamil, Tanglish or English. Pick the Karttik AI made for your trade, ready the day you start.
           </p>
         </div>
 
@@ -176,7 +176,7 @@ export default function Hero({ onSelectIndustry }) {
 
                   {/* Kicker Tag */}
                   <div className="text-[11px] font-medium tracking-[0.14em] uppercase text-white/50 mb-1">
-                    ISUITE AI
+                    KARTTIK AI
                   </div>
 
                   {/* Name */}

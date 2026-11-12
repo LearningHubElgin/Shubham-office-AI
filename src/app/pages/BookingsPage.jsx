@@ -212,11 +212,11 @@ export default function BookingsPage() {
               Share this link on your Instagram bio, Google Maps listing, or WhatsApp status. Customers can pick their slot directly:
             </p>
             <div className="p-3 bg-gray-50 rounded-xl border border-gray-200 font-mono text-[11px] text-blue-600 break-all mb-4">
-              https://isuite.ai/book/{currentConfig.id}/madurai-hq
+              https://karttik.ai/book/{currentConfig.id}/madurai-hq
             </div>
             <button
               onClick={() => {
-                navigator.clipboard.writeText(`https://isuite.ai/book/${currentConfig.id}/madurai-hq`);
+                navigator.clipboard.writeText(`https://karttik.ai/book/${currentConfig.id}/madurai-hq`);
                 alert('Copied to clipboard!');
                 setPreviewBookingUrlOpen(false);
               }}

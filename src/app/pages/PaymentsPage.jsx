@@ -53,9 +53,9 @@ export default function PaymentsPage() {
 
   // Payment links
   const [paymentLinks, setPaymentLinks] = useState([
-    { id: 'pl_01', title: 'Token Advance Deposit', customer: customers[0]?.name || 'Meenakshi Ammal', amount: 1000, status: 'paid', created: 'Today, 09:00 AM', link: 'https://rzp.io/l/isuite-demo-01' },
-    { id: 'pl_02', title: 'Stage 2 Milestone Payment', customer: 'Vignesh Balakrishnan', amount: 25000, status: 'active', created: 'Yesterday, 11:30 AM', link: 'https://rzp.io/l/isuite-demo-02' },
-    { id: 'pl_03', title: 'Batch Registration Fee', customer: 'Saravanan Muthu', amount: 18000, status: 'active', created: '07 Nov, 03:00 PM', link: 'https://rzp.io/l/isuite-demo-03' },
+    { id: 'pl_01', title: 'Token Advance Deposit', customer: customers[0]?.name || 'Meenakshi Ammal', amount: 1000, status: 'paid', created: 'Today, 09:00 AM', link: 'https://rzp.io/l/karttik-demo-01' },
+    { id: 'pl_02', title: 'Stage 2 Milestone Payment', customer: 'Vignesh Balakrishnan', amount: 25000, status: 'active', created: 'Yesterday, 11:30 AM', link: 'https://rzp.io/l/karttik-demo-02' },
+    { id: 'pl_03', title: 'Batch Registration Fee', customer: 'Saravanan Muthu', amount: 18000, status: 'active', created: '07 Nov, 03:00 PM', link: 'https://rzp.io/l/karttik-demo-03' },
   ]);
 
   // Instalments schedule
@@ -192,7 +192,7 @@ export default function PaymentsPage() {
             </div>
             <div>
               <p className="text-sm font-bold text-gray-900">Razorpay India</p>
-              <p className="text-[11px] text-gray-400">MID: isuite_live_9482</p>
+              <p className="text-[11px] text-gray-400">MID: karttik_live_9482</p>
             </div>
           </div>
           <p className="text-[11px] text-gray-500 mt-3 pt-2.5 border-t border-gray-100 flex items-center gap-1">

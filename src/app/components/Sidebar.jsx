@@ -92,7 +92,7 @@ export default function Sidebar({
           path: '/app/ai-studio',
         },
         { id: 'marketing', label: 'Broadcasts & Meta Ads', icon: Megaphone, path: '/app/marketing' },
-        { id: 'calls', label: 'iSuite Phone Calls', icon: PhoneCall, path: '/app/calls' },
+        { id: 'calls', label: 'Karttik Phone Calls', icon: PhoneCall, path: '/app/calls' },
         { id: 'team', label: 'Team & Roles', icon: UserCheck, path: '/app/team' },
         { id: 'settings', label: 'Workspace Settings', icon: Settings, path: '/app/settings' },
       ],
@@ -118,7 +118,7 @@ export default function Sidebar({
         {/* Brand Header */}
         <div className="h-16 flex items-center justify-between px-4 border-b border-white/10 shrink-0">
           <div className="flex items-center gap-2.5 overflow-hidden">
-            <img src="/logo-white-wordmark.png" alt="iSuite AI" className="h-6 w-auto object-contain shrink-0" />
+            <img src="/logo-white-wordmark.png" alt="Karttik AI" className="h-6 w-auto object-contain shrink-0" />
             {!collapsed && (
               <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 truncate">
                 {currentConfig.name.split(' ')[0]}

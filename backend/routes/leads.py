@@ -20,7 +20,7 @@ def health_check():
     mysql_ok, msg = check_mysql()
     return jsonify({
         "status": "ok",
-        "service": "isuite-ai-backend",
+        "service": "karttik-ai-backend",
         "mysql_status": "connected" if mysql_ok else f"pending ({msg})",
         "database": "active"
     }), 200

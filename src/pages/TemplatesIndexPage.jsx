@@ -7,7 +7,7 @@ import { ArrowRight, FileText, CheckCircle2 } from 'lucide-react';
 export default function TemplatesIndexPage({ onNavigateRoute, onNavigateHome, onOpenDemo, onOpenTrial }) {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Free Templates for Indian Businesses | iSuite AI';
+    document.title = 'Free Templates for Indian Businesses | Karttik AI';
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement('meta');
@@ -41,7 +41,7 @@ export default function TemplatesIndexPage({ onNavigateRoute, onNavigateHome, on
             <p className="mt-4 text-[15px] sm:text-[17px] text-[#475569] leading-relaxed font-normal">
               Messages and formats the trades we build for use every day — fee reminders, demand letters, maintenance
               contracts and more — written for India, in English, Tamil, Tanglish and Hindi. Copy them, change the details and
-              use them; you do not need iSuite AI for any of them.
+              use them; you do not need Karttik AI for any of them.
             </p>
           </div>
         </section>

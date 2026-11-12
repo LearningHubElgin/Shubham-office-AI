@@ -1,10 +1,10 @@
-// Product Data: iSuite AI – Gym & Fitness Studio
+// Product Data: Karttik AI – Gym & Fitness Studio
 export const gymData = {
   id: 'gym',
   slug: 'gyms',
-  title: 'Gym Management Software | iSuite AI – Gym & Fitness Studio',
+  title: 'Gym Management Software | Karttik AI – Gym & Fitness Studio',
   metaDescription: 'Gym management software for Indian gyms and studios: QR check-ins on WhatsApp, renewal links, freezes and an AI that books trials, from ₹7,999 a year + GST.',
-  canonicalUrl: 'https://isuite.ai/gyms/',
+  canonicalUrl: 'https://karttik.ai/gyms/',
   themeColor: '#001845',
   locale: 'en_IN',
   ogImage: '/assets/img/og-gym.jpg',
@@ -13,13 +13,13 @@ export const gymData = {
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Gym & Fitness Studio',
+    badge: 'Karttik AI – Gym & Fitness Studio',
     h1Main: 'Gym management software for Indian gyms,',
     h1Accent: 'with an AI front desk',
     subtitle: 'For gyms and yoga, Zumba and CrossFit studios: members, QR check-ins, renewals and freezes in one app, from ₹7,999 a year + GST. An AI answers plans and prices and books free trials on WhatsApp, Instagram and web chat at any hour, and members renew by link.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI.", primary: false, isExternal: true },
+      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI.", primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹7,999 a year + GST',
@@ -81,8 +81,8 @@ export const gymData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'AT A GLANCE',
-    h2: 'iSuite AI – Gym & Fitness Studio at a glance',
-    intro: 'iSuite AI – Gym & Fitness Studio is gym management software for Indian gyms and yoga, Zumba and CrossFit studios. Members, WhatsApp QR check-ins, renewals and freezes sit in one app, with an AI front desk that books free trials. Plans start from ₹7,999 a year + GST, with a 14-day free trial. No machine or member app is needed.',
+    h2: 'Karttik AI – Gym & Fitness Studio at a glance',
+    intro: 'Karttik AI – Gym & Fitness Studio is gym management software for Indian gyms and yoga, Zumba and CrossFit studios. Members, WhatsApp QR check-ins, renewals and freezes sit in one app, with an AI front desk that books free trials. Plans start from ₹7,999 a year + GST, with a 14-day free trial. No machine or member app is needed.',
     facts: [
       {
         label: 'WHAT IT IS',
@@ -256,7 +256,7 @@ export const gymData = {
     h2: 'It speaks the way a front desk does',
     comparisonHeader: {
       left: 'TODAY',
-      right: 'WITH ISUITE AI – GYM & FITNESS STUDIO',
+      right: 'WITH KARTTIK AI – GYM & FITNESS STUDIO',
     },
     rows: [
       {
@@ -291,7 +291,7 @@ export const gymData = {
     cards: [
       {
         title: 'Where it fits',
-        text: 'Not a biometric, turnstile or door-access system, and not a workout or diet app for members. iSuite AI – Gym & Fitness Studio keeps enquiries, members, check-ins, memberships, payments and the conversations with members; on Gym Growth, PT packs, body progress and Accounts for GST invoices and expenses too. Your door hardware stays where it is. It is not yet built for chains with many branches.',
+        text: 'Not a biometric, turnstile or door-access system, and not a workout or diet app for members. Karttik AI – Gym & Fitness Studio keeps enquiries, members, check-ins, memberships, payments and the conversations with members; on Gym Growth, PT packs, body progress and Accounts for GST invoices and expenses too. Your door hardware stays where it is. It is not yet built for chains with many branches.',
       },
       {
         title: 'What the AI is told never to do',
@@ -330,7 +330,7 @@ export const gymData = {
           { title: 'Reminders & broadcasts', description: 'Automated expiry alerts and WhatsApp broadcast campaigns' },
           { title: 'Android app & staff roles', description: 'Front-desk, trainer and owner roles on Android' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=gyms&package=basic',
+        buyUrl: 'https://app.karttik.ai/buy?industry=gyms&package=basic',
       },
       {
         name: 'Gym Growth',
@@ -351,7 +351,7 @@ export const gymData = {
           { title: 'Automations & Studio', description: 'Workflow automations and marketing content suggestions' },
           { title: 'Advanced team reports', description: 'Track trainer utilization, member retention and daily revenue' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=gyms&package=growth',
+        buyUrl: 'https://app.karttik.ai/buy?industry=gyms&package=growth',
       },
     ],
     footnotes: [
@@ -373,18 +373,18 @@ export const gymData = {
     faqs: [
       {
         id: 'what-is',
-        question: 'What is iSuite AI – Gym & Fitness Studio?',
-        answer: 'iSuite AI – Gym & Fitness Studio is gym management software for Indian gyms and yoga, Zumba and CrossFit studios, made by MnT Future in Madurai. Enquiries, members, QR check-ins, memberships with freezes and online payments sit in one app, with an AI front desk that answers plans and books free trials. Gym Growth adds PT packs and body progress.',
+        question: 'What is Karttik AI – Gym & Fitness Studio?',
+        answer: 'Karttik AI – Gym & Fitness Studio is gym management software for Indian gyms and yoga, Zumba and CrossFit studios, made by MnT Future in Madurai. Enquiries, members, QR check-ins, memberships with freezes and online payments sit in one app, with an AI front desk that answers plans and books free trials. Gym Growth adds PT packs and body progress.',
       },
       {
         id: 'cost',
-        question: 'How much does iSuite AI – Gym & Fitness Studio cost?',
+        question: 'How much does Karttik AI – Gym & Fitness Studio cost?',
         answer: 'Gym Basic costs ₹7,999 a year + GST, and Gym Growth ₹11,999 a year + GST. Growth adds PT session packs, body progress, GST invoices, automations, Meta lead ads and team reports. Both include monthly AI credits and a 14-day free trial.',
       },
       {
         id: 'biometric',
         question: 'Do I need a biometric machine or turnstile?',
-        answer: 'No. iSuite AI uses WhatsApp QR check-in. You print the QR code poster generated by the app and paste it at your desk. Members scan it using their phone’s camera and tap send on WhatsApp. Their check-in is logged instantly and their membership status shows on screen. Your front desk can also tap check-in manually.',
+        answer: 'No. Karttik AI uses WhatsApp QR check-in. You print the QR code poster generated by the app and paste it at your desk. Members scan it using their phone’s camera and tap send on WhatsApp. Their check-in is logged instantly and their membership status shows on screen. Your front desk can also tap check-in manually.',
       },
       {
         id: 'freezes',
@@ -408,14 +408,14 @@ export const gymData = {
   ctaBanner: {
     eyebrow: 'START YOUR FREE TRIAL',
     h2: 'Every member checked in. Every renewal reminded.',
-    sub: 'Set up your gym on iSuite AI today with a 14-day free trial. We help you set up your plans, members and check-in poster 1-on-1 on WhatsApp.',
+    sub: 'Set up your gym on Karttik AI today with a 14-day free trial. We help you set up your plans, members and check-in poster 1-on-1 on WhatsApp.',
     buttonPrimary: {
       text: 'Start 14-Day Free Trial',
       href: '#plans',
     },
     buttonSecondary: {
       text: 'Book a Live Demo',
-      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Gym.",
+      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Gym.",
     },
     callText: 'Or call +91 93486 33365 to talk with our team',
     callHref: 'tel:+919348633365',
@@ -423,7 +423,7 @@ export const gymData = {
 
   // 11. Family Section
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'Every product is built around the way its industry runs — with its own screens, tools and AI.',
     templateLink: '/templates/gym-fee-reminder-message/',

@@ -1,13 +1,13 @@
 // Pricing Data
 export const pricingData = {
-  title: 'iSuite AI Pricing – Yearly Plans in Rupees, Plus GST',
-  metaDescription: 'Plans for every iSuite AI product, priced by the year in rupees plus 18% GST. Free trial on every plan; WhatsApp charges are billed by Meta.',
-  canonicalUrl: 'https://isuite.ai/pricing/',
+  title: 'Karttik AI Pricing – Yearly Plans in Rupees, Plus GST',
+  metaDescription: 'Plans for every Karttik AI product, priced by the year in rupees plus 18% GST. Free trial on every plan; WhatsApp charges are billed by Meta.',
+  canonicalUrl: 'https://karttik.ai/pricing/',
   themeColor: '#001d55',
 
   hero: {
     eyebrow: 'PLANS FOR EVERY PRODUCT',
-    h1: 'iSuite AI pricing: plans made for your trade',
+    h1: 'Karttik AI pricing: plans made for your trade',
     lead: 'Pick your product, then the plan that fits your team. Each product’s plans start with its trade’s setup in place, and every plan has a free trial. Prices are by the year, in rupees, and GST is added to every invoice.',
   },
 
@@ -38,7 +38,7 @@ export const pricingData = {
         { title: 'GST invoices', description: 'Generate and send PDF invoices with your logo' },
         { title: 'Broadcasts', description: 'Send targeted WhatsApp marketing messages to customer groups' },
       ],
-      buyUrl: 'https://app.isuite.ai/buy?package=basic',
+      buyUrl: 'https://app.karttik.ai/buy?package=basic',
     },
     {
       name: 'Growth',
@@ -56,7 +56,7 @@ export const pricingData = {
         { title: 'Expense tracking & GSTR exports', description: 'Complete accounting sheets ready for your tax consultant' },
         { title: 'Advanced team roles', description: 'Granular permissions and team performance reports' },
       ],
-      buyUrl: 'https://app.isuite.ai/buy?package=growth',
+      buyUrl: 'https://app.karttik.ai/buy?package=growth',
     },
   ],
 
@@ -98,7 +98,7 @@ export const pricingData = {
     {
       id: 'whatsapp-meta',
       question: 'Are WhatsApp message charges included?',
-      answer: 'No. iSuite AI uses Meta’s official WhatsApp Business Platform, and Meta bills its message charges to your own WhatsApp Business account, at Meta’s rates, separately from your iSuite AI plan. Meta’s rates depend on the kind of message and the country.',
+      answer: 'No. Karttik AI uses Meta’s official WhatsApp Business Platform, and Meta bills its message charges to your own WhatsApp Business account, at Meta’s rates, separately from your Karttik AI plan. Meta’s rates depend on the kind of message and the country.',
     },
     {
       id: 'ai-credits',

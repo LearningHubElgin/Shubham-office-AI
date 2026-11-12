@@ -116,9 +116,9 @@ def seed_initial_app_data(engine_type):
     """Seed customers, conversations, bookings, payments and invoices directly into SQL."""
     # 1. Seed workspace settings
     ws_defaults = [
-        ("ws_clinic", "iSuite Health Care Clinic", "clinic", "growth", 8420, "+91 93486 33365", "Approved", 14, "3/501, Subash Street, Iyer Bungalow, Madurai - 625014", "33EACPR6502N1ZH"),
-        ("ws_coaching", "iSuite Academy & Coaching", "coaching", "growth", 8420, "+91 93486 33365", "Approved", 7, "14, Bypass Road, Madurai - 625016", "33EACPR6502N1ZH"),
-        ("ws_realestate", "iSuite Royal Enclave Properties", "real-estate", "growth", 8420, "+91 93486 33365", "Approved", 14, "Tower A, Royal Enclave, Madurai", "33EACPR6502N1ZH"),
+        ("ws_clinic", "Karttik Health Care Clinic", "clinic", "growth", 8420, "+91 93486 33365", "Approved", 14, "3/501, Subash Street, Iyer Bungalow, Madurai - 625014", "33EACPR6502N1ZH"),
+        ("ws_coaching", "Karttik Academy & Coaching", "coaching", "growth", 8420, "+91 93486 33365", "Approved", 7, "14, Bypass Road, Madurai - 625016", "33EACPR6502N1ZH"),
+        ("ws_realestate", "Karttik Royal Enclave Properties", "real-estate", "growth", 8420, "+91 93486 33365", "Approved", 14, "Tower A, Royal Enclave, Madurai", "33EACPR6502N1ZH"),
         ("ws_gym", "PowerFit Fitness Studio", "gym", "growth", 8420, "+91 93486 33365", "Approved", 14, "42, Anna Nagar Main Road, Madurai", "33EACPR6502N1ZH"),
         ("ws_salon", "Glow & Style Bridal Salon", "salon", "growth", 8420, "+91 93486 33365", "Approved", 14, "Chokkikulam, Madurai", "33EACPR6502N1ZH"),
         ("ws_fieldservice", "ProTech AC & Equipment AMC", "field-service", "growth", 8420, "+91 93486 33365", "Approved", 14, "Kappalur Industrial Estate, Madurai", "33EACPR6502N1ZH"),
@@ -1045,7 +1045,7 @@ def get_app_data(industry="clinic"):
     # Format workspace
     workspace = {
         "id": ws_row["id"] if ws_row else f"ws_{ind}",
-        "businessName": ws_row["business_name"] if ws_row else "iSuite AI Enterprise",
+        "businessName": ws_row["business_name"] if ws_row else "Karttik AI Enterprise",
         "industry": ind,
         "plan": ws_row["plan"] if ws_row else "growth",
         "credits": ws_row["credits"] if ws_row else 8420,

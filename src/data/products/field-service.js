@@ -1,10 +1,10 @@
-// Product Data: iSuite AI – Field Service & AMC
+// Product Data: Karttik AI – Field Service & AMC
 export const fieldServiceData = {
   id: 'field-service',
   slug: 'field-service',
-  title: 'Field Service Management Software India | iSuite AI',
+  title: 'Field Service Management Software India | Karttik AI',
   metaDescription: 'Field service management software for AC, RO and appliance service, from ₹9,999 a year + GST: jobs board, technician app, GST bills, warranties. AMC on Growth.',
-  canonicalUrl: 'https://isuite.ai/field-service/',
+  canonicalUrl: 'https://karttik.ai/field-service/',
   themeColor: '#001845',
   locale: 'en_IN',
   ogImage: '/assets/img/og-field-service.jpg',
@@ -13,13 +13,13 @@ export const fieldServiceData = {
 
   // 1. Hero
   hero: {
-    badge: 'iSuite AI – Field Service & AMC',
+    badge: 'Karttik AI – Field Service & AMC',
     h1Main: 'Field service management software,',
     h1Accent: 'with AMC and an AI on Field Service Growth',
     subtitle: 'Run your AC, RO water purifier, appliance, CCTV or electrical service business on one app: jobs by technician and window with WhatsApp updates, mobile job cards, doorstep billing with parts, equipment warranties and AMC contracts. Field Service Basic has no AI; Field Service Growth adds AMC contracts and an AI dispatcher on WhatsApp.',
     buttons: [
       { text: 'Start free trial', href: '#plans', primary: true },
-      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Field%20Service.", primary: false, isExternal: true },
+      { text: 'Book a demo', href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Field%20Service.", primary: false, isExternal: true },
     ],
     trustChips: [
       'Plans from ₹9,999 a year + GST',
@@ -81,8 +81,8 @@ export const fieldServiceData = {
   atAGlance: {
     id: 'at-a-glance',
     eyebrow: 'AT A GLANCE',
-    h2: 'iSuite AI – Field Service & AMC at a glance',
-    intro: 'iSuite AI – Field Service & AMC is field service management software for Indian service providers: jobs board, technician mobile view, doorstep GST bills, customer equipment tracking and AMC contracts in one app. Plans start from ₹9,999 a year + GST, with a 14-day free trial. Field Service Growth adds AMC contracts, maintenance schedules and an AI dispatcher that books jobs on WhatsApp.',
+    h2: 'Karttik AI – Field Service & AMC at a glance',
+    intro: 'Karttik AI – Field Service & AMC is field service management software for Indian service providers: jobs board, technician mobile view, doorstep GST bills, customer equipment tracking and AMC contracts in one app. Plans start from ₹9,999 a year + GST, with a 14-day free trial. Field Service Growth adds AMC contracts, maintenance schedules and an AI dispatcher that books jobs on WhatsApp.',
     facts: [
       {
         label: 'WHAT IT IS',
@@ -253,10 +253,10 @@ export const fieldServiceData = {
   // 6. Speaks Section
   speaksSection: {
     eyebrow: 'MADE FOR SERVICE TEAMS',
-    h2: 'Paper job cards vs iSuite AI',
+    h2: 'Paper job cards vs Karttik AI',
     comparisonHeader: {
       left: 'TODAY',
-      right: 'WITH ISUITE AI – FIELD SERVICE & AMC',
+      right: 'WITH KARTTIK AI – FIELD SERVICE & AMC',
     },
     rows: [
       {
@@ -291,7 +291,7 @@ export const fieldServiceData = {
     cards: [
       {
         title: 'Where it fits',
-        text: 'iSuite AI – Field Service & AMC is designed for residential and commercial service providers in HVAC, water purification, appliance repair, electrical systems and CCTV. It keeps job dispatch, technician workflows, spare parts, customer equipment history, AMC contracts and billing in one app.',
+        text: 'Karttik AI – Field Service & AMC is designed for residential and commercial service providers in HVAC, water purification, appliance repair, electrical systems and CCTV. It keeps job dispatch, technician workflows, spare parts, customer equipment history, AMC contracts and billing in one app.',
       },
       {
         title: 'What the AI is told never to do',
@@ -328,7 +328,7 @@ export const fieldServiceData = {
           { title: 'Customer equipment tracking', description: 'Maintain service history by machine serial number and model' },
           { title: 'UPI payment links', description: 'Collect payments via Razorpay QR or instant WhatsApp links' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=field-service&package=basic',
+        buyUrl: 'https://app.karttik.ai/buy?industry=field-service&package=basic',
       },
       {
         name: 'Field Service Growth',
@@ -348,7 +348,7 @@ export const fieldServiceData = {
           { title: 'Meta lead ads integration', description: 'Facebook and Instagram service leads flow straight into jobs board' },
           { title: 'GSTR-1 & expense exports', description: 'Complete accounting sheets ready for your tax consultant' },
         ],
-        buyUrl: 'https://app.isuite.ai/buy?industry=field-service&package=growth',
+        buyUrl: 'https://app.karttik.ai/buy?industry=field-service&package=growth',
       },
     ],
     footnotes: [
@@ -370,8 +370,8 @@ export const fieldServiceData = {
     faqs: [
       {
         id: 'what-is',
-        question: 'What is iSuite AI – Field Service & AMC?',
-        answer: 'iSuite AI – Field Service & AMC is field service management software made in Madurai for Indian service teams. It gives you a jobs board by technician, a mobile view for technicians on the road, GST bills on the spot, equipment records, and AMC contracts. Field Service Growth adds an AI dispatcher on WhatsApp.',
+        question: 'What is Karttik AI – Field Service & AMC?',
+        answer: 'Karttik AI – Field Service & AMC is field service management software made in Madurai for Indian service teams. It gives you a jobs board by technician, a mobile view for technicians on the road, GST bills on the spot, equipment records, and AMC contracts. Field Service Growth adds an AI dispatcher on WhatsApp.',
       },
       {
         id: 'amc-difference',
@@ -407,7 +407,7 @@ export const fieldServiceData = {
     },
     buttonSecondary: {
       text: 'Book a Live Demo',
-      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20iSuite%20AI%20Field%20Service.",
+      href: "https://wa.me/919348633365?text=Hi%2C%20I'd%20like%20a%20free%20demo%20of%20Karttik%20AI%20Field%20Service.",
     },
     callText: 'Or call +91 93486 33365 to talk with our team',
     callHref: 'tel:+919348633365',
@@ -415,7 +415,7 @@ export const fieldServiceData = {
 
   // 11. Family Section
   familySection: {
-    eyebrow: 'THE ISUITE AI FAMILY',
+    eyebrow: 'THE KARTTIK AI FAMILY',
     h2: 'One platform, made for each trade',
     sub: 'Every product is built around the way its industry runs — with its own screens, tools and AI.',
     templateLink: '/templates/amc-contract-format/',
